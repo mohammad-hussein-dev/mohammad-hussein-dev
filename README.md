@@ -43,14 +43,14 @@ I'm a **Physics & Math student** who believes that code is the ultimate tool to 
 
 ## 🛠️ Technical Arsenal
 
-```text
-🐍 Python        ██████████░░░░  75%
-🌐 Django        ████████░░░░░░  55%
-📊 NumPy/Matplotlib ██████░░░░░░  40%
-🗄️ SQL           ███████░░░░░░░  50%
-🐧 Git/GitHub    ████████░░░░░░  55%
-🎨 HTML/CSS      ██████░░░░░░░░  40%
-```
+| Skill               | Level          |
+|---------------------|----------------|
+| 🐍 Python           | ██████████░░░░ 75% |
+| 🌐 Django           | ████████░░░░░░ 55% |
+| 📊 NumPy/Matplotlib | ██████░░░░░░░░ 40% |
+| 🗄️ SQL              | ███████░░░░░░░ 50% |
+| 🐧 Git/GitHub       | ████████░░░░░░ 55% |
+| 🎨 HTML/CSS         | ██████░░░░░░░░ 40% |
 
 | **Category** | **Technologies** |
 | :--- | :--- |
@@ -116,6 +116,16 @@ I'm a **Physics & Math student** who believes that code is the ultimate tool to 
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=mohammad-hussein-dev&theme=radical&no-frame=true&row=2&column=4"/>
 </p>
+
+---
+
+## 📊 Weekly Development Breakdown
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=mohammad-hussein-dev&layout=compact&theme=github_dark&hide_border=true" width="48%"/>
+</p>
+
+> 💡 *This section updates automatically based on my coding activity via WakaTime.*
 
 ---
 
