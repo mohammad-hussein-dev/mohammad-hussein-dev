@@ -1,4 +1,3 @@
-```markdown
 <h1 align="center">🚀 Mohammad Hussein | 16-Year-Old Physics & Code Architect</h1>
 
 <p align="center">
@@ -120,4 +119,3 @@ I'm a **16-year-old Physics & Math student** who believes that code is the ultim
 <p align="center">
   <i>“The best time to start was yesterday. The second best time is NOW.”</i>
 </p>
-```
