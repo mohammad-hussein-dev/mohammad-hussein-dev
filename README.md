@@ -128,6 +128,20 @@ I'm a **Physics & Math student** who believes that code is the ultimate tool to 
 - 💬 **Telegram**: @mohammad_hussein_dev  
 - 🌐 **GitHub**: [mohammad-hussein-dev](https://github.com/mohammad-hussein-dev)
 
+## 📇 Let's Connect
+
+<p align="center">
+  <a href="mailto:king.mohamd.09876@gmail.com">
+    <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
+  </a>
+  <a href="https://t.me/mohammad_hussein_dev">
+    <img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white"/>
+  </a>
+  <a href="https://github.com/mohammad-hussein-dev">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+  </a>
+</p>
+
 *"Clean code, solid architecture, and on‑time delivery."*
 
 ---
@@ -151,24 +165,3 @@ I'm a **Physics & Math student** who believes that code is the ultimate tool to 
 <p align="center">
   <i>“The best time to start was yesterday. The second best time is NOW.”</i>
 </p>
-
-## 📇 Let's Connect
-
-<p align="center">
-  <a href="mailto:king.mohamd.09876@gmail.com">
-    <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
-  </a>
-  <a href="https://t.me/mohammad_hussein_dev">
-    <img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white"/>
-  </a>
-  <a href="https://github.com/mohammad-hussein-dev">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
-  </a>
-</p>
-
-<p align="center">
-  <b>⚡ Status:</b> Available for Freelance & Collaboration<br>
-  <b>🧩 Stack:</b> Python • Django • PostgreSQL • Docker • Arch Linux
-</p>
-
-> *"From physics to web apps — I build solutions that scale."*
