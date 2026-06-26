@@ -37,14 +37,12 @@ I'm a **Physics & Math student** who believes that code is the ultimate tool to 
 
 ## 🛠️ Technical Arsenal
 
-| Skill               | Progress                                   |
-|---------------------|--------------------------------------------|
-| 🐍 Python           | <div style="background:#4CAF50; width:75%; height:20px; border-radius:5px; display:inline-block;"></div> 75% |
-| 🌐 Django           | <div style="background:#FF9800; width:55%; height:20px; border-radius:5px; display:inline-block;"></div> 55% |
-| 📊 NumPy/Matplotlib | <div style="background:#f44336; width:40%; height:20px; border-radius:5px; display:inline-block;"></div> 40% |
-| 🗄️ SQL              | <div style="background:#2196F3; width:50%; height:20px; border-radius:5px; display:inline-block;"></div> 50% |
-| 🐧 Git/GitHub       | <div style="background:#9C27B0; width:55%; height:20px; border-radius:5px; display:inline-block;"></div> 55% |
-| 🎨 HTML/CSS         | <div style="background:#795548; width:40%; height:20px; border-radius:5px; display:inline-block;"></div> 40% |
+![Python](https://img.shields.io/badge/Python-75%25-blue?style=flat-square&logo=python)
+![Django](https://img.shields.io/badge/Django-55%25-green?style=flat-square&logo=django)
+![NumPy](https://img.shields.io/badge/NumPy-40%25-orange?style=flat-square&logo=numpy)
+![SQL](https://img.shields.io/badge/SQL-50%25-yellow?style=flat-square&logo=postgresql)
+![Git](https://img.shields.io/badge/Git-55%25-red?style=flat-square&logo=git)
+![HTML/CSS](https://img.shields.io/badge/HTML%2FCSS-40%25-lightgrey?style=flat-square&logo=html5)
 
 | **Category** | **Technologies** |
 | :--- | :--- |
