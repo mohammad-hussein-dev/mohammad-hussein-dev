@@ -101,12 +101,12 @@ I'm a **Physics & Math student** who believes that code is the ultimate tool to 
 ## 📊 GitHub Activity
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=mohammad-hussein-dev&show_icons=true&theme=radical&hide_border=true&count_private=true" width="48%"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=mohammad-hussein-dev&theme=radical&hide_border=true" width="48%"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=mohammad-hussein-dev&show_icons=true&theme=github_dark&hide_border=true&count_private=true" width="48%"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=mohammad-hussein-dev&theme=github_dark&hide_border=true" width="48%"/>
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mohammad-hussein-dev&layout=compact&theme=radical&hide_border=true" width="40%"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mohammad-hussein-dev&layout=compact&theme=github_dark&hide_border=true" width="40%"/>
 </p>
 
 ---
