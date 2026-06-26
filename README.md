@@ -119,16 +119,16 @@ I'm a **Physics & Math student** who believes that code is the ultimate tool to 
 
 ---
 
-## 💼 Ready to Build Something?
+## 💼 Open for Collaboration
 
-> 🚀 I'm currently available for **freelance projects** and **collaboration**.  
-> Let's turn your idea into a robust, high-performance application.
+> I build **scalable backend systems** and **clean APIs** with Django & Python.  
+> Whether you need a full‑stack app, an admin panel, or performance optimization — I'm ready.
 
-- 📧 **Email**: king.mohamd.09876@gmail.com
-- 💬 **Telegram**: @mohammad_hussein_dev
+- 📧 **Email**: king.mohamd.09876@gmail.com  
+- 💬 **Telegram**: @mohammad_hussein_dev  
 - 🌐 **GitHub**: [mohammad-hussein-dev](https://github.com/mohammad-hussein-dev)
 
-*"From physics simulations to Django backends—I code it all."*
+*"Clean code, solid architecture, and on‑time delivery."*
 
 ---
 
