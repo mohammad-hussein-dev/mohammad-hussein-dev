@@ -37,12 +37,14 @@ I'm a **Physics & Math student** who believes that code is the ultimate tool to 
 
 ## 🛠️ Technical Arsenal
 
-![Python](https://img.shields.io/badge/Python-75%25-blue?style=flat-square&logo=python)
-![Django](https://img.shields.io/badge/Django-55%25-green?style=flat-square&logo=django)
-![NumPy](https://img.shields.io/badge/NumPy-40%25-orange?style=flat-square&logo=numpy)
-![SQL](https://img.shields.io/badge/SQL-50%25-yellow?style=flat-square&logo=postgresql)
-![Git](https://img.shields.io/badge/Git-55%25-red?style=flat-square&logo=git)
-![HTML/CSS](https://img.shields.io/badge/HTML%2FCSS-40%25-lightgrey?style=flat-square&logo=html5)
+| Skill               | Level          |
+|---------------------|----------------|
+| 🐍 Python           | ██████████░░░░ 75% |
+| 🌐 Django           | ████████░░░░░░ 55% |
+| 📊 NumPy/Matplotlib | ██████░░░░░░░░ 40% |
+| 🗄️ SQL              | ███████░░░░░░░ 50% |
+| 🐧 Git/GitHub       | ████████░░░░░░ 55% |
+| 🎨 HTML/CSS         | ██████░░░░░░░░ 40% |
 
 | **Category** | **Technologies** |
 | :--- | :--- |
