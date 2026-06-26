@@ -1,4 +1,4 @@
-<h1 align="center">🚀 Mohammad Hussein | 16-Year-Old Physics & Code Architect</h1>
+<h1 align="center">🚀 Mohammad Hussein | Physics & Code Architect</h1>
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com/?lines=Python+%26+Django+Developer;Physics+%26+Math+Student;Turning+Formulas+into+Software;Future+AI+%26+ML+Engineer;Building+the+Future+One+Commit+at+a+Time&font=Fira%20Code&center=true&width=500&height=50&color=00d8ff&vCenter=true&size=22&pause=1000">
