@@ -13,16 +13,22 @@
   <img src="https://img.shields.io/badge/Arch%20Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white"/>
 </p>
 
+<p align="center">
+  <b><i>"I don't just write code. I simulate the universe."</i></b>
+</p>
+
+---
+
 ## 👨‍💻 Who Am I?
 
-I'm a **16-year-old Physics & Math student** who believes that code is the ultimate tool to understand the universe. While others memorize equations, I breathe life into them through Python.
+I'm a **Physics & Math student** who believes that code is the ultimate tool to understand the universe. While others memorize equations, I breathe life into them through Python.
 
 | **Aspect** | **Details** |
 | :--- | :--- |
 | 🎯 **Current Mission** | Building a solid GitHub portfolio that speaks louder than a resume |
 | 🔭 **Right Now** | Creating my first open-source projects and freelance portfolio |
 | 🧠 **Learning Path** | Python → Django REST → Machine Learning → System Architecture |
-| 📚 **Academic Focus** | 10th Grade Physics & Mathematics (Iranian National Curriculum) |
+| 📚 **Academic Focus** | Physics & Mathematics |
 | 💡 **Ultimate Goal** | Become an AI/ML Engineer and build systems that matter |
 | 🎯 **2026 Target** | Land my first paid freelance project & complete 3 portfolio projects |
 
@@ -46,18 +52,26 @@ I'm a **16-year-old Physics & Math student** who believes that code is the ultim
 | **Scientific Computing** | NumPy, Matplotlib, SymPy |
 | **Databases** | SQLite, PostgreSQL (Basics) |
 | **Version Control** | Git & GitHub |
-| **OS & Tools** | Linux (Ubuntu), VS Code, Terminal |
+| **OS & Tools** | Linux (Arch), VS Code, Terminal |
 
 ---
 
-## 📌 Featured Projects (My Portfolio Pipeline)
+## 📌 Featured Projects
 
-| **Project Name** | **Description** | **Status** |
-| :--- | :--- | :--- |
-| 🔬 **Projectile Physics Simulator** | 2D trajectory simulation using kinematic equations with real-time matplotlib graphs | 🔄 In Progress |
-| 📋 **Django Task Manager** | Full CRUD web application with user authentication and task categorization | 📋 Planned |
-| 🧮 **Newton-Raphson Solver** | Root-finding algorithm implementation with a clean CLI interface | 📋 Planned |
-| 📊 **Math Visualization Tool** | Interactive graph plotter for functions, derivatives, and integrals | 📋 Future |
+### 🔬 Projectile Physics Simulator
+> **Tech:** `Python` `NumPy` `Matplotlib`  
+> A 2D trajectory simulator that visualizes projectile motion using kinematic equations.  
+> **Status:** 🟢 In Progress
+
+### 📋 Django Task Manager
+> **Tech:** `Django` `SQLite` `Bootstrap`  
+> Full-featured task management app with user authentication and CRUD operations.  
+> **Status:** 🔵 Planned
+
+### 🧮 Newton-Raphson Solver
+> **Tech:** `Python` `SymPy`  
+> Find roots of any equation using the Newton-Raphson numerical method.  
+> **Status:** 🔵 Planned
 
 ---
 
@@ -90,20 +104,24 @@ I'm a **16-year-old Physics & Math student** who believes that code is the ultim
 
 ---
 
+## 💼 Ready to Build Something?
+
+> 🚀 I'm currently available for **freelance projects** and **collaboration**.  
+> Let's turn your idea into a robust, high-performance application.
+
+- 📧 **Email**: [Your Email Here]
+- 🌐 **GitHub**: [mohammad-hussein-dev](https://github.com/mohammad-hussein-dev)
+- 💬 **Telegram**: [Your Handle - Optional]
+
+*"From physics simulations to Django backends—I code it all."*
+
+---
+
 ## 💬 My Philosophy
 
 > **"Physics is the law, Mathematics is the language, and Code is the tool to build anything imaginable."**
 
 > **"I don't just want to learn to code. I want to code to learn."**
-
----
-
-## 📫 Connect With Me
-
-- 📧 **Email**: [Your Email Here] *(Create a professional Gmail for work)*
-- 🌐 **GitHub**: [mohammad-hussein-dev](https://github.com/mohammad-hussein-dev)
-- 💬 **Telegram**: [Your Handle - Optional]
-- 🔗 **LinkedIn**: [Your Profile - Optional for now]
 
 ---
 
@@ -118,3 +136,4 @@ I'm a **16-year-old Physics & Math student** who believes that code is the ultim
 <p align="center">
   <i>“The best time to start was yesterday. The second best time is NOW.”</i>
 </p>
+```
