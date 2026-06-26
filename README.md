@@ -151,3 +151,21 @@ I'm a **Physics & Math student** who believes that code is the ultimate tool to 
 <p align="center">
   <i>“The best time to start was yesterday. The second best time is NOW.”</i>
 </p>
+
+## ⚡ CONNECT // TERMINAL
+┌─────────────────────────────────────────────┐
+│ > whoami │
+│ mohammad-hussein-dev │
+│ > location │
+│ Earth / Cyberspace │
+│ > status │
+│ Available for freelance & collaboration │
+│ > contact │
+│ email: king.mohamd.09876@gmail.com │
+│ telegram: @mohammad_hussein_dev │
+│ github: mohammad-hussein-dev │
+└─────────────────────────────────────────────┘
+
+text
+
+*"I don't just write code — I architect systems."*
