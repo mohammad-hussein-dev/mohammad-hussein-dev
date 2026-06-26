@@ -37,14 +37,14 @@ I'm a **Physics & Math student** who believes that code is the ultimate tool to 
 
 ## 🛠️ Technical Arsenal
 
-```markdown
-🐍 Python        ██████████░░░░  75%
-🌐 Django        ████████░░░░░░  55%
-📊 NumPy/Matplotlib ██████░░░░░░  40%
-🗄️ SQL           ███████░░░░░░░  50%
-🐧 Git/GitHub    ████████░░░░░░  55%
-🎨 HTML/CSS      ██████░░░░░░░░  40%
-```
+| Skill               | Progress                                   |
+|---------------------|--------------------------------------------|
+| 🐍 Python           | <div style="background:#4CAF50; width:75%; height:20px; border-radius:5px; display:inline-block;"></div> 75% |
+| 🌐 Django           | <div style="background:#FF9800; width:55%; height:20px; border-radius:5px; display:inline-block;"></div> 55% |
+| 📊 NumPy/Matplotlib | <div style="background:#f44336; width:40%; height:20px; border-radius:5px; display:inline-block;"></div> 40% |
+| 🗄️ SQL              | <div style="background:#2196F3; width:50%; height:20px; border-radius:5px; display:inline-block;"></div> 50% |
+| 🐧 Git/GitHub       | <div style="background:#9C27B0; width:55%; height:20px; border-radius:5px; display:inline-block;"></div> 55% |
+| 🎨 HTML/CSS         | <div style="background:#795548; width:40%; height:20px; border-radius:5px; display:inline-block;"></div> 40% |
 
 | **Category** | **Technologies** |
 | :--- | :--- |
