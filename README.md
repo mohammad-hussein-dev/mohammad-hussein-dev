@@ -11,6 +11,7 @@
   <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white"/>
   <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
   <img src="https://img.shields.io/badge/Arch%20Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Neovim-57A143?style=for-the-badge&logo=neovim&logoColor=white"/>
 </p>
 
 <p align="center">
@@ -36,7 +37,7 @@ I'm a **Physics & Math student** who believes that code is the ultimate tool to 
 
 ## 🛠️ Technical Arsenal
 
-```text
+```markdown
 🐍 Python        ██████████░░░░  75%
 🌐 Django        ████████░░░░░░  55%
 📊 NumPy/Matplotlib ██████░░░░░░  40%
@@ -52,7 +53,7 @@ I'm a **Physics & Math student** who believes that code is the ultimate tool to 
 | **Scientific Computing** | NumPy, Matplotlib, SymPy |
 | **Databases** | SQLite, PostgreSQL (Basics) |
 | **Version Control** | Git & GitHub |
-| **OS & Tools** | Linux (Arch), VS Code, Terminal |
+| **OS & Tools** | Linux (Arch), VS Code, Neovim, Terminal |
 
 ---
 
@@ -104,14 +105,22 @@ I'm a **Physics & Math student** who believes that code is the ultimate tool to 
 
 ---
 
+## 🏆 GitHub Trophies
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=mohammad-hussein-dev&theme=radical&no-frame=true&row=2&column=4"/>
+</p>
+
+---
+
 ## 💼 Ready to Build Something?
 
 > 🚀 I'm currently available for **freelance projects** and **collaboration**.  
 > Let's turn your idea into a robust, high-performance application.
 
-- 📧 **Email**: [Your Email Here]
+- 📧 **Email**: king.mohamd.09876@gmail.com
+- 💬 **Telegram**: @mohammad_hussein_dev
 - 🌐 **GitHub**: [mohammad-hussein-dev](https://github.com/mohammad-hussein-dev)
-- 💬 **Telegram**: [Your Handle - Optional]
 
 *"From physics simulations to Django backends—I code it all."*
 
