@@ -31,14 +31,14 @@ I'm a **16-year-old Physics & Math student** who believes that code is the ultim
 
 ## 🛠️ Technical Arsenal
 
-```text
+
 🐍 Python        ██████████░░░░  75%
 🌐 Django        ████████░░░░░░  55%
 📊 NumPy/Matplotlib ██████░░░░░░  40%
 🗄️ SQL           ███████░░░░░░░  50%
 🐧 Git/GitHub    ████████░░░░░░  55%
 🎨 HTML/CSS      ██████░░░░░░░░  40%
-```
+
 
 | **Category** | **Technologies** |
 | :--- | :--- |
