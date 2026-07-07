@@ -187,4 +187,3 @@ I'm a **Physics & Math student** who believes that code is the ultimate tool to 
 <p align="center">
   <i>“The best time to start was yesterday. The second best time is NOW.”</i>
 </p>
-[متن README جدید اینجا]
