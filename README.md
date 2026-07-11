@@ -130,7 +130,7 @@ I'm a **Physics & Math student** who believes that code is the ultimate tool to 
 
 - 📧 **Email**: king.mohamd.09876@gmail.com  
 - 💬 **Telegram**: @mohammad_hussein_dev  
-- 🔗 **LinkedIn**: [mohammad-hussein](https://www.linkedin.com/in/mohammad-hussein-undefined-860237405/)
+- 🔗 **LinkedIn**: [mohammad-hussein-ghafoori](https://www.linkedin.com/in/mohammad-hussein-ghafoori-860237405/)
 - 🐦 **X**: [@your_username](https://x.com/your_username)
 - 🌐 **GitHub**: [mohammad-hussein-dev](https://github.com/mohammad-hussein-dev)
 - 🦊 **GitLab**: [your_username](https://gitlab.com/your_username)
@@ -148,7 +148,7 @@ I'm a **Physics & Math student** who believes that code is the ultimate tool to 
   <a href="https://t.me/mohammad_hussein_dev">
     <img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white"/>
   </a>
-  <a href="https://www.linkedin.com/in/mohammad-hussein-undefined-860237405/">
+  <a href="https://www.linkedin.com/in/mohammad-hussein-ghafoori-860237405/">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
   </a>
   <a href="https://x.com/your_username">
