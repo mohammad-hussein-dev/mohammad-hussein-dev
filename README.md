@@ -13,10 +13,12 @@
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+  <img src="https://img.shields.io/badge/GitLab-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white"/>
   <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
   <img src="https://img.shields.io/badge/Arch%20Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white"/>
   <img src="https://img.shields.io/badge/Neovim-57A143?style=for-the-badge&logo=neovim&logoColor=white"/>
   <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white"/>
   <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
   <img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white"/>
 </p>
@@ -128,7 +130,14 @@ I'm a **Physics & Math student** who believes that code is the ultimate tool to 
 
 - 📧 **Email**: king.mohamd.09876@gmail.com  
 - 💬 **Telegram**: @mohammad_hussein_dev  
+- 🔗 **LinkedIn**: [mohammad-hussein](https://www.linkedin.com/in/mohammad-hussein-undefined-860237405/)
+- 🐦 **X**: [@your_username](https://x.com/your_username)
 - 🌐 **GitHub**: [mohammad-hussein-dev](https://github.com/mohammad-hussein-dev)
+- 🦊 **GitLab**: [your_username](https://gitlab.com/your_username)
+- 📌 **Ponisha**: [MHussein1](https://ponisha.ir/profile/MHussein1)
+- 📌 **ParsCoders**: [mohammad_hussein](https://parscoders.com/resume/769525/mohammad_hussein)
+- 📌 **Karlancer**: [1401608](https://karlancer.com/profile/1401608)
+- 📌 **Lancerify**: [10007982](https://lancerify.com/fre/10007982)
 
 ## 📇 Let's Connect
 
@@ -139,8 +148,17 @@ I'm a **Physics & Math student** who believes that code is the ultimate tool to 
   <a href="https://t.me/mohammad_hussein_dev">
     <img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white"/>
   </a>
+  <a href="https://www.linkedin.com/in/mohammad-hussein-undefined-860237405/">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  </a>
+  <a href="https://x.com/your_username">
+    <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white"/>
+  </a>
   <a href="https://github.com/mohammad-hussein-dev">
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+  </a>
+  <a href="https://gitlab.com/your_username">
+    <img src="https://img.shields.io/badge/GitLab-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white"/>
   </a>
   <a href="https://ponisha.ir/profile/MHussein1">
     <img src="https://img.shields.io/badge/Ponisha-005A9C?style=for-the-badge&logo=link&logoColor=white"/>
