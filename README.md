@@ -7,11 +7,12 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
   <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Django%20REST%20Framework-A30000?style=for-the-badge&logo=django&logoColor=white"/>
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"/>
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"/>
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
-  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white"/>
   <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
   <img src="https://img.shields.io/badge/Arch%20Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white"/>
   <img src="https://img.shields.io/badge/Neovim-57A143?style=for-the-badge&logo=neovim&logoColor=white"/>
@@ -33,8 +34,8 @@ I'm a **Physics & Math student** who believes that code is the ultimate tool to 
 | **Aspect** | **Details** |
 | :--- | :--- |
 | 🎯 **Current Mission** | Building a solid GitHub portfolio that speaks louder than a resume |
-| 🔭 **Right Now** | Creating my first open-source projects and freelance portfolio |
-| 🧠 **Learning Path** | Python → Django REST → Machine Learning → System Architecture |
+| 🔭 **Right Now** | Mastering backend frameworks (Django REST, FastAPI) & building real‑world projects |
+| 🧠 **Learning Path** | Python → Django → Django REST → FastAPI → Machine Learning → System Architecture |
 | 📚 **Academic Focus** | Physics & Mathematics |
 | 💡 **Ultimate Goal** | Become an AI/ML Engineer and build systems that matter |
 | 🎯 **2026 Target** | Land my first paid freelance project & complete 3 portfolio projects |
@@ -43,23 +44,14 @@ I'm a **Physics & Math student** who believes that code is the ultimate tool to 
 
 ## 🛠️ Technical Arsenal
 
-| Skill               | Level          |
-|---------------------|----------------|
-| 🐍 Python           | ██████████░░░░ 75% |
-| 🌐 Django           | ██████████░░░░ 70% |
-| 📊 NumPy/Matplotlib | ████████░░░░░░ 60% |
-| 🗄️ SQL              | ███████░░░░░░░ 50% |
-| 🐧 Git/GitHub       | ██████████░░░░ 70% |
-| 🎨 HTML/CSS         | ████████░░░░░░ 55% |
-
-| **Category** | **Technologies** |
-| :--- | :--- |
-| **Languages** | Python (Proficient), JavaScript (Beginner) |
-| **Frameworks** | Django, Django REST Framework (Learning) |
-| **Scientific Computing** | NumPy, Matplotlib, SymPy |
-| **Databases** | SQLite, PostgreSQL (Basics) |
-| **Version Control** | Git & GitHub |
-| **OS & Tools** | Linux (Arch) / Windows 11 (Dual Boot), VS Code, Neovim, Terminal |
+| **Category** | **Technologies** | **Level** |
+| :--- | :--- | :--- |
+| **Languages** | Python, JavaScript (Basic) | ██████████ 75% |
+| **Backend Frameworks** | Django, Django REST Framework, FastAPI | ██████████ 70% |
+| **Scientific Computing** | NumPy, Matplotlib, SymPy | ████████ 60% |
+| **Databases** | SQLite, PostgreSQL | ███████ 50% |
+| **DevOps & Tools** | Docker, Git, GitHub, Linux (Arch) | ██████████ 70% |
+| **Web Basics** | HTML5, CSS3 | ████████ 55% |
 
 ---
 
@@ -87,9 +79,9 @@ I'm a **Physics & Math student** who believes that code is the ultimate tool to 
 | **Quarter** | **Goal** | **Status** |
 | :--- | :--- | :--- |
 | **Q3 (Jul–Sep)** | ✅ Complete 3 portfolio projects (Physics Simulator + Django Task Manager + Site Selection GA) | ✅ **Done** |
-| **Q4 (Oct–Dec)** | ✅ Land first freelance project on Ponisha/Upwork | 🔵 **In Progress** |
-| **Q1 2027 (Jan–Mar)** | ✅ Master Django REST Framework & deploy first production API | 🔵 **Planned** |
-| **Q2 2027 (Apr–Jun)** | ✅ Start Machine Learning journey with scikit-learn & pandas | 🔵 **Planned** |
+| **Q4 (Oct–Dec)** | ✅ Land first freelance project on Ponisha/Upwork & build a real‑world API with DRF/FastAPI | 🔵 **In Progress** |
+| **Q1 2027 (Jan–Mar)** | ✅ Master Django REST Framework & deploy first production API; start learning ML | 🔵 **Planned** |
+| **Q2 2027 (Apr–Jun)** | ✅ Start Machine Learning journey with scikit‑learn & pandas; build first AI model | 🔵 **Planned** |
 
 ### 🔥 Daily Commitment:
 - **1 commit per day** (even if it's just a comment or a small fix)
@@ -131,8 +123,8 @@ I'm a **Physics & Math student** who believes that code is the ultimate tool to 
 
 ## 💼 Open for Collaboration
 
-> I build **scalable backend systems** and **clean APIs** with Django & Python.  
-> Whether you need a full‑stack app, an admin panel, or performance optimization — I'm ready.
+> I build **scalable backend systems** and **clean APIs** with Django, DRF, and FastAPI.  
+> Whether you need a full‑stack app, an admin panel, a REST API, or performance optimization — I'm ready.
 
 - 📧 **Email**: king.mohamd.09876@gmail.com  
 - 💬 **Telegram**: @mohammad_hussein_dev  
