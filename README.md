@@ -44,6 +44,17 @@ I'm a **Physics & Math student** who believes that code is the ultimate tool to 
 
 ---
 
+## ✨ Why Choose Me?
+
+- **Clean Code & Best Practices** — 96% average test coverage, DRY principles, SOLID design patterns
+- **Production-Ready Mindset** — Scalability, performance, and security-first approach
+- **Physics-Based Problem Solving** — Break down complex problems systematically and mathematically
+- **Consistent Delivery** — 1 commit per day, on-time milestones, transparent progress
+- **Communication** — Clear documentation, detailed README files, easy collaboration
+- **Multiple Platforms** — Active on Ponisha, ParsCoders, Karlancer, Lancerify (ready for freelance)
+
+---
+
 ## 🛠️ Technical Arsenal
 
 | **Category** | **Technologies** | **Level** |
