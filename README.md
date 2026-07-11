@@ -13,9 +13,14 @@
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+  <img src="https://img.shields.io/badge/GitLab-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white"/>
   <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
   <img src="https://img.shields.io/badge/Arch%20Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white"/>
   <img src="https://img.shields.io/badge/Neovim-57A143?style=for-the-badge&logo=neovim&logoColor=white"/>
+  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white"/>
 </p>
 
 <p align="center">
@@ -32,21 +37,10 @@ I'm a **Physics & Math student** who believes that code is the ultimate tool to 
 | :--- | :--- |
 | 🎯 **Current Mission** | Building a solid GitHub portfolio that speaks louder than a resume |
 | 🔭 **Right Now** | Mastering backend frameworks (Django REST, FastAPI) & building real‑world projects |
-| 🧠 **Learning Path** | Python → Django → DRF → FastAPI → Machine Learning → System Architecture |
+| 🧠 **Learning Path** | Python → Django → Django REST → FastAPI → Machine Learning → System Architecture |
 | 📚 **Academic Focus** | Physics & Mathematics |
 | 💡 **Ultimate Goal** | Become an AI/ML Engineer and build systems that matter |
-| 🎯 **2026 Target** | Land first paid freelance project & complete 3 portfolio projects ✅ |
-
----
-
-## ✨ Why Choose Me?
-
-- **Clean Code & Best Practices** — 96% average test coverage, DRY principles, SOLID design patterns
-- **Production-Ready Mindset** — Scalability, performance, and security-first approach
-- **Physics-Based Problem Solving** — Break down complex problems systematically and mathematically
-- **Consistent Delivery** — 1 commit per day, on-time milestones, transparent progress
-- **Communication** — Clear documentation, detailed README files, easy collaboration
-- **Multiple Platforms** — Active on Ponisha, ParsCoders, Karlancer, Lancerify (ready for freelance)
+| 🎯 **2026 Target** | Land my first paid freelance project & complete 3 portfolio projects |
 
 ---
 
@@ -55,24 +49,11 @@ I'm a **Physics & Math student** who believes that code is the ultimate tool to 
 | **Category** | **Technologies** | **Level** |
 | :--- | :--- | :--- |
 | **Languages** | Python, JavaScript (Basic) | ██████████ 75% |
-| **Backend Frameworks** | Django, DRF, FastAPI | ██████████ 70% |
-| **Scientific Computing** | NumPy, Matplotlib, SymPy, DEAP | ████████ 60% |
-| **Databases** | PostgreSQL, SQLite | ███████ 50% |
+| **Backend Frameworks** | Django, Django REST Framework, FastAPI | ██████████ 70% |
+| **Scientific Computing** | NumPy, Matplotlib, SymPy | ████████ 60% |
+| **Databases** | SQLite, PostgreSQL | ███████ 50% |
 | **DevOps & Tools** | Docker, Git, GitHub, Linux (Arch) | ██████████ 70% |
-| **Web Basics** | HTML5, CSS3, Bootstrap | ████████ 55% |
-| **Testing** | pytest, unittest, GitHub Actions | ██████████ 75% |
-
----
-
-## 🎖️ Quick Stats
-
-<p align="center">
-  <img alt="Total Commits" src="https://img.shields.io/badge/Total%20Commits-34+-blue?style=flat-square"/>
-  <img alt="Projects" src="https://img.shields.io/badge/Portfolio%20Projects-3-brightgreen?style=flat-square"/>
-  <img alt="Test Coverage" src="https://img.shields.io/badge/Test%20Coverage-96%25-success?style=flat-square"/>
-  <img alt="Days Consistent" src="https://img.shields.io/badge/Consistency-1%20Commit%2FDay-orange?style=flat-square"/>
-  <img alt="Active Platforms" src="https://img.shields.io/badge/Freelance%20Platforms-4-red?style=flat-square"/>
-</p>
+| **Web Basics** | HTML5, CSS3 | ████████ 55% |
 
 ---
 
@@ -80,64 +61,38 @@ I'm a **Physics & Math student** who believes that code is the ultimate tool to 
 
 ### 📋 [Django Task Manager](https://github.com/mohammad-hussein-dev/django-task-manager)
 > **Tech:** `Django` `Bootstrap 5` `pytest` `GitHub Actions`  
-> **Description:** Full-featured task management app with user authentication, categories, deadline tracking  
-> **Highlights:** 96% test coverage, clean architecture, production-ready  
-> **Status:** ✅ Completed  
+> Full-featured task management app with user authentication, categories, deadline tracking, and 96% test coverage.  
+> **Status:** ✅ **Completed** — [View on GitHub](https://github.com/mohammad-hussein-dev/django-task-manager)
 
 ### 🔬 [Projectile Physics Simulator](https://github.com/mohammad-hussein-dev/projectile-physics-simulator)
 > **Tech:** `Python` `NumPy` `Matplotlib` `pytest`  
-> **Description:** 2D trajectory simulator with bilingual support (Persian/English)  
-> **Highlights:** 100% test coverage, kinematic equation visualization, educational  
-> **Status:** ✅ Completed  
+> 2D trajectory simulator with bilingual support (Persian/English) and 100% test coverage.  
+> **Status:** ✅ **Completed** — [View on GitHub](https://github.com/mohammad-hussein-dev/projectile-physics-simulator)
 
 ### 🧬 [Site Selection Using Genetic Algorithm](https://github.com/mohammad-hussein-dev/site-selection-ga)
 > **Tech:** `Python` `DEAP` `NumPy` `Matplotlib` `pytest` `GitHub Actions`  
-> **Description:** Optimal selection of 3 school locations from 100 candidates using GA  
-> **Highlights:** Complex optimization, real-world problem solving, 100% test coverage  
-> **Status:** ✅ Completed  
+> Optimal selection of 3 school locations from 100 candidates using Genetic Algorithm, maximizing population coverage and proximity to facilities.  
+> **Status:** ✅ **Completed** — [View on GitHub](https://github.com/mohammad-hussein-dev/site-selection-ga)
 
 ---
 
-## 🔧 Deep Dive: My Tech Stack
+## 🎯 2026 Roadmap (Milestones)
 
-### Backend Development
-- **Framework**: Django 4.x + Django REST Framework
-- **Alternative**: FastAPI for async workloads
-- **Database**: PostgreSQL (production), SQLite (development)
-- **Testing**: pytest with 95%+ code coverage
-- **API Documentation**: Swagger/OpenAPI ready
-
-### Scientific Computing & Optimization
-- **Data Processing**: NumPy, Pandas
-- **Visualization**: Matplotlib, Plotly
-- **Machine Learning**: scikit-learn (currently learning)
-- **Optimization**: DEAP (Genetic Algorithms)
-
-### DevOps & Infrastructure
-- **Containerization**: Docker, Docker Compose
-- **Version Control**: Git, GitHub, GitLab
-- **CI/CD**: GitHub Actions (automated testing & deployment)
-- **Environment**: Arch Linux, Neovim, Tmux
-
----
-
-## 🎯 2026 Roadmap & Achievements
-
-| **Quarter** | **Goal** | **Status** | **Progress** |
-| :--- | :--- | :--- | :--- |
-| **Q3 (Jul–Sep)** | Complete 3 portfolio projects | ✅ **Done** | 100% |
-| **Q4 (Oct–Dec)** | Land first freelance project & build real-world API | 🔄 **In Progress** | 50% |
-| **Q1 2027 (Jan–Mar)** | Master DRF & deploy first production API | 🔵 **Planned** | 0% |
-| **Q2 2027 (Apr–Jun)** | Start ML journey with scikit-learn & pandas | 🔵 **Planned** | 0% |
+| **Quarter** | **Goal** | **Status** |
+| :--- | :--- | :--- |
+| **Q3 (Jul–Sep)** | ✅ Complete 3 portfolio projects (Physics Simulator + Django Task Manager + Site Selection GA) | ✅ **Done** |
+| **Q4 (Oct–Dec)** | ✅ Land first freelance project on Ponisha/Upwork & build a real‑world API with DRF/FastAPI | 🔵 **In Progress** |
+| **Q1 2027 (Jan–Mar)** | ✅ Master Django REST Framework & deploy first production API; start learning ML | 🔵 **Planned** |
+| **Q2 2027 (Apr–Jun)** | ✅ Start Machine Learning journey with scikit‑learn & pandas; build first AI model | 🔵 **Planned** |
 
 ### 🔥 Daily Commitment:
-- **1 commit per day** (consistent development)
-- **1 hour of focused coding** (quality over quantity)
-- **1 project milestone per week** (measurable progress)
+- **1 commit per day** (even if it's just a comment or a small fix)
+- **1 hour of focused coding** (right after school)
+- **1 project milestone per week**
 
 ---
 
-## 📊 GitHub Activity & Stats
+## 📊 GitHub Activity
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=mohammad-hussein-dev&show_icons=true&theme=github_dark&hide_border=true&count_private=true" width="48%"/>
@@ -145,8 +100,12 @@ I'm a **Physics & Math student** who believes that code is the ultimate tool to 
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mohammad-hussein-dev&layout=compact&theme=github_dark&hide_border=true" width="45%"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mohammad-hussein-dev&layout=compact&theme=github_dark&hide_border=true" width="40%"/>
 </p>
+
+---
+
+## 🏆 GitHub Trophies
 
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=mohammad-hussein-dev&theme=radical&no-frame=true&row=2&column=4"/>
@@ -154,18 +113,33 @@ I'm a **Physics & Math student** who believes that code is the ultimate tool to 
 
 ---
 
-## 💼 Hire Me For
+## 📊 Weekly Development Breakdown
 
-✅ **Backend Development** — Production-ready Django & FastAPI applications  
-✅ **REST API Design** — Scalable, documented, fully tested APIs  
-✅ **Database Architecture** — PostgreSQL optimization & design  
-✅ **DevOps & Deployment** — Docker containerization & CI/CD pipelines  
-✅ **Technical Consultation** — System architecture & performance optimization  
-✅ **Code Review** — Best practices & quality assurance  
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=mohammad-hussein-dev&layout=compact&theme=github_dark&hide_border=true" width="48%"/>
+</p>
+
+> 💡 *This section updates automatically based on my coding activity via WakaTime.*
 
 ---
 
-## 📞 Let's Connect
+## 💼 Open for Collaboration
+
+> I build **scalable backend systems** and **clean APIs** with Django, DRF, and FastAPI.  
+> Whether you need a full‑stack app, an admin panel, a REST API, or performance optimization — I'm ready.
+
+- 📧 **Email**: king.mohamd.09876@gmail.com  
+- 💬 **Telegram**: @mohammad_hussein_dev  
+- 🔗 **LinkedIn**: [mohammad-hussein-ghafoori](https://www.linkedin.com/in/mohammad-hussein-ghafoori-860237405/)
+- 🐦 **X**: [@your_username](https://x.com/your_username)
+- 🌐 **GitHub**: [mohammad-hussein-dev](https://github.com/mohammad-hussein-dev)
+- 🦊 **GitLab**: [your_username](https://gitlab.com/your_username)
+- 📌 **Ponisha**: [MHussein1](https://ponisha.ir/profile/MHussein1)
+- 📌 **ParsCoders**: [mohammad_hussein](https://parscoders.com/resume/769525/mohammad_hussein)
+- 📌 **Karlancer**: [1401608](https://karlancer.com/profile/1401608)
+- 📌 **Lancerify**: [10007982](https://lancerify.com/fre/10007982)
+
+## 📇 Let's Connect
 
 <p align="center">
   <a href="mailto:king.mohamd.09876@gmail.com">
@@ -177,13 +151,13 @@ I'm a **Physics & Math student** who believes that code is the ultimate tool to 
   <a href="https://www.linkedin.com/in/mohammad-hussein-ghafoori-860237405/">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
   </a>
-  <a href="https://x.com/mohammad_hussein_dev">
+  <a href="https://x.com/your_username">
     <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white"/>
   </a>
   <a href="https://github.com/mohammad-hussein-dev">
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
   </a>
-  <a href="https://gitlab.com/mohammad-hussein-dev">
+  <a href="https://gitlab.com/your_username">
     <img src="https://img.shields.io/badge/GitLab-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white"/>
   </a>
   <a href="https://ponisha.ir/profile/MHussein1">
@@ -200,32 +174,15 @@ I'm a **Physics & Math student** who believes that code is the ultimate tool to 
   </a>
 </p>
 
-| **Contact** | **Link** |
-| :--- | :--- |
-| 📧 **Email** | king.mohamd.09876@gmail.com |
-| 💬 **Telegram** | @mohammad_hussein_dev |
-| 🔗 **LinkedIn** | [mohammad-hussein-ghafoori](https://www.linkedin.com/in/mohammad-hussein-ghafoori-860237405/) |
-| 🐦 **X (Twitter)** | [@mohammad_hussein_dev](https://x.com/mohammad_hussein_dev) |
-| 🌐 **GitHub** | [mohammad-hussein-dev](https://github.com/mohammad-hussein-dev) |
-| 🦊 **GitLab** | [mohammad-hussein-dev](https://gitlab.com/mohammad-hussein-dev) |
+*"Clean code, solid architecture, and on‑time delivery."*
 
 ---
 
-## 💬 Philosophy
+## 💬 My Philosophy
 
 > **"Physics is the law, Mathematics is the language, and Code is the tool to build anything imaginable."**
 
 > **"I don't just want to learn to code. I want to code to learn."**
-
-> **"Clean code, solid architecture, and on‑time delivery."**
-
----
-
-## 🚀 Next Steps
-
-- 🔄 **Currently:** Building real-world freelance projects on Ponisha & ParsCoders
-- 📈 **Next:** Deploy first production API with DRF (Q1 2027)
-- 🤖 **Future:** Specialize in AI/ML Engineering & System Architecture
 
 ---
 
@@ -238,13 +195,5 @@ I'm a **Physics & Math student** who believes that code is the ultimate tool to 
 </p>
 
 <p align="center">
-  <i>"The best time to start was yesterday. The second best time is NOW."</i>
-</p>
-
-<p align="center">
-  <b>🚀 Open to opportunities | Always learning | Building the future</b>
-</p>
-
-<p align="center">
-  Last updated: January 2026 | Always up-to-date on GitHub
+  <i>“The best time to start was yesterday. The second best time is NOW.”</i>
 </p>
