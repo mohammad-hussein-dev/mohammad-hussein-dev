@@ -144,7 +144,7 @@ I'm a **Physics & Math student** who believes that code is the ultimate tool to 
 - 🔗 **LinkedIn**: [mohammad-hussein-ghafoori](https://www.linkedin.com/in/mohammad-hussein-ghafoori-860237405/)
 - 🐦 **X**: [@your_username](https://x.com/your_username)
 - 🌐 **GitHub**: [mohammad-hussein-dev](https://github.com/mohammad-hussein-dev)
-- 🦊 **GitLab**: [your_username](https://gitlab.com/your_username)
+- 🦊 **GitLab**: [mohammad-hussein-dev](https://gitlab.com/mohammad-hussein-dev)
 - 📌 **Ponisha**: [MHussein1](https://ponisha.ir/profile/MHussein1)
 - 📌 **ParsCoders**: [mohammad_hussein](https://parscoders.com/resume/769525/mohammad_hussein)
 - 📌 **Karlancer**: [1401608](https://karlancer.com/profile/1401608)
@@ -168,7 +168,7 @@ I'm a **Physics & Math student** who believes that code is the ultimate tool to 
   <a href="https://github.com/mohammad-hussein-dev">
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
   </a>
-  <a href="https://gitlab.com/your_username">
+  <a href="https://gitlab.com/mohammad-hussein-dev">
     <img src="https://img.shields.io/badge/GitLab-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white"/>
   </a>
   <a href="https://ponisha.ir/profile/MHussein1">
