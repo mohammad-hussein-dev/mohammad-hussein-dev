@@ -144,6 +144,7 @@ I'm a **Physics & Math student** who believes that code is the ultimate tool to 
 - 💬 **Telegram**: @mohammad_hussein_dev  
 - 🔗 **LinkedIn**: [mohammad-hussein-ghafoori](https://www.linkedin.com/in/mohammad-hussein-ghafoori-860237405/)
 - 🐦 **X**: [@your_username](https://x.com/your_username)
+- 📺 **YouTube**: [mohammad_hussein_dev](https://www.youtube.com/@mohammad_hussein_dev)
 - 🌐 **GitHub**: [mohammad-hussein-dev](https://github.com/mohammad-hussein-dev)
 - 🦊 **GitLab**: [mohammad-hussein-dev](https://gitlab.com/mohammad-hussein-dev)
 - 📌 **Ponisha**: [MHussein1](https://ponisha.ir/profile/MHussein1)
@@ -165,6 +166,9 @@ I'm a **Physics & Math student** who believes that code is the ultimate tool to 
   </a>
   <a href="https://x.com/your_username">
     <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white"/>
+  </a>
+  <a href="https://www.youtube.com/@mohammad_hussein_dev">
+    <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"/>
   </a>
   <a href="https://github.com/mohammad-hussein-dev">
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
