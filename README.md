@@ -88,6 +88,36 @@ I'm a **Physics & Math student** who believes that code is the ultimate tool to 
 
 ---
 
+## 🌍 Translation & Academic Writing
+
+> **Bridging languages. Connecting knowledge.**
+
+Beyond code, I transform complex technical content between **English ↔ Persian** with precision and cultural sensitivity.
+
+| **Service** | **Details** | **Expertise** |
+| :--- | :--- | :--- |
+| 📚 **Technical Translation** | Software docs, API references, scientific papers | Django, Python, ML, Physics |
+| 🎓 **Academic Writing** | Research papers, theses, lab reports | LaTeX, APA, IEEE formatting |
+| 🌐 **Localization** | RTL adaptation, cultural context, UI/UX text | Persian/Arabic markets |
+| ✍️ **Content Creation** | Technical blogs, tutorials, documentation | SEO-optimized, developer-friendly |
+
+### 📖 Featured Translation Work
+
+| **Project** | **Type** | **Status** |
+| :--- | :--- | :--- |
+| 🐍 **Python Documentation (FA)** | Official docs localization | 🔵 In Progress |
+| 🎯 **Django Tutorial Series** | Video + blog translation | ✅ Completed |
+| 🔬 **Physics Lab Reports** | Academic paper translation | ✅ Completed |
+| 🤖 **ML Research Papers** | Scientific paper summaries | 🔵 In Progress |
+
+### 🏆 Translation Portfolio
+
+> **Explore my complete translation work:**
+> 
+> 📁 **[translation-portfolio](https://github.com/mohammad-hussein-dev/translation-portfolio)** — A curated collection of technical translations, academic writings, and localized content.
+
+---
+
 ## 📌 Featured Projects
 
 ### 📋 [Django Task Manager](https://github.com/mohammad-hussein-dev/django-task-manager)
