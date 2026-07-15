@@ -473,29 +473,58 @@
             align-items: center;
         }
 
+        .about-image-wrapper {
+            position: relative;
+            width: 480px;
+            height: 480px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        #matrix-canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            z-index: 0;
+            opacity: 0.6;
+        }
+
         .about-image {
             position: relative;
+            z-index: 2;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid transparent;
+            background: linear-gradient(var(--bg-primary), var(--bg-primary)) padding-box,
+                        conic-gradient(from 0deg, #00d8ff, #00ff88, #0088cc, #00d8ff) border-box;
+            animation: neon-pulse 3s ease-in-out infinite;
         }
 
         .about-image img {
             width: 100%;
-            max-width: 400px;
-            border-radius: var(--radius-xl);
-            box-shadow: var(--shadow-lg);
-            transition: var(--transition);
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
         }
 
-        .about-image::before {
-            content: '';
-            position: absolute;
-            top: -20px;
-            left: -20px;
-            right: 20px;
-            bottom: 20px;
-            border: 2px solid var(--accent);
-            border-radius: var(--radius-xl);
-            opacity: 0.3;
-            z-index: -1;
+        @keyframes neon-pulse {
+            0%, 100% { 
+                box-shadow: 0 0 20px rgba(0, 216, 255, 0.3),
+                            0 0 40px rgba(0, 216, 255, 0.2),
+                            0 0 60px rgba(0, 216, 255, 0.1);
+            }
+            50% { 
+                box-shadow: 0 0 30px rgba(0, 216, 255, 0.6),
+                            0 0 60px rgba(0, 216, 255, 0.4),
+                            0 0 90px rgba(0, 216, 255, 0.2);
+            }
         }
 
         .about-content h3 {
@@ -1633,8 +1662,11 @@
                 <p class="section-desc">From translating technical docs to building systems that power them.</p>
             </div>
             <div class="about-grid">
-                <div class="about-image">
-                    <img src="https://avatars.githubusercontent.com/mohammad-hussein-dev" alt="Mohammad Hussein" onerror="this.src='https://via.placeholder.com/400x400/1a1a2e/00d8ff?text=MH'">
+                <div class="about-image-wrapper">
+                    <canvas id="matrix-canvas"></canvas>
+                    <div class="about-image">
+                        <img src="https://avatars.githubusercontent.com/mohammad-hussein-dev" alt="Mohammad Hussein" onerror="this.src='https://via.placeholder.com/400x400/1a1a2e/00d8ff?text=MH'">
+                    </div>
                 </div>
                 <div class="about-content">
                     <h3>Physics, Code & Everything In Between</h3>
@@ -2195,6 +2227,63 @@
 
         // Start typing effect
         typeEffect();
+
+        // Matrix Rain Effect for Profile Picture
+        (function() {
+            const canvas = document.getElementById('matrix-canvas');
+            if (!canvas) return;
+            
+            const ctx = canvas.getContext('2d');
+            let width, height;
+            
+            function resize() {
+                const parent = canvas.parentElement;
+                if (!parent) return;
+                width = parent.offsetWidth;
+                height = parent.offsetHeight;
+                canvas.width = width;
+                canvas.height = height;
+            }
+            resize();
+            window.addEventListener('resize', resize);
+            
+            const chars = '01';
+            const fontSize = 20;
+            let columns = 0;
+            let drops = [];
+            
+            function initDrops() {
+                columns = Math.floor(width / fontSize);
+                drops = [];
+                for (let i = 0; i < columns; i++) {
+                    drops[i] = Math.random() * -100;
+                }
+            }
+            initDrops();
+            
+            function draw() {
+                ctx.fillStyle = 'rgba(10, 10, 30, 0.08)';
+                ctx.fillRect(0, 0, width, height);
+                
+                ctx.fillStyle = '#00d8ff';
+                ctx.font = fontSize + 'px monospace';
+                
+                for (let i = 0; i < drops.length; i++) {
+                    const text = chars[Math.floor(Math.random() * chars.length)];
+                    const alpha = Math.random() * 0.4 + 0.2;
+                    ctx.globalAlpha = alpha;
+                    ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+                    ctx.globalAlpha = 1;
+                    
+                    if (drops[i] * fontSize > height && Math.random() > 0.98) {
+                        drops[i] = 0;
+                    }
+                    drops[i]++;
+                }
+                requestAnimationFrame(draw);
+            }
+            draw();
+        })();
     </script>
 </body>
 </html>
