@@ -181,7 +181,7 @@ Beyond code, I transform complex technical content between **English ↔ Persian
 
 - 📧 **Email**: king.mohamd.09876@gmail.com  
 - 💬 **Telegram**: @mohammad_hussein_dev  
-- 🔗 **LinkedIn**: [mohammad-hussein-ghafoori](https://www.linkedin.com/in/mohammad-hussein-ghafoori-860237405/)
+- 🔗 **LinkedIn**: [mohammad-hussein-ghafoori](https://www.linkedin.com/in/mohammad-hussein-dev/)
 - 🐦 **X**: [@mohammad_h_dev](https://x.com/mohammad_h_dev)
 - 📺 **YouTube**: [mohammad_hussein_dev](https://www.youtube.com/@mohammad_hussein_dev)
 - 🌐 **Portfolio**: [mohammad-hussein-dev.github.io](https://mohammad-hussein-dev.github.io/mohammad-hussein-dev/)
@@ -204,7 +204,7 @@ Beyond code, I transform complex technical content between **English ↔ Persian
   <a href="https://t.me/mohammad_hussein_dev">
     <img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white"/>
   </a>
-  <a href="https://www.linkedin.com/in/mohammad-hussein-ghafoori-860237405/">
+  <a href="https://www.linkedin.com/in/mohammad-hussein-dev/">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
   </a>
   <a href="https://x.com/mohammad_h_dev">
