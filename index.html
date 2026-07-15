@@ -1543,6 +1543,72 @@
         .profile-img-effect:hover {
             filter: grayscale(0%);
         }
+
+        /* ========== PROFILE EFFECT (Stitch Style) ========== */
+        .profile-wrapper {
+            position: relative;
+            display: inline-block;
+        }
+        
+        /* Glow effect */
+        .profile-glow {
+            position: absolute;
+            top: -8px;
+            left: -8px;
+            right: -8px;
+            bottom: -8px;
+            border-radius: 50%;
+            background: rgba(0, 216, 255, 0.2);
+            filter: blur(20px);
+            transition: all 0.5s ease;
+            z-index: 0;
+        }
+        
+        .profile-wrapper:hover .profile-glow {
+            background: rgba(0, 216, 255, 0.4);
+            filter: blur(30px);
+            transform: scale(1.1);
+        }
+        
+        /* Border ring */
+        .profile-border {
+            position: relative;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 3px solid rgba(0, 216, 255, 0.3);
+            padding: 8px;
+            transition: all 0.5s ease;
+            z-index: 1;
+        }
+        
+        .profile-wrapper:hover .profile-border {
+            border-color: rgba(0, 216, 255, 0.6);
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(0, 216, 255, 0.2);
+        }
+        
+        /* Image effect */
+        .profile-img-effect {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            filter: grayscale(100%);
+            transition: filter 0.7s ease;
+        }
+        
+        .profile-wrapper:hover .profile-img-effect {
+            filter: grayscale(0%);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .profile-border {
+                width: 200px;
+                height: 200px;
+            }
+        }
 </style>
 </head>
 <body>
@@ -1641,30 +1707,13 @@
             </div>
             <div class="about-grid">
                 <div class="about-image">
-                    <img class="profile-img-effect" src="https://avatars.githubusercontent.com/mohammad-hussein-dev" alt="Mohammad Hussein" onerror="this.src='https://via.placeholder.com/400x400/1a1a2e/00d8ff?text=MH'">
-                </div>
-                <div class="about-content">
-                    <h3>Physics, Code & Everything In Between</h3>
-                    <p>
-                        I'm a <strong>Physics & Mathematics student</strong> who discovered that code is the most powerful 
-                        language to describe the universe. While others solve equations on paper, I turn them into 
-                        software that runs on Arch Linux.
-                    </p>
-                    <p>
-                        My journey started with <strong>technical translation</strong> — localizing Django docs, Python 
-                        tutorials, and SaaS platforms. That gave me a unique superpower: I don't just write code, 
-                        I <em>explain</em> it. Every project I build comes with documentation that actually makes sense.
-                    </p>
-                    <p>
-                        Today, I build <strong>backend systems</strong> with Django & FastAPI, experiment with 
-                        <strong>AI/ML</strong> algorithms, and contribute to open-source projects. I believe in 
-                        clean code, comprehensive tests, and the power of Linux.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <div class="stat-number">3+</div>
-                            <div class="stat-label">Years Coding</div>
+                    <div class="profile-wrapper">
+                        <div class="profile-glow"></div>
+                        <div class="profile-border">
+                            <img class="profile-img-effect" src="https://avatars.githubusercontent.com/mohammad-hussein-dev" alt="Mohammad Hussein" onerror="this.src='https://via.placeholder.com/400x400/1a1a2e/00d8ff?text=MH'">
                         </div>
+                    </div>
+                </div>
                         <div class="stat-item">
                             <div class="stat-number">10+</div>
                             <div class="stat-label">Projects</div>
