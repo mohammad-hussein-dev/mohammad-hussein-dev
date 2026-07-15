@@ -181,7 +181,7 @@ Beyond code, I transform complex technical content between **English ↔ Persian
 
 - 📧 **Email**: king.mohamd.09876@gmail.com  
 - 💬 **Telegram**: @mohammad_hussein_dev  
-- 🔗 **LinkedIn**: [mohammad-hussein-ghafoori](https://www.linkedin.com/in/mohammad-hussein-dev/)
+- 🔗 **LinkedIn**: [mohammad-hussein-dev](https://www.linkedin.com/in/mohammad-hussein-dev/)
 - 🐦 **X**: [@mohammad_h_dev](https://x.com/mohammad_h_dev)
 - 📺 **YouTube**: [mohammad_hussein_dev](https://www.youtube.com/@mohammad_hussein_dev)
 - 🌐 **Portfolio**: [mohammad-hussein-dev.github.io](https://mohammad-hussein-dev.github.io/mohammad-hussein-dev/)
