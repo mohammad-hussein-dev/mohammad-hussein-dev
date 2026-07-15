@@ -1103,6 +1103,101 @@
             .section-header {
                 padding: 0 0.5rem;
             }
+
+            /* ========== NAVIGATION FIX ========== */
+            /* Hamburger menu instead of hiding */
+            .nav-links {
+                display: none;
+                position: fixed;
+                top: 60px;
+                left: 0;
+                right: 0;
+                background: var(--bg-primary);
+                flex-direction: column;
+                padding: 1rem;
+                gap: 0.5rem;
+                border-bottom: 1px solid var(--border);
+                z-index: 1000;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .nav-toggle {
+                display: block;
+                background: none;
+                border: none;
+                color: var(--text-primary);
+                font-size: 1.5rem;
+                cursor: pointer;
+                padding: 0.5rem;
+                min-width: 44px;
+                min-height: 44px;
+            }
+            
+            /* ========== TOUCH TARGETS FIX ========== */
+            /* Minimum 44x44px for all interactive elements */
+            .btn, .hero-socials a, .contact-item, .project-link {
+                min-height: 44px;
+                min-width: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            /* ========== TYPOGRAPHY FIX ========== */
+            /* Line height 1.5 for readability */
+            .hero-desc, .section-desc, .project-desc, .about-text {
+                line-height: 1.5;
+            }
+            /* Font size minimum 16px */
+            body {
+                font-size: 16px;
+            }
+            
+            /* ========== CONTAINER FIX ========== */
+            .container {
+                padding: 0 clamp(0.75rem, 3vw, 1rem);
+                width: 100%;
+                max-width: 100%;
+            }
+            
+            /* ========== IMAGES FIX ========== */
+            img, .about-image img, .project-image {
+                max-width: 100%;
+                height: auto;
+            }
+            
+            /* ========== HERO FIX ========== */
+            .hero-title {
+                font-size: clamp(1.5rem, 6vw, 2.5rem);
+                line-height: 1.2;
+                word-break: break-word;
+            }
+            .hero-subtitle {
+                font-size: clamp(0.9rem, 3vw, 1.1rem);
+            }
+            .hero-desc {
+                font-size: clamp(0.85rem, 2.5vw, 1rem);
+            }
+            
+            /* ========== GRID FIXES ========== */
+            .projects-grid, .skills-grid, .translation-portfolio-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            /* ========== CARD FIXES ========== */
+            .project-card, .skill-card, .translation-portfolio-card {
+                padding: 1.25rem;
+            }
+            
+            /* ========== FOOTER FIX ========== */
+            .footer-text {
+                font-size: clamp(0.75rem, 2vw, 0.85rem);
+                line-height: 1.5;
+                padding: 0 1rem;
+                text-align: center;
+            }
 }
 
         /* ========== MOBILE SMALL (480px) ========== */
@@ -1191,6 +1286,37 @@
             .hero-visual {
                 max-width: 90%;
                 margin: 0 auto;
+            }
+
+            /* ========== NAVIGATION FIX ========== */
+            .nav-links {
+                display: flex;
+                gap: 1.5rem;
+            }
+            .nav-toggle {
+                display: none;
+            }
+            
+            /* ========== CONTAINER FIX ========== */
+            .container {
+                padding: 0 clamp(1rem, 4vw, 1.5rem);
+            }
+            
+            /* ========== HERO FIX ========== */
+            .hero-visual {
+                max-width: 85%;
+                margin: 0 auto;
+            }
+            
+            /* ========== GRID FIXES ========== */
+            .projects-grid, .skills-grid, .translation-portfolio-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+            
+            /* ========== TOUCH TARGETS ========== */
+            .btn, .hero-socials a {
+                min-height: 44px;
             }
 }
 
