@@ -847,15 +847,31 @@
             font-size: 0.9rem;
         }
 
-        .footer-heart {
-            color: var(--danger);
-            animation: heartbeat 1.5s infinite;
+
+        .footer-arch {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 4px;
+            animation: arch-spin 4s linear infinite, arch-pulse 2s ease-in-out infinite;
+            filter: drop-shadow(0 0 4px rgba(23, 147, 209, 0.5));
+            transition: var(--transition);
         }
 
-        @keyframes heartbeat {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.2); }
+        .footer-arch:hover {
+            filter: drop-shadow(0 0 8px rgba(23, 147, 209, 0.8));
+            transform: scale(1.2);
         }
+
+        @keyframes arch-spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes arch-pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
 
         /* ============================================
            RESPONSIVE
@@ -1617,7 +1633,7 @@
     <footer>
         <div class="container">
             <p class="footer-text">
-                Built with <span class="footer-heart">❤️</span> on Arch Linux using Neovim | 
+                Built with <svg class="footer-arch" viewBox="0 0 24 24" width="16" height="16" fill="#1793D1" style="vertical-align:middle;margin:0 4px;"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm0 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm5.5 14.5c0 .83-.67 1.5-1.5 1.5h-8c-.83 0-1.5-.67-1.5-1.5v-1c0-2.33 1.67-4.22 3.75-4.72.3-.07.62-.11.95-.15.1-.01.2-.02.3-.02.33.04.65.08.95.15 2.08.5 3.75 2.39 3.75 4.72v1z"/></svg> on Arch Linux using Neovim | 
                 © 2026 Mohammad Hussein
             </p>
         </div>
