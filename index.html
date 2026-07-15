@@ -848,14 +848,34 @@
         }
 
 
-        .footer-arch {
+                .footer-arch {
             display: inline-block;
             vertical-align: middle;
             margin: 0 4px;
-            animation: arch-spin 4s linear infinite, arch-pulse 2s ease-in-out infinite;
-            filter: drop-shadow(0 0 4px rgba(23, 147, 209, 0.5));
-            transition: var(--transition);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            filter: drop-shadow(0 0 3px rgba(23, 147, 209, 0.4));
+            transform-origin: center bottom;
         }
+
+        .footer-arch:hover {
+            filter: drop-shadow(0 0 8px rgba(23, 147, 209, 0.9)) 
+                    drop-shadow(0 0 16px rgba(23, 147, 209, 0.4));
+            transform: scale(1.3) translateY(-2px);
+            animation: arch-bounce 0.6s ease;
+        }
+
+        @keyframes arch-bounce {
+            0% { transform: scale(1.3) translateY(-2px) rotate(0deg); }
+            25% { transform: scale(1.35) translateY(-4px) rotate(-5deg); }
+            50% { transform: scale(1.3) translateY(-2px) rotate(0deg); }
+            75% { transform: scale(1.35) translateY(-4px) rotate(5deg); }
+            100% { transform: scale(1.3) translateY(-2px) rotate(0deg); }
+        }
+
+        @keyframes arch-glow {
+            0%, 100% { filter: drop-shadow(0 0 3px rgba(23, 147, 209, 0.4)); }
+            50% { filter: drop-shadow(0 0 6px rgba(23, 147, 209, 0.7)); }
+        }}
 
         .footer-arch:hover {
             filter: drop-shadow(0 0 8px rgba(23, 147, 209, 0.8));
@@ -1633,7 +1653,7 @@
     <footer>
         <div class="container">
             <p class="footer-text">
-                Built with <svg class="footer-arch" viewBox="0 0 24 24" width="16" height="16" fill="#1793D1" style="vertical-align:middle;margin:0 4px;"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm0 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm5.5 14.5c0 .83-.67 1.5-1.5 1.5h-8c-.83 0-1.5-.67-1.5-1.5v-1c0-2.33 1.67-4.22 3.75-4.72.3-.07.62-.11.95-.15.1-.01.2-.02.3-.02.33.04.65.08.95.15 2.08.5 3.75 2.39 3.75 4.72v1z"/></svg> on Arch Linux using Neovim | 
+                Built with <svg class="footer-arch" viewBox="0 0 24 24" width="16" height="16" fill="#1793D1" style="vertical-align:middle;margin:0 4px;" xmlns="http://www.w3.org/2000/svg"><path d="M11.39.605c-1.015.487-1.626 2.113-2.755 4.527.693.735 1.543 1.589 2.923 2.554-1.484-.61-2.496-1.224-3.253-1.86-1.445 3.016-3.71 7.312-8.305 15.569 3.612-2.085 6.412-3.37 9.02-3.862a4.5 4.5 0 0 1-.172-1.547l.004-.115c.058-2.315 1.26-4.095 2.687-3.973 1.426.12 2.534 2.096 2.478 4.41-.01.435-.06.854-.146 1.242 2.581.505 5.352 1.787 8.914 3.844-.702-1.293-1.33-2.459-1.928-3.57-.944-.73-1.927-1.682-3.933-2.712 1.38.358 2.367.77 3.136 1.233C13.97 7.01 13.48 5.504 11.39.605z"/></svg> on Arch Linux using Neovim | 
                 © 2026 Mohammad Hussein
             </p>
         </div>
