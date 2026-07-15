@@ -1534,6 +1534,15 @@
             stroke-linejoin: round;
         }
 
+
+        /* ========== PROFILE IMAGE EFFECT ========== */
+        .profile-img-effect {
+            filter: grayscale(100%);
+            transition: filter 0.7s ease;
+        }
+        .profile-img-effect:hover {
+            filter: grayscale(0%);
+        }
 </style>
 </head>
 <body>
@@ -1632,7 +1641,7 @@
             </div>
             <div class="about-grid">
                 <div class="about-image">
-                    <img class="grayscale hover:grayscale-0 transition-all duration-700" src="https://avatars.githubusercontent.com/mohammad-hussein-dev" alt="Mohammad Hussein" onerror="this.src='https://via.placeholder.com/400x400/1a1a2e/00d8ff?text=MH'">
+                    <img class="profile-img-effect" src="https://avatars.githubusercontent.com/mohammad-hussein-dev" alt="Mohammad Hussein" onerror="this.src='https://via.placeholder.com/400x400/1a1a2e/00d8ff?text=MH'">
                 </div>
                 <div class="about-content">
                     <h3>Physics, Code & Everything In Between</h3>
