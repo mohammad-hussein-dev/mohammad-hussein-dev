@@ -918,7 +918,162 @@
             opacity: 1;
             transform: translateY(0);
         }
-    </style>
+    
+        /* ============================================
+           TRANSLATION PORTFOLIO SECTION
+           ============================================ */
+        .translation-portfolio {
+            background: var(--bg-secondary);
+        }
+
+        .translation-portfolio .section-title::after {
+            background: linear-gradient(90deg, #00d8ff, #00ff88);
+        }
+
+        .translation-portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .translation-portfolio-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(0, 216, 255, 0.3);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .translation-portfolio-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d8ff, #00ff88);
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .translation-portfolio-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(0, 216, 255, 0.6);
+            box-shadow: 0 0 30px rgba(0, 216, 255, 0.1);
+        }
+
+        .translation-portfolio-card:hover::before {
+            opacity: 1;
+        }
+
+        .translation-portfolio-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .translation-portfolio-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: var(--radius-sm);
+            background: linear-gradient(135deg, #00d8ff 0%, #00ff88 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .translation-portfolio-icon svg {
+            width: 24px;
+            height: 24px;
+            stroke: white;
+            stroke-width: 2;
+            fill: none;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .translation-portfolio-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        .translation-portfolio-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: rgba(0, 216, 255, 0.1);
+            border: 1px solid rgba(0, 216, 255, 0.3);
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--accent);
+            margin-top: 0.5rem;
+        }
+
+        .translation-portfolio-body {
+            padding: 1.5rem;
+        }
+
+        .translation-portfolio-desc {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .translation-portfolio-stats {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .translation-portfolio-stat {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .translation-portfolio-stat svg {
+            width: 14px;
+            height: 14px;
+            stroke: currentColor;
+            stroke-width: 2;
+            fill: none;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .translation-portfolio-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .translation-portfolio-link:hover {
+            gap: 0.75rem;
+        }
+
+        .translation-portfolio-link svg {
+            width: 16px;
+            height: 16px;
+            stroke: currentColor;
+            stroke-width: 2;
+            fill: none;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+</style>
 </head>
 <body>
     <!-- Navigation -->
@@ -1236,6 +1391,121 @@
                             <a href="https://github.com/mohammad-hussein-dev/physics-projects" target="_blank" class="project-link primary">View Code</a>
                             <a href="#" class="project-link secondary">Notebooks</a>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- ============================================
+         TRANSLATION PORTFOLIO SECTION
+         ============================================ -->
+    <section class="translation-portfolio" id="translation-portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Translation Portfolio</h2>
+                <p class="section-desc">Professional technical translation & academic writing services</p>
+            </div>
+            
+            <div class="translation-portfolio-grid">
+                <!-- Translation Portfolio Card -->
+                <div class="translation-portfolio-card">
+                    <div class="translation-portfolio-header">
+                        <div class="translation-portfolio-icon">
+                            <svg viewBox="0 0 24 24"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg>
+                        </div>
+                        <div>
+                            <div class="translation-portfolio-title">Translation Portfolio</div>
+                            <div class="translation-portfolio-badge">Translation & Writing</div>
+                        </div>
+                    </div>
+                    <div class="translation-portfolio-body">
+                        <div class="translation-portfolio-desc">
+                            A curated collection of technical translations, academic writings, and localized content. 
+                            Specializing in software documentation, scientific papers, and developer resources 
+                            between English and Persian.
+                        </div>
+                        <div class="translation-portfolio-stats">
+                            <div class="translation-portfolio-stat">
+                                <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                                15+ Documents
+                            </div>
+                            <div class="translation-portfolio-stat">
+                                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                2.3 Day Avg
+                            </div>
+                        </div>
+                        <a href="https://github.com/mohammad-hussein-dev/translation-portfolio" target="_blank" class="translation-portfolio-link">
+                            View Portfolio
+                            <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Academic Writing Card -->
+                <div class="translation-portfolio-card">
+                    <div class="translation-portfolio-header">
+                        <div class="translation-portfolio-icon">
+                            <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                        </div>
+                        <div>
+                            <div class="translation-portfolio-title">Academic Writing</div>
+                            <div class="translation-portfolio-badge">Research & Papers</div>
+                        </div>
+                    </div>
+                    <div class="translation-portfolio-body">
+                        <div class="translation-portfolio-desc">
+                            Research papers, theses, and lab reports formatted in LaTeX with APA/IEEE standards. 
+                            Physics and mathematics focused with precise technical terminology.
+                        </div>
+                        <div class="translation-portfolio-stats">
+                            <div class="translation-portfolio-stat">
+                                <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                                8+ Papers
+                            </div>
+                            <div class="translation-portfolio-stat">
+                                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                LaTeX Ready
+                            </div>
+                        </div>
+                        <a href="https://github.com/mohammad-hussein-dev/translation-portfolio/tree/main/academic-writing" target="_blank" class="translation-portfolio-link">
+                            View Papers
+                            <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Technical Docs Card -->
+                <div class="translation-portfolio-card">
+                    <div class="translation-portfolio-header">
+                        <div class="translation-portfolio-icon">
+                            <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                        </div>
+                        <div>
+                            <div class="translation-portfolio-title">Technical Docs</div>
+                            <div class="translation-portfolio-badge">API & Software</div>
+                        </div>
+                    </div>
+                    <div class="translation-portfolio-body">
+                        <div class="translation-portfolio-desc">
+                            Software documentation, API references, and developer guides translated with 
+                            cultural context. Django, Python, and ML documentation specialist.
+                        </div>
+                        <div class="translation-portfolio-stats">
+                            <div class="translation-portfolio-stat">
+                                <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                                10+ Docs
+                            </div>
+                            <div class="translation-portfolio-stat">
+                                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                In Progress
+                            </div>
+                        </div>
+                        <a href="https://github.com/mohammad-hussein-dev/translation-portfolio/tree/main/translations" target="_blank" class="translation-portfolio-link">
+                            View Docs
+                            <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
                     </div>
                 </div>
             </div>
