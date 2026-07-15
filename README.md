@@ -5,6 +5,15 @@
 </p>
 
 <p align="center">
+  <a href="https://mohammad-hussein-dev.github.io/mohammad-hussein-dev/" target="_blank">
+    <img src="https://img.shields.io/badge/🌐 Portfolio-00d8ff?style=for-the-badge&logo=firefox&logoColor=white"/>
+  </a>
+  <a href="https://mohammad-hussein-dev.github.io/mohammad-hussein-dev/" target="_blank">
+    <img src="https://img.shields.io/badge/Live%20Site-0088cc?style=for-the-badge&logo=githubpages&logoColor=white"/>
+  </a>
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
   <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white"/>
   <img src="https://img.shields.io/badge/Django%20REST%20Framework-A30000?style=for-the-badge&logo=django&logoColor=white"/>
@@ -27,6 +36,16 @@
 <p align="center">
   <b><i>"I don't just write code. I simulate the universe."</i></b>
 </p>
+
+---
+
+## 🌐 Live Portfolio
+
+> **Check out my portfolio website:**
+> 
+> 🔗 **[mohammad-hussein-dev.github.io](https://mohammad-hussein-dev.github.io/mohammad-hussein-dev/)**
+> 
+> Built with pure HTML/CSS/JS • Dark/Light mode • Responsive design • All my projects in one place
 
 ---
 
@@ -125,16 +144,6 @@ I'm a **Physics & Math student** who believes that code is the ultimate tool to 
 
 ---
 
-## 📊 Weekly Development Breakdown
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=mohammad-hussein-dev&layout=compact&theme=github_dark&hide_border=true" width="48%"/>
-</p>
-
-> 💡 *This section updates automatically based on my coding activity via WakaTime.*
-
----
-
 ## 💼 Open for Collaboration
 
 > I build **scalable backend systems** and **clean APIs** with Django, DRF, and FastAPI.  
@@ -145,7 +154,8 @@ I'm a **Physics & Math student** who believes that code is the ultimate tool to 
 - 🔗 **LinkedIn**: [mohammad-hussein-ghafoori](https://www.linkedin.com/in/mohammad-hussein-ghafoori-860237405/)
 - 🐦 **X**: [@your_username](https://x.com/your_username)
 - 📺 **YouTube**: [mohammad_hussein_dev](https://www.youtube.com/@mohammad_hussein_dev)
-- 🌐 **GitHub**: [mohammad-hussein-dev](https://github.com/mohammad-hussein-dev)
+- 🌐 **Portfolio**: [mohammad-hussein-dev.github.io](https://mohammad-hussein-dev.github.io/mohammad-hussein-dev/)
+- 🐙 **GitHub**: [mohammad-hussein-dev](https://github.com/mohammad-hussein-dev)
 - 🦊 **GitLab**: [mohammad-hussein-dev](https://gitlab.com/mohammad-hussein-dev)
 - 📌 **Ponisha**: [MHussein1](https://ponisha.ir/profile/MHussein1)
 - 📌 **ParsCoders**: [mohammad_hussein](https://parscoders.com/resume/769525/mohammad_hussein)
@@ -155,6 +165,9 @@ I'm a **Physics & Math student** who believes that code is the ultimate tool to 
 ## 📇 Let's Connect
 
 <p align="center">
+  <a href="https://mohammad-hussein-dev.github.io/mohammad-hussein-dev/" target="_blank">
+    <img src="https://img.shields.io/badge/🌐 Portfolio-00d8ff?style=for-the-badge&logo=firefox&logoColor=white"/>
+  </a>
   <a href="mailto:king.mohamd.09876@gmail.com">
     <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
   </a>
@@ -211,5 +224,5 @@ I'm a **Physics & Math student** who believes that code is the ultimate tool to 
 </p>
 
 <p align="center">
-  <i>“The best time to start was yesterday. The second best time is NOW.”</i>
+  <i>"The best time to start was yesterday. The second best time is NOW."</i>
 </p>
