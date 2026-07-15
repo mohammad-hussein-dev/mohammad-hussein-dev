@@ -152,7 +152,7 @@ I'm a **Physics & Math student** who believes that code is the ultimate tool to 
 - 📧 **Email**: king.mohamd.09876@gmail.com  
 - 💬 **Telegram**: @mohammad_hussein_dev  
 - 🔗 **LinkedIn**: [mohammad-hussein-ghafoori](https://www.linkedin.com/in/mohammad-hussein-ghafoori-860237405/)
-- 🐦 **X**: [@your_username](https://x.com/your_username)
+- 🐦 **X**: [@your_username](https://x.com/mohammad_h_dev)
 - 📺 **YouTube**: [mohammad_hussein_dev](https://www.youtube.com/@mohammad_hussein_dev)
 - 🌐 **Portfolio**: [mohammad-hussein-dev.github.io](https://mohammad-hussein-dev.github.io/mohammad-hussein-dev/)
 - 🐙 **GitHub**: [mohammad-hussein-dev](https://github.com/mohammad-hussein-dev)
@@ -177,7 +177,7 @@ I'm a **Physics & Math student** who believes that code is the ultimate tool to 
   <a href="https://www.linkedin.com/in/mohammad-hussein-ghafoori-860237405/">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
   </a>
-  <a href="https://x.com/your_username">
+  <a href="https://x.com/mohammad_h_dev">
     <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white"/>
   </a>
   <a href="https://www.youtube.com/@mohammad_hussein_dev">
