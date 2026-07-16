@@ -2299,6 +2299,33 @@
     }
 }
 
+
+
+/* ============================================================
+   CODE BOX - TAP EFFECT FOR MOBILE/TOUCH DEVICES
+   ============================================================ */
+
+/* استایل برای زمانی که باکس در حال لمس شدن است (موبایل) */
+.code-window:active,
+.code-window.tap-active {
+    transform: scale(1.02) !important;
+    border-color: var(--accent) !important;
+    box-shadow: var(--shadow-glow) !important;
+    transition: all 0.15s ease !important;
+}
+
+/* استایل برای دکمه‌های داخل باکس در حالت لمس */
+.code-window:active .code-header,
+.code-window.tap-active .code-header {
+    background: rgba(0, 216, 255, 0.1) !important;
+}
+
+/* استایل برای متن داخل باکس در حالت لمس */
+.code-window:active .code-body,
+.code-window.tap-active .code-body {
+    color: var(--text-primary) !important;
+}
+
 </style>
 </head>
 <body>
