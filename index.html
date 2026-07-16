@@ -1769,7 +1769,48 @@
     .hero {
         padding: 5rem 1rem 2rem !important;
         min-height: 90vh !important;
+    
+
+    /* ----- CONTACT SECTION - FIX FOR BOTH CODE BOXES ----- */
+    .contact-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
     }
+    /* ستون راست که شامل دو باکس است */
+    .contact-grid > div:last-child {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow: hidden !important;
+    }
+    /* هر دو باکس کد */
+    .contact-grid .code-window {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: auto !important;
+        margin-bottom: 0 !important;
+    }
+    .contact-grid .code-body {
+        font-size: 0.65rem !important;
+        padding: 0.75rem !important;
+        overflow-x: auto !important;
+        white-space: pre-wrap !important;
+        word-break: break-all !important;
+        line-height: 1.5 !important;
+    }
+    .contact-grid .code-body code {
+        font-size: 0.65rem !important;
+        white-space: pre-wrap !important;
+        word-break: break-all !important;
+    }
+    /* استایل‌های JSON برای جلوگیری از سرریز */
+    .contact-grid .code-body .code-str {
+        word-break: break-word !important;
+    }
+    /* تنظیم فاصله بین دو باکس */
+    .contact-grid > div:last-child > div {
+        gap: 1rem !important;
+    }
+}
     .hero-container {
         grid-template-columns: 1fr !important;
         gap: 1.5rem !important;
@@ -2122,7 +2163,29 @@
     .hero-container {
         grid-template-columns: 1fr !important;
         gap: 2rem !important;
+    
+
+    /* ----- CONTACT SECTION - TABLET ----- */
+    .contact-grid > div:last-child {
+        width: 100% !important;
+        max-width: 100% !important;
     }
+    .contact-grid .code-window {
+        overflow-x: auto !important;
+    }
+    .contact-grid .code-body {
+        font-size: 0.7rem !important;
+        padding: 0.75rem !important;
+        overflow-x: auto !important;
+        white-space: pre-wrap !important;
+        word-break: break-all !important;
+    }
+    .contact-grid .code-body code {
+        font-size: 0.7rem !important;
+        white-space: pre-wrap !important;
+        word-break: break-all !important;
+    }
+}
     .hero-title {
         font-size: clamp(2.2rem, 4vw, 2.8rem) !important;
     }
