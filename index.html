@@ -1442,36 +1442,7 @@
 }
 
         /* ========== MOBILE SMALL (480px) ========== */
-        @media (max-width: 480px) {
-            .hero-title {
-                font-size: clamp(1.4rem, 6vw, 1.6rem);
-            }
-            .hero-subtitle {
-                font-size: 0.85rem;
-            }
-            .hero-desc {
-                font-size: 0.8rem;
-            }
-            .about-stats {
-                grid-template-columns: 1fr;
-                text-align: center;
-                gap: 1rem;
-            }
-            .stat-number {
-                font-size: 1.8rem;
-            }
-            .section-title {
-                font-size: 1.4rem;
-            }
-            .project-title,
-            .translation-portfolio-title {
-                font-size: 1rem;
-            }
-            .btn {
-                padding: 0.65rem 1.25rem;
-                font-size: 0.85rem;
-            }
-        }
+        
 
         /* ========== TABLET (769px - 1023px) ========== */
         @media (min-width: 769px) and (max-width: 1023px) {
@@ -1596,30 +1567,7 @@
 }
 
         /* ========== MOBILE SMALL (480px) ========== */
-        @media (max-width: 480px) {
-            .hero-title {
-                font-size: 1.6rem;
-            }
-            .hero-subtitle {
-                font-size: 0.9rem;
-            }
-            .about-stats {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-            .stat-number {
-                font-size: 2rem;
-            }
-            .section-title {
-                font-size: 1.6rem;
-            }
-            .project-title {
-                font-size: 1.1rem;
-            }
-            .translation-portfolio-title {
-                font-size: 1.1rem;
-            }
-        }
+        
 
         /* ============================================
            SCROLLBAR
@@ -1808,6 +1756,461 @@
             stroke-linecap: round;
             stroke-linejoin: round;
         }
+
+
+
+/* ============================================================
+   RESPONSIVE DESIGN - OPTIMIZED VERSION
+   ============================================================ */
+
+/* ---------- MOBILE FIRST (< 768px) ---------- */
+@media (max-width: 767px) {
+    /* ----- HERO SECTION ----- */
+    .hero {
+        padding: 5rem 1rem 2rem !important;
+        min-height: 90vh !important;
+    }
+    .hero-container {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+        padding: 0 !important;
+    }
+    .hero-content {
+        text-align: center !important;
+    }
+    .hero-title {
+        font-size: clamp(1.6rem, 5vw, 2.2rem) !important;
+        line-height: 1.2 !important;
+    }
+    .hero-subtitle {
+        font-size: clamp(0.85rem, 2.5vw, 1rem) !important;
+        min-height: auto !important;
+    }
+    .hero-desc {
+        font-size: clamp(0.85rem, 2vw, 0.95rem) !important;
+        max-width: 100% !important;
+        margin: 0 auto 1.5rem !important;
+    }
+    .hero-badge {
+        font-size: 0.7rem !important;
+        padding: 0.3rem 0.7rem !important;
+        margin-bottom: 1rem !important;
+    }
+    .hero-buttons {
+        flex-direction: column !important;
+        gap: 0.75rem !important;
+        align-items: stretch !important;
+    }
+    .hero-buttons .btn {
+        width: 100% !important;
+        justify-content: center !important;
+        font-size: 0.9rem !important;
+        padding: 0.75rem 1.5rem !important;
+        text-align: center !important;
+    }
+    .hero-socials {
+        justify-content: center !important;
+        flex-wrap: wrap !important;
+        gap: 0.5rem !important;
+    }
+    .hero-socials .social-link {
+        width: 38px !important;
+        height: 38px !important;
+    }
+    .hero-socials .social-link svg {
+        width: 16px !important;
+        height: 16px !important;
+    }
+    .hero-visual {
+        display: none !important;
+    }
+
+    /* ----- ABOUT SECTION ----- */
+    .about-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+    }
+    .about-image-wrapper {
+        width: 100% !important;
+        height: auto !important;
+        max-width: 280px !important;
+        margin: 0 auto !important;
+    }
+    .about-image {
+        width: 200px !important;
+        height: 200px !important;
+        margin: 0 auto !important;
+    }
+    .about-image img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+    #matrix-canvas {
+        display: none !important;
+    }
+    .about-content h3 {
+        font-size: 1.4rem !important;
+        text-align: center !important;
+    }
+    .about-content p {
+        font-size: 0.9rem !important;
+        text-align: center !important;
+    }
+    .about-stats {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 0.75rem !important;
+    }
+    .stat-item {
+        padding: 1rem !important;
+    }
+    .stat-number {
+        font-size: 1.4rem !important;
+    }
+    .stat-label {
+        font-size: 0.7rem !important;
+    }
+
+    /* ----- SKILLS SECTION ----- */
+    .skills-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+    }
+    .skill-card {
+        padding: 1rem !important;
+    }
+    .skill-header {
+        gap: 0.75rem !important;
+    }
+    .skill-icon {
+        width: 40px !important;
+        height: 40px !important;
+        font-size: 1.2rem !important;
+    }
+    .skill-name {
+        font-size: 1rem !important;
+    }
+    .skill-tag {
+        font-size: 0.7rem !important;
+        padding: 0.2rem 0.6rem !important;
+    }
+
+    /* ----- WHAT I SOLVE SECTION ----- */
+    #solutions {
+        padding: 2rem 0.75rem !important;
+    }
+    #solutions .translation-features {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+    }
+    #solutions .feature-card {
+        padding: 1.25rem !important;
+    }
+    #solutions .feature-title {
+        font-size: 1rem !important;
+    }
+    #solutions .feature-desc {
+        font-size: 0.85rem !important;
+    }
+    #solutions .feature-icon {
+        width: 48px !important;
+        height: 48px !important;
+        font-size: 1.25rem !important;
+    }
+
+    /* ----- PROJECTS SECTION ----- */
+    .projects-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+    }
+    .project-card {
+        padding: 0 !important;
+        border-radius: var(--radius-md) !important;
+    }
+    .project-header {
+        padding: 1rem !important;
+    }
+    .project-title {
+        font-size: 1rem !important;
+    }
+    .project-desc {
+        font-size: 0.85rem !important;
+    }
+    .project-body {
+        padding: 1rem !important;
+    }
+    .project-body p {
+        font-size: 0.85rem !important;
+    }
+    .project-tech {
+        flex-wrap: wrap !important;
+        gap: 0.4rem !important;
+    }
+    .tech-tag {
+        font-size: 0.7rem !important;
+        padding: 0.2rem 0.6rem !important;
+    }
+    .project-stats {
+        flex-wrap: wrap !important;
+        gap: 0.75rem !important;
+    }
+    .project-stat {
+        font-size: 0.75rem !important;
+    }
+    .project-links {
+        flex-direction: column !important;
+        gap: 0.5rem !important;
+    }
+    .project-links .project-link {
+        width: 100% !important;
+        justify-content: center !important;
+        padding: 0.6rem 1rem !important;
+        font-size: 0.85rem !important;
+    }
+
+    /* ----- PRICING SECTION ----- */
+    #pricing {
+        padding: 2rem 0.75rem !important;
+    }
+    #pricing .pricing-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+    }
+    #pricing .pricing-card {
+        padding: 1.5rem !important;
+    }
+    #pricing .pricing-card h3 {
+        font-size: 1.2rem !important;
+    }
+    #pricing .pricing-card div[style*="font-size: 2rem"] {
+        font-size: 1.5rem !important;
+    }
+    #pricing .pricing-card ul li {
+        font-size: 0.85rem !important;
+    }
+
+    /* ----- TRANSLATION PORTFOLIO ----- */
+    .translation-portfolio-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+    }
+    .translation-portfolio-card {
+        padding: 0 !important;
+    }
+    .translation-portfolio-header {
+        padding: 1rem !important;
+    }
+    .translation-portfolio-title {
+        font-size: 1rem !important;
+    }
+    .translation-portfolio-body {
+        padding: 1rem !important;
+    }
+    .translation-portfolio-desc {
+        font-size: 0.85rem !important;
+    }
+    .translation-portfolio-stats {
+        flex-wrap: wrap !important;
+        gap: 0.5rem !important;
+    }
+    .translation-portfolio-stat {
+        font-size: 0.75rem !important;
+    }
+
+    /* ----- TRANSLATION FEATURES ----- */
+    .translation-features {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+    }
+    .feature-card {
+        padding: 1.25rem !important;
+    }
+
+    /* ----- CONTACT SECTION ----- */
+    .contact-grid {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+    }
+    .contact-info h3 {
+        font-size: 1.4rem !important;
+        text-align: center !important;
+    }
+    .contact-info p {
+        font-size: 0.9rem !important;
+        text-align: center !important;
+    }
+    .contact-item {
+        padding: 0.75rem !important;
+        gap: 0.75rem !important;
+    }
+    .contact-icon {
+        width: 38px !important;
+        height: 38px !important;
+        flex-shrink: 0 !important;
+    }
+    .contact-icon svg {
+        width: 18px !important;
+        height: 18px !important;
+    }
+    .contact-detail h4 {
+        font-size: 0.85rem !important;
+    }
+    .contact-detail span {
+        font-size: 0.75rem !important;
+        word-break: break-all !important;
+    }
+
+    /* ----- CODE WINDOW IN CONTACT ----- */
+    .contact .code-window {
+        max-width: 100% !important;
+        overflow-x: auto !important;
+    }
+    .contact .code-body {
+        font-size: 0.7rem !important;
+        padding: 1rem !important;
+        overflow-x: auto !important;
+    }
+
+    /* ----- FOOTER ----- */
+    footer {
+        padding: 2rem 1rem !important;
+    }
+    .footer-text {
+        font-size: 0.7rem !important;
+        line-height: 1.6 !important;
+        padding: 0 0.5rem !important;
+        word-wrap: break-word !important;
+        text-align: center !important;
+    }
+    .footer-arch {
+        width: 14px !important;
+        height: 14px !important;
+    }
+
+    /* ----- SECTION HEADERS ----- */
+    .section-title {
+        font-size: clamp(1.4rem, 4vw, 1.8rem) !important;
+    }
+    .section-desc {
+        font-size: 0.9rem !important;
+    }
+    .section-header {
+        margin-bottom: 1.5rem !important;
+        padding: 0 0.5rem !important;
+    }
+    section {
+        padding: 2rem 0.75rem !important;
+    }
+    .container {
+        padding: 0 0.75rem !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* ----- NAVIGATION ----- */
+    .navbar {
+        padding: 0.5rem 0.75rem !important;
+    }
+    .nav-brand {
+        font-size: 1.2rem !important;
+    }
+}
+
+/* ---------- TABLET (768px - 1024px) ---------- */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* ----- HERO ----- */
+    .hero-container {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+    }
+    .hero-title {
+        font-size: clamp(2.2rem, 4vw, 2.8rem) !important;
+    }
+    .hero-subtitle {
+        font-size: 1rem !important;
+    }
+    .hero-desc {
+        font-size: 0.95rem !important;
+        max-width: 90% !important;
+    }
+    .hero-visual {
+        max-width: 80% !important;
+        margin: 0 auto !important;
+    }
+    .hero-buttons {
+        justify-content: center !important;
+    }
+
+    /* ----- ABOUT ----- */
+    .about-grid {
+        grid-template-columns: 1fr 1.5fr !important;
+        gap: 2rem !important;
+    }
+    .about-image-wrapper {
+        width: 100% !important;
+        height: auto !important;
+        max-width: 320px !important;
+    }
+    .about-image {
+        width: 260px !important;
+        height: 260px !important;
+    }
+
+    /* ----- PROJECTS ----- */
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1.5rem !important;
+    }
+    .project-links {
+        flex-direction: row !important;
+    }
+    .project-links .project-link {
+        width: auto !important;
+        padding: 0.5rem 1rem !important;
+        font-size: 0.8rem !important;
+    }
+
+    /* ----- PRICING ----- */
+    #pricing .pricing-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1.5rem !important;
+    }
+
+    /* ----- TRANSLATION PORTFOLIO ----- */
+    .translation-portfolio-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1.5rem !important;
+    }
+
+    /* ----- CONTACT ----- */
+    .contact-grid {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 2rem !important;
+    }
+
+    /* ----- TRANSLATION FEATURES ----- */
+    .translation-features {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1.5rem !important;
+    }
+
+    /* ----- SKILLS ----- */
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1.5rem !important;
+    }
+
+    /* ----- GENERAL ----- */
+    .container {
+        padding: 0 1.5rem !important;
+    }
+    section {
+        padding: 3rem 1rem !important;
+    }
+}
+
+/* ---------- LAPTOP/DESKTOP (1025px+) - NO CHANGES ---------- */
+/* دسکتاپ کاملاً بدون تغییر باقی می‌ماند */
 
 </style>
 </head>
