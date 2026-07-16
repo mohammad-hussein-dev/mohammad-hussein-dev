@@ -2299,6 +2299,35 @@
     }
 }
 
+
+
+/* ============================================================
+   CODE BOXES - TAP EFFECT ON MOBILE (LIKE ARCH LOGO)
+   ============================================================ */
+
+/* استایل اصلی باکس (همانند قبل) */
+.code-window {
+    transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1),
+                border-color 0.25s ease,
+                box-shadow 0.25s ease;
+    transform-origin: center center;
+}
+
+/* هاور در دسکتاپ (همانند قبل، ولی با اضافه شدن transform) */
+.code-window:hover {
+    transform: scale(1.02);
+    border-color: var(--accent) !important;
+    box-shadow: var(--shadow-glow) !important;
+}
+
+/* حالت لمس در موبایل (با استفاده از :active که در موبایل کار می‌کند) */
+.code-window:active {
+    transform: scale(1.02) !important;
+    border-color: var(--accent) !important;
+    box-shadow: var(--shadow-glow) !important;
+    transition: all 0.15s ease !important;
+}
+
 </style>
 </head>
 <body>
