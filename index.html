@@ -1766,53 +1766,7 @@
     .contact-grid {
         grid-template-columns: 1fr !important;
         gap: 1.5rem !important;
-    
-
-    /* ----- ABOUT SECTION - MOBILE OPTIMIZATION ----- */
-    .about-image-wrapper {
-        width: 100% !important;
-        height: auto !important;
-        max-width: 320px !important;
-        margin: 0 auto !important;
-        position: relative !important;
     }
-    .about-image {
-        width: 280px !important;
-        height: 280px !important;
-        margin: 0 auto !important;
-        border-width: 4px !important;
-    }
-    .about-image img {
-        width: 100% !important;
-        height: 100% !important;
-        object-fit: cover !important;
-    }
-    #matrix-canvas {
-        display: block !important;
-        width: 100% !important;
-        height: 100% !important;
-        opacity: 0.4 !important;
-        border-radius: 50% !important;
-    }
-    .about-image:active {
-        transform: scale(1.02) !important;
-        box-shadow: 0 0 30px rgba(0, 216, 255, 0.8) !important;
-        transition: all 0.15s ease !important;
-    }
-    .about-stats {
-        grid-template-columns: repeat(3, 1fr) !important;
-        gap: 0.75rem !important;
-    }
-    .stat-item {
-        padding: 1rem !important;
-    }
-    .stat-number {
-        font-size: 1.4rem !important;
-    }
-    .stat-label {
-        font-size: 0.7rem !important;
-    }
-}
     /* ستون راست که شامل دو باکس است */
     .contact-grid > div:last-child {
         width: 100% !important;
@@ -1925,7 +1879,8 @@
         object-fit: cover !important;
     }
     #matrix-canvas {
-        display: none !important;
+        display: block !important;
+        opacity: 0.4 !important;
     }
     .about-content h3 {
         font-size: 1.4rem !important;
@@ -3059,71 +3014,60 @@
 
         // Matrix Rain Effect for Profile Picture
         (function() {
-    const canvas = document.getElementById('matrix-canvas');
-    if (!canvas) return;
-    const ctx = canvas.getContext('2d');
-    let width, height;
-    
-    function resize() {
-        const parent = canvas.parentElement;
-        if (!parent) return;
-        width = parent.offsetWidth;
-        height = parent.offsetHeight;
-        canvas.width = width;
-        canvas.height = height;
-    }
-    resize();
-    window.addEventListener('resize', resize);
-    
-    // تشخیص موبایل برای کاهش بار
-    const isMobile = window.innerWidth <= 767;
-    const chars = '01';
-    const fontSize = isMobile ? 14 : 20;
-    let columns = 0;
-    let drops = [];
-    let frameCount = 0;
-    
-    function initDrops() {
-        columns = Math.floor(width / fontSize);
-        drops = [];
-        for (let i = 0; i < columns; i++) {
-            drops[i] = Math.random() * -100;
-        }
-    }
-    initDrops();
-    
-    function draw() {
-        // در موبایل، هر دو فریم یکبار رسم کن تا مصرف کمتر شود
-        if (isMobile) {
-            frameCount++;
-            if (frameCount % 2 === 0) {
-                requestAnimationFrame(draw);
-                return;
-            }
-        }
-        
-        ctx.fillStyle = 'rgba(10, 10, 30, 0.06)';
-        ctx.fillRect(0, 0, width, height);
-        
-        ctx.fillStyle = '#00d8ff';
-        ctx.font = fontSize + 'px monospace';
-        
-        for (let i = 0; i < drops.length; i++) {
-            const text = chars[Math.floor(Math.random() * chars.length)];
-            const alpha = Math.random() * 0.3 + 0.1;
-            ctx.globalAlpha = alpha;
-            ctx.fillText(text, i * fontSize, drops[i] * fontSize);
-            ctx.globalAlpha = 1;
+            const canvas = document.getElementById('matrix-canvas');
+            if (!canvas) return;
             
-            if (drops[i] * fontSize > height && Math.random() > 0.98) {
-                drops[i] = 0;
+            const ctx = canvas.getContext('2d');
+            let width, height;
+            
+            function resize() {
+                const parent = canvas.parentElement;
+                if (!parent) return;
+                width = parent.offsetWidth;
+                height = parent.offsetHeight;
+                canvas.width = width;
+                canvas.height = height;
             }
-            drops[i]++;
-        }
-        requestAnimationFrame(draw);
-    }
-    draw();
-})();
+            resize();
+            window.addEventListener('resize', resize);
+            
+            const chars = '01';
+            const fontSize = 20;
+            let columns = 0;
+            let drops = [];
+            
+            function initDrops() {
+                columns = Math.floor(width / fontSize);
+                drops = [];
+                for (let i = 0; i < columns; i++) {
+                    drops[i] = Math.random() * -100;
+                }
+            }
+            initDrops();
+            
+            function draw() {
+                ctx.fillStyle = 'rgba(10, 10, 30, 0.08)';
+                ctx.fillRect(0, 0, width, height);
+                
+                ctx.fillStyle = '#00d8ff';
+                ctx.font = fontSize + 'px monospace';
+                
+                for (let i = 0; i < drops.length; i++) {
+                    const text = chars[Math.floor(Math.random() * chars.length)];
+                    const alpha = Math.random() * 0.4 + 0.2;
+                    ctx.globalAlpha = alpha;
+                    ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+                    ctx.globalAlpha = 1;
+                    
+                    if (drops[i] * fontSize > height && Math.random() > 0.98) {
+                        drops[i] = 0;
+                    }
+                    drops[i]++;
+                }
+                requestAnimationFrame(draw);
+            }
+            draw();
+        })();
     </script>
 </body>
 </html>
