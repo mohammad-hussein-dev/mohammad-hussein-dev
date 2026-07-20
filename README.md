@@ -8,8 +8,8 @@
   <a href="https://mohammad-hussein-dev.github.io/mohammad-hussein-dev/" target="_blank">
     <img src="https://img.shields.io/badge/🌐 Portfolio-00d8ff?style=for-the-badge&logo=firefox&logoColor=white"/>
   </a>
-  <a href="https://mohammad-hussein-dev.github.io/mohammad-hussein-dev/" target="_blank">
-    <img src="https://img.shields.io/badge/Live%20Site-0088cc?style=for-the-badge&logo=githubpages&logoColor=white"/>
+  <a href="https://github.com/mohammad-hussein-dev/content-studio" target="_blank">
+    <img src="https://img.shields.io/badge/📁 Content%20Studio-0088cc?style=for-the-badge&logo=github&logoColor=white"/>
   </a>
 </p>
 
@@ -111,11 +111,11 @@ Beyond code, I transform complex technical content between **English ↔ Persian
 | 🔬 **Physics Lab Reports** | Academic paper translation | ✅ Completed |
 | 🤖 **ML Research Papers** | Scientific paper summaries | 🔵 In Progress |
 
-### 🏆 Translation Portfolio
+### 🏆 Content Studio Portfolio
 
-> **Explore my complete translation work:**
+> **Explore my complete portfolio:**
 > 
-> 📁 **[translation-portfolio](https://github.com/mohammad-hussein-dev/translation-portfolio)** — A curated collection of technical translations, academic writings, and localized content.
+> 📁 **[content-studio](https://github.com/mohammad-hussein-dev/content-studio)** — A comprehensive collection of translations, technical writing, academic research, presentations, and office works.
 
 ---
 
