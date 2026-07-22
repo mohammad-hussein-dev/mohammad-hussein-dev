@@ -193,7 +193,7 @@ Beyond engineering, I transform complex technical content between **English ↔ 
 - 🌐 **Portfolio**: [mohammad-hussein-dev.github.io](https://mohammad-hussein-dev.github.io/mohammad-hussein-dev/)
 - 🔗 **LinkedIn**: [mohammad-hussein-dev](https://www.linkedin.com/in/mohammad-hussein-dev/)
 - 🐙 **GitHub**: [mohammad-hussein-dev](https://github.com/mohammad-hussein-dev)
-- 🦊 **GitLab**: [mohammad-hussein-dev](https://gitlab.com/mohammad-hussein-dev) *(mirrored)*
+- 🦊 **GitLab**: [mohammad-hussein-dev](https://gitlab.com/mohammad-hussein-dev)
 - 💬 **Telegram**: [@mohammad_hussein_dev](https://t.me/mohammad_hussein_dev)
 - 🐦 **X**: [@mohammad_h_dev](https://x.com/mohammad_h_dev)
 - 📺 **YouTube**: [mohammad_hussein_dev](https://www.youtube.com/@mohammad_hussein_dev)
