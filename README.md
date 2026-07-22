@@ -1,53 +1,53 @@
-&lt;h1 align="center"&gt;🚀 Mohammad Hussein | Backend Engineer & Systems Architect&lt;/h1&gt;
+<h1 align="center">🚀 Mohammad Hussein | Backend Engineer & Systems Architect</h1>
 
-&lt;p align="center"&gt;
-  &lt;img src="https://readme-typing-svg.demolab.com/?lines=Python+%26+Django+Developer;Building+Production-Grade+APIs;System+Design+%26+Architecture;Clean+Code+%2B+Solid+Engineering&font=Fira%20Code&center=true&width=500&height=50&color=00d8ff&vCenter=true&size=22&pause=1000"&gt;
-&lt;/p&gt;
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com/?lines=Python+%26+Django+Developer;Building+Production-Grade+APIs;System+Design+%26+Architecture;Clean+Code+%2B+Solid+Engineering&font=Fira%20Code&center=true&width=500&height=50&color=00d8ff&vCenter=true&size=22&pause=1000" alt="Typing SVG">
+</p>
 
-&lt;p align="center"&gt;
-  &lt;a href="https://mohammad-hussein-dev.github.io/mohammad-hussein-dev/" target="_blank"&gt;
-    &lt;img src="https://img.shields.io/badge/🌐 Portfolio-00d8ff?style=for-the-badge&logo=firefox&logoColor=white"/&gt;
-  &lt;/a&gt;
-  &lt;a href="https://github.com/mohammad-hussein-dev/content-studio" target="_blank"&gt;
-    &lt;img src="https://img.shields.io/badge/📁 Content%20Studio-0088cc?style=for-the-badge&logo=github&logoColor=white"/&gt;
-  &lt;/a&gt;
-&lt;/p&gt;
+<p align="center">
+  <a href="https://mohammad-hussein-dev.github.io/mohammad-hussein-dev/" target="_blank">
+    <img src="https://img.shields.io/badge/🌐%20Portfolio-00d8ff?style=for-the-badge&logo=firefox&logoColor=white" alt="Portfolio">
+  </a>
+  <a href="https://github.com/mohammad-hussein-dev/content-studio" target="_blank">
+    <img src="https://img.shields.io/badge/📁%20Content%20Studio-0088cc?style=for-the-badge&logo=github&logoColor=white" alt="Content Studio">
+  </a>
+</p>
 
-&lt;p align="center"&gt;
-  &lt;img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/&gt;
-  &lt;img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white"/&gt;
-  &lt;img src="https://img.shields.io/badge/Django%20REST%20Framework-A30000?style=for-the-badge&logo=django&logoColor=white"/&gt;
-  &lt;img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"/&gt;
-  &lt;img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"/&gt;
-  &lt;img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white"/&gt;
-  &lt;img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/&gt;
-  &lt;img src="https://img.shields.io/badge/Celery-37814A?style=for-the-badge&logo=celery&logoColor=white"/&gt;
-  &lt;img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/&gt;
-  &lt;img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white"/&gt;
-  &lt;img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"/&gt;
-  &lt;img src="https://img.shields.io/badge/Arch%20Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white"/&gt;
-  &lt;img src="https://img.shields.io/badge/Neovim-57A143?style=for-the-badge&logo=neovim&logoColor=white"/&gt;
-  &lt;img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/&gt;
-  &lt;img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white"/&gt;
-  &lt;img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/&gt;
-  &lt;img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white"/&gt;
-  &lt;img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"/&gt;
-  &lt;img src="https://img.shields.io/badge/Upwork-168B2B?style=for-the-badge&logo=upwork&logoColor=white"/&gt;
-&lt;/p&gt;
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" alt="Django">
+  <img src="https://img.shields.io/badge/Django%20REST%20Framework-A30000?style=for-the-badge&logo=django&logoColor=white" alt="DRF">
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI">
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
+  <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" alt="Redis">
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+  <img src="https://img.shields.io/badge/Celery-37814A?style=for-the-badge&logo=celery&logoColor=white" alt="Celery">
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+  <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" alt="GitHub Actions">
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux">
+  <img src="https://img.shields.io/badge/Arch%20Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white" alt="Arch">
+  <img src="https://img.shields.io/badge/Neovim-57A143?style=for-the-badge&logo=neovim&logoColor=white" alt="Neovim">
+  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+  <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X">
+  <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail">
+  <img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram">
+  <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube">
+  <img src="https://img.shields.io/badge/Upwork-168B2B?style=for-the-badge&logo=upwork&logoColor=white" alt="Upwork">
+</p>
 
-&lt;p align="center"&gt;
-  &lt;b&gt;&lt;i&gt;"I don't just write code. I architect systems that scale."&lt;/i&gt;&lt;/b&gt;
-&lt;/p&gt;
+<p align="center">
+  <b><i>"I don't just write code. I architect systems that scale."</i></b>
+</p>
 
 ---
 
 ## 🌐 Live Portfolio
 
-&gt; **Check out my portfolio website:**
-&gt; 
-&gt; 🔗 **[mohammad-hussein-dev.github.io](https://mohammad-hussein-dev.github.io/mohammad-hussein-dev/)**
-&gt; 
-&gt; Built with pure HTML/CSS/JS • Dark/Light mode • Responsive design • All my projects in one place
+> **Check out my portfolio website:**
+> 
+> 🔗 **[mohammad-hussein-dev.github.io](https://mohammad-hussein-dev.github.io/mohammad-hussein-dev/)**
+> 
+> Built with pure HTML/CSS/JS • Dark/Light mode • Responsive design • All my projects in one place
 
 ---
 
@@ -80,7 +80,7 @@ Backend engineer with a deep foundation in Physics and Mathematics. I architect 
 
 ## 🚀 Production Experience
 
-&gt; **Real systems shipped. Not tutorials.**
+> **Real systems shipped. Not tutorials.**
 
 - **CI/CD Pipelines** — GitHub Actions with automated testing, linting, and deployment
 - **Container Orchestration** — Docker Compose for multi-service apps, ready for Kubernetes
@@ -107,7 +107,7 @@ Backend engineer with a deep foundation in Physics and Mathematics. I architect 
 
 ## 🌍 Translation & Technical Writing
 
-&gt; **Bridging languages. Connecting knowledge.**
+> **Bridging languages. Connecting knowledge.**
 
 Beyond engineering, I transform complex technical content between **English ↔ Persian** with precision and cultural sensitivity.
 
@@ -129,40 +129,40 @@ Beyond engineering, I transform complex technical content between **English ↔ 
 
 ### 🏆 Content Studio Portfolio
 
-&gt; **Explore my complete portfolio:**
-&gt; 
-&gt; 📁 **[content-studio](https://github.com/mohammad-hussein-dev/content-studio)** — A comprehensive collection of translations, technical writing, academic research, presentations, and office works.
+> **Explore my complete portfolio:**
+> 
+> 📁 **[content-studio](https://github.com/mohammad-hussein-dev/content-studio)** — A comprehensive collection of translations, technical writing, academic research, presentations, and office works.
 
 ---
 
 ## 📌 Featured Projects
 
 ### 📋 [Django Task Manager](https://github.com/mohammad-hussein-dev/django-task-manager)
-&gt; **Challenge:** Build a scalable task management system with role-based access  
-&gt; **Solution:** Django + DRF + PostgreSQL + Redis + Celery + Docker  
-&gt; **Impact:** 96% test coverage, sub-200ms API response times, CI/CD deployed  
-&gt; **Tech:** `Django` `DRF` `PostgreSQL` `Redis` `Celery` `Docker` `pytest` `GitHub Actions`  
-&gt; **Status:** ✅ **Production-Ready** — [View on GitHub](https://github.com/mohammad-hussein-dev/django-task-manager)
+> **Challenge:** Build a scalable task management system with role-based access  
+> **Solution:** Django + DRF + PostgreSQL + Redis + Celery + Docker  
+> **Impact:** 96% test coverage, sub-200ms API response times, CI/CD deployed  
+> **Tech:** `Django` `DRF` `PostgreSQL` `Redis` `Celery` `Docker` `pytest` `GitHub Actions`  
+> **Status:** ✅ **Production-Ready** — [View on GitHub](https://github.com/mohammad-hussein-dev/django-task-manager)
 
 ### 🔬 [Projectile Physics Simulator](https://github.com/mohammad-hussein-dev/projectile-physics-simulator)
-&gt; **Challenge:** Simulate complex 2D trajectories with air resistance and variable gravity  
-&gt; **Solution:** NumPy vectorization + Matplotlib animation + pytest for numerical accuracy  
-&gt; **Impact:** 100% test coverage, 10x faster than naive implementation, bilingual UI  
-&gt; **Tech:** `Python` `NumPy` `Matplotlib` `pytest`  
-&gt; **Status:** ✅ **Completed** — [View on GitHub](https://github.com/mohammad-hussein-dev/projectile-physics-simulator)
+> **Challenge:** Simulate complex 2D trajectories with air resistance and variable gravity  
+> **Solution:** NumPy vectorization + Matplotlib animation + pytest for numerical accuracy  
+> **Impact:** 100% test coverage, 10x faster than naive implementation, bilingual UI  
+> **Tech:** `Python` `NumPy` `Matplotlib` `pytest`  
+> **Status:** ✅ **Completed** — [View on GitHub](https://github.com/mohammad-hussein-dev/projectile-physics-simulator)
 
 ### 🧬 [Site Selection Using Genetic Algorithm](https://github.com/mohammad-hussein-dev/site-selection-ga)
-&gt; **Challenge:** Select optimal school locations from 100 candidates with multi-objective constraints  
-&gt; **Solution:** DEAP framework + custom fitness functions + parallel evaluation  
-&gt; **Impact:** 40% improvement over greedy baseline, fully containerized deployment  
-&gt; **Tech:** `Python` `DEAP` `NumPy` `Matplotlib` `pytest` `Docker` `GitHub Actions`  
-&gt; **Status:** ✅ **Completed** — [View on GitHub](https://github.com/mohammad-hussein-dev/site-selection-ga)
+> **Challenge:** Select optimal school locations from 100 candidates with multi-objective constraints  
+> **Solution:** DEAP framework + custom fitness functions + parallel evaluation  
+> **Impact:** 40% improvement over greedy baseline, fully containerized deployment  
+> **Tech:** `Python` `DEAP` `NumPy` `Matplotlib` `pytest` `Docker` `GitHub Actions`  
+> **Status:** ✅ **Completed** — [View on GitHub](https://github.com/mohammad-hussein-dev/site-selection-ga)
 
 ---
 
 ## 🔨 Currently Building
 
-&gt; **Active projects in development. Follow the commits.**
+> **Active projects in development. Follow the commits.**
 
 | **Project** | **Stack** | **Status** | **Goal** |
 | :--- | :--- | :--- | :--- |
@@ -174,24 +174,24 @@ Beyond engineering, I transform complex technical content between **English ↔ 
 
 ## 📊 GitHub Activity
 
-&lt;p align="center"&gt;
-  &lt;img src="https://github-readme-stats.vercel.app/api?username=mohammad-hussein-dev&show_icons=true&theme=github_dark&hide_border=true&count_private=true" width="48%"/&gt;
-  &lt;img src="https://github-readme-streak-stats.herokuapp.com/?user=mohammad-hussein-dev&theme=github_dark&hide_border=true" width="48%"/&gt;
-&lt;/p&gt;
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=mohammad-hussein-dev&show_icons=true&theme=github_dark&hide_border=true&count_private=true" alt="GitHub Stats" width="48%">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=mohammad-hussein-dev&theme=github_dark&hide_border=true" alt="GitHub Streak" width="48%">
+</p>
 
-&lt;p align="center"&gt;
-  &lt;img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mohammad-hussein-dev&layout=compact&theme=github_dark&hide_border=true" width="40%"/&gt;
-&lt;/p&gt;
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mohammad-hussein-dev&layout=compact&theme=github_dark&hide_border=true" alt="Top Languages" width="40%">
+</p>
 
 ---
 
 ## 💼 Open for Collaboration
 
-&gt; I architect **scalable backend systems** and **production APIs** with Django, DRF, and FastAPI.  
-&gt; Whether you need a full-stack app, an admin panel, a REST API, or performance optimization — I'm ready.
+> I architect **scalable backend systems** and **production APIs** with Django, DRF, and FastAPI.  
+> Whether you need a full-stack app, an admin panel, a REST API, or performance optimization — I'm ready.
 
-- 📧 **Email**: king.mohamd.09876@gmail.com  
-- 💬 **Telegram**: @mohammad_hussein_dev  
+- 📧 **Email**: [king.mohamd.09876@gmail.com](mailto:king.mohamd.09876@gmail.com)
+- 💬 **Telegram**: [@mohammad_hussein_dev](https://t.me/mohammad_hussein_dev)
 - 🔗 **LinkedIn**: [mohammad-hussein-dev](https://www.linkedin.com/in/mohammad-hussein-dev/)
 - 🐦 **X**: [@mohammad_h_dev](https://x.com/mohammad_h_dev)
 - 📺 **YouTube**: [mohammad_hussein_dev](https://www.youtube.com/@mohammad_hussein_dev)
@@ -201,36 +201,40 @@ Beyond engineering, I transform complex technical content between **English ↔ 
 - 📌 **Upwork**: Ready for freelance
 - 📌 **Ponisha**: [MHussein1](https://ponisha.ir/profile/MHussein1)
 
+---
+
 ## 📇 Let's Connect
 
-&lt;p align="center"&gt;
-  &lt;a href="https://mohammad-hussein-dev.github.io/mohammad-hussein-dev/" target="_blank"&gt;
-    &lt;img src="https://img.shields.io/badge/🌐 Portfolio-00d8ff?style=for-the-badge&logo=firefox&logoColor=white"/&gt;
-  &lt;/a&gt;
-  &lt;a href="mailto:king.mohamd.09876@gmail.com"&gt;
-    &lt;img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/&gt;
-  &lt;/a&gt;
-  &lt;a href="https://t.me/mohammad_hussein_dev"&gt;
-    &lt;img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white"/&gt;
-  &lt;/a&gt;
-  &lt;a href="https://www.linkedin.com/in/mohammad-hussein-dev/"&gt;
-    &lt;img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/&gt;
-  &lt;/a&gt;
-  &lt;a href="https://x.com/mohammad_h_dev"&gt;
-    &lt;img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white"/&gt;
-  &lt;/a&gt;
-  &lt;a href="https://www.youtube.com/@mohammad_hussein_dev"&gt;
-    &lt;img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"/&gt;
-  &lt;/a&gt;
-  &lt;a href="https://github.com/mohammad-hussein-dev"&gt;
-    &lt;img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/&gt;
-  &lt;/a&gt;
-  &lt;a href="https://gitlab.com/mohammad-hussein-dev"&gt;
-    &lt;img src="https://img.shields.io/badge/GitLab-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white"/&gt;
-  &lt;/a&gt;
-  &lt;a href="https://ponisha.ir/profile/MHussein1"&gt;
-    &lt;img src="https://img.shields.io/badge/Ponisha-005A9C?style=for-the-badge&logo=link&logoColor=white"/&gt;
-  &lt;/a&gt;
-&lt;/p&gt;
+<p align="center">
+  <a href="https://mohammad-hussein-dev.github.io/mohammad-hussein-dev/" target="_blank">
+    <img src="https://img.shields.io/badge/🌐%20Portfolio-00d8ff?style=for-the-badge&logo=firefox&logoColor=white" alt="Portfolio">
+  </a>
+  <a href="mailto:king.mohamd.09876@gmail.com">
+    <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+  </a>
+  <a href="https://t.me/mohammad_hussein_dev">
+    <img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram">
+  </a>
+  <a href="https://www.linkedin.com/in/mohammad-hussein-dev/">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
+  <a href="https://x.com/mohammad_h_dev">
+    <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X">
+  </a>
+  <a href="https://www.youtube.com/@mohammad_hussein_dev">
+    <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube">
+  </a>
+  <a href="https://github.com/mohammad-hussein-dev">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+  </a>
+  <a href="https://gitlab.com/mohammad-hussein-dev">
+    <img src="https://img.shields.io/badge/GitLab-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white" alt="GitLab">
+  </a>
+  <a href="https://ponisha.ir/profile/MHussein1">
+    <img src="https://img.shields.io/badge/Ponisha-005A9C?style=for-the-badge&logo=link&logoColor=white" alt="Ponisha">
+  </a>
+</p>
+
+---
 
 *"Clean code, solid architecture, and on‑time delivery."*
