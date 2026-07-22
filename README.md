@@ -190,14 +190,17 @@ Beyond engineering, I transform complex technical content between **English ↔ 
 > I architect **scalable backend systems** and **production APIs** with Django, DRF, and FastAPI.  
 > Whether you need a full-stack app, an admin panel, a REST API, or performance optimization — I'm ready.
 
-- 📧 **Email**: [king.mohamd.09876@gmail.com](mailto:king.mohamd.09876@gmail.com)
-- 💬 **Telegram**: [@mohammad_hussein_dev](https://t.me/mohammad_hussein_dev)
+- 🌐 **Portfolio**: [mohammad-hussein-dev.github.io](https://mohammad-hussein-dev.github.io/mohammad-hussein-dev/)
 - 🔗 **LinkedIn**: [mohammad-hussein-dev](https://www.linkedin.com/in/mohammad-hussein-dev/)
+- 🐙 **GitHub**: [mohammad-hussein-dev](https://github.com/mohammad-hussein-dev)
+- 💬 **Telegram**: [@mohammad_hussein_dev](https://t.me/mohammad_hussein_dev)
 - 🐦 **X**: [@mohammad_h_dev](https://x.com/mohammad_h_dev)
 - 📺 **YouTube**: [mohammad_hussein_dev](https://www.youtube.com/@mohammad_hussein_dev)
-- 🌐 **Portfolio**: [mohammad-hussein-dev.github.io](https://mohammad-hussein-dev.github.io/mohammad-hussein-dev/)
-- 🐙 **GitHub**: [mohammad-hussein-dev](https://github.com/mohammad-hussein-dev)
+- 📧 **Email**: [king.mohamd.09876@gmail.com](mailto:king.mohamd.09876@gmail.com)
 - 🦊 **GitLab**: [mohammad-hussein-dev](https://gitlab.com/mohammad-hussein-dev)
+- 💼 **Karlancer**: [MohammadHossein.Gh](https://karlancer.com/profile/1401608)
+- 📄 **Parscoders**: [mohammad_hussein](https://parscoders.com/resume/769525/mohammad_hussein)
+- ✍️ **Typeiran**: [Mohammad Hussein Ghafoori](https://typeiran.com/user/797507)
 - 📌 **Upwork**: Ready for freelance
 - 📌 **Ponisha**: [MHussein1](https://ponisha.ir/profile/MHussein1)
 
@@ -209,28 +212,40 @@ Beyond engineering, I transform complex technical content between **English ↔ 
   <a href="https://mohammad-hussein-dev.github.io/mohammad-hussein-dev/" target="_blank">
     <img src="https://img.shields.io/badge/🌐%20Portfolio-00d8ff?style=for-the-badge&logo=firefox&logoColor=white" alt="Portfolio">
   </a>
+  <a href="https://www.linkedin.com/in/mohammad-hussein-dev/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
+  <a href="https://github.com/mohammad-hussein-dev" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+  </a>
+  <a href="https://t.me/mohammad_hussein_dev" target="_blank">
+    <img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram">
+  </a>
+  <a href="https://x.com/mohammad_h_dev" target="_blank">
+    <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X">
+  </a>
+  <a href="https://www.youtube.com/@mohammad_hussein_dev" target="_blank">
+    <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube">
+  </a>
   <a href="mailto:king.mohamd.09876@gmail.com">
     <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
   </a>
-  <a href="https://t.me/mohammad_hussein_dev">
-    <img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram">
-  </a>
-  <a href="https://www.linkedin.com/in/mohammad-hussein-dev/">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
-  </a>
-  <a href="https://x.com/mohammad_h_dev">
-    <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X">
-  </a>
-  <a href="https://www.youtube.com/@mohammad_hussein_dev">
-    <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube">
-  </a>
-  <a href="https://github.com/mohammad-hussein-dev">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
-  </a>
-  <a href="https://gitlab.com/mohammad-hussein-dev">
+  <a href="https://gitlab.com/mohammad-hussein-dev" target="_blank">
     <img src="https://img.shields.io/badge/GitLab-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white" alt="GitLab">
   </a>
-  <a href="https://ponisha.ir/profile/MHussein1">
+  <a href="https://karlancer.com/profile/1401608" target="_blank">
+    <img src="https://img.shields.io/badge/💼%20Karlancer-FF6B00?style=for-the-badge&logo=link&logoColor=white" alt="Karlancer">
+  </a>
+  <a href="https://parscoders.com/resume/769525/mohammad_hussein" target="_blank">
+    <img src="https://img.shields.io/badge/📄%20Parscoders-00A86B?style=for-the-badge&logo=link&logoColor=white" alt="Parscoders">
+  </a>
+  <a href="https://typeiran.com/user/797507" target="_blank">
+    <img src="https://img.shields.io/badge/✍️%20Typeiran-6A0DAD?style=for-the-badge&logo=link&logoColor=white" alt="Typeiran">
+  </a>
+  <a href="https://www.upwork.com/" target="_blank">
+    <img src="https://img.shields.io/badge/Upwork-168B2B?style=for-the-badge&logo=upwork&logoColor=white" alt="Upwork">
+  </a>
+  <a href="https://ponisha.ir/profile/MHussein1" target="_blank">
     <img src="https://img.shields.io/badge/Ponisha-005A9C?style=for-the-badge&logo=link&logoColor=white" alt="Ponisha">
   </a>
 </p>
