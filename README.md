@@ -193,11 +193,11 @@ Beyond engineering, I transform complex technical content between **English ↔ 
 - 🌐 **Portfolio**: [mohammad-hussein-dev.github.io](https://mohammad-hussein-dev.github.io/mohammad-hussein-dev/)
 - 🔗 **LinkedIn**: [mohammad-hussein-dev](https://www.linkedin.com/in/mohammad-hussein-dev/)
 - 🐙 **GitHub**: [mohammad-hussein-dev](https://github.com/mohammad-hussein-dev)
+- 🦊 **GitLab**: [mohammad-hussein-dev](https://gitlab.com/mohammad-hussein-dev) *(mirrored)*
 - 💬 **Telegram**: [@mohammad_hussein_dev](https://t.me/mohammad_hussein_dev)
 - 🐦 **X**: [@mohammad_h_dev](https://x.com/mohammad_h_dev)
 - 📺 **YouTube**: [mohammad_hussein_dev](https://www.youtube.com/@mohammad_hussein_dev)
 - 📧 **Email**: [king.mohamd.09876@gmail.com](mailto:king.mohamd.09876@gmail.com)
-- 🦊 **GitLab**: [mohammad-hussein-dev](https://gitlab.com/mohammad-hussein-dev)
 - 💼 **Karlancer**: [MohammadHossein.Gh](https://karlancer.com/profile/1401608)
 - 📄 **Parscoders**: [mohammad_hussein](https://parscoders.com/resume/769525/mohammad_hussein)
 - ✍️ **Typeiran**: [Mohammad Hussein Ghafoori](https://typeiran.com/user/797507)
@@ -220,6 +220,9 @@ Beyond engineering, I transform complex technical content between **English ↔ 
   <a href="https://github.com/mohammad-hussein-dev" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
   </a>
+  <a href="https://gitlab.com/mohammad-hussein-dev" target="_blank">
+    <img src="https://img.shields.io/badge/GitLab-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white" alt="GitLab">
+  </a>
   <a href="https://t.me/mohammad_hussein_dev" target="_blank">
     <img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram">
   </a>
@@ -231,9 +234,6 @@ Beyond engineering, I transform complex technical content between **English ↔ 
   </a>
   <a href="mailto:king.mohamd.09876@gmail.com">
     <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
-  </a>
-  <a href="https://gitlab.com/mohammad-hussein-dev" target="_blank">
-    <img src="https://img.shields.io/badge/GitLab-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white" alt="GitLab">
   </a>
   <a href="https://karlancer.com/profile/1401608" target="_blank">
     <img src="https://img.shields.io/badge/💼%20Karlancer-FF6B00?style=for-the-badge&logo=link&logoColor=white" alt="Karlancer">
