@@ -5,10 +5,10 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 // ============================================================================
-// Vite Configuration (Production-Ready)
+// Vite Configuration (Production-Ready & CI/CD Optimized)
 // ============================================================================
 
-// Resolve __dirname in an ESM environment without triggering Vite warnings
+// Resolve __dirname in an ESM environment without triggering Vite native loader warnings
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
@@ -39,15 +39,9 @@ strictPort: true, // Fails explicitly if port 3000 is occupied, preventing silen
     sourcemap: false, // Disabled in production to reduce bundle size and protect source code logic
     chunkSizeWarningLimit: 1000, // Warn if any generated chunk exceeds 1000 KB
 
-    // Advanced Rollup optimization for code splitting and improved browser caching
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          'react-vendor': ['react', 'react-dom'],
-          'ui-vendor': ['lucide-react', 'clsx', 'tailwind-merge'],
-        },
-      },
-    },
+    // NOTE: Custom rollupOptions (manualChunks) have been intentionally removed.
+    // Vite's default code-splitting is highly optimized and prevents compatibility
+    // issues with newer bundlers (like Rolldown) used in GitHub Actions environments.
   },
 
   // Configuration for locally previewing the production build (e.g., `npm run preview`)
