@@ -4,20 +4,24 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch:
+  workflow_dispatch: # Allows manual triggering of the workflow from the GitHub UI
 
+# Grant necessary permissions for GitHub Pages deployment
 permissions:
   contents: read
   pages: write
   id-token: write
 
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
-  group: 'pages'
-  cancel-in-progress: true
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 10 # Prevents the workflow from hanging indefinitely
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -25,16 +29,18 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: 'npm'
+          node-version: '20'
+          cache: 'npm' # Uses package-lock.json for faster and deterministic installs
 
       - name: Install dependencies
-        run: npm ci
+        run: npm ci # 'ci' is strictly preferred over 'install' in CI environments
 
       - name: Build static site with Vite
         run: npm run build
 
       - name: Copy Resume assets into dist
+        # Vite only copies the 'public' folder by default.
+        # This step ensures root-level 'Resume' assets are included in the final build.
         run: |
           mkdir -p dist/Resume
           cp -r Resume/* dist/Resume/ || true
@@ -42,7 +48,7 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: dist # Explicitly tells GitHub to deploy the Vite build output
 
   deploy:
     environment:
