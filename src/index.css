@@ -1,0 +1,469 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #07090e;
+    --bg-secondary: #090d16;
+    --bg-card: #0b101c;
+    --bg-elevated: #0d1322;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+    --accent-cyan: #00e5ff;
+    --accent-emerald: #10b981;
+    --border-subtle: #1e293b;
+    --border-card: rgba(6, 182, 212, 0.2);
+  }
+
+  html.light {
+    --bg-primary: #f8fafc;
+    --bg-secondary: #ffffff;
+    --bg-card: #ffffff;
+    --bg-elevated: #f1f5f9;
+    --text-primary: #0f172a;
+    --text-secondary: #334155;
+    --text-muted: #64748b;
+    --accent-cyan: #0284c7;
+    --accent-emerald: #059669;
+    --border-subtle: #e2e8f0;
+    --border-card: #cbd5e1;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  html[lang="fa"],
+  html.font-persian,
+  .font-persian {
+    font-family: 'Vazirmatn', 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  /* Force code and terminal blocks to stay LTR and monospace */
+  pre,
+  code,
+  .font-mono,
+  #terminal-cockpit,
+  #terminal-container,
+  .ascii-logo {
+    font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
+    direction: ltr !important;
+    text-align: left !important;
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    overflow-x: hidden;
+    transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  ::selection {
+    background-color: rgba(0, 229, 255, 0.3);
+    color: #ffffff;
+  }
+
+  html.light ::selection {
+    background-color: rgba(2, 132, 199, 0.25);
+    color: #0f172a;
+  }
+}
+
+/* Universal Smooth Transitions for Surface Colors */
+header,
+main,
+section,
+footer,
+article,
+aside,
+nav {
+  transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* View Transition API */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.35s;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-subtle);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00e5ff88;
+}
+
+html.light ::-webkit-scrollbar-thumb:hover {
+  background: #0284c788;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 25s linear infinite;
+}
+
+
+/* ==========================================================================
+   METICULOUS LIGHT THEME SPECIFICATION
+   ========================================================================== */
+
+html.light {
+  /* 1. Global Shell Backgrounds */
+  body,
+  .min-h-screen.bg-\[\#07090e\],
+  .bg-\[\#07090e\],
+  .bg-\[\#070a11\],
+  .bg-\[\#070a12\],
+  .bg-\[\#070a14\] {
+    background-color: #f8fafc !important;
+    color: #0f172a !important;
+  }
+
+  /* 2. Top Header & Navigation */
+  header {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    border-bottom-color: #e2e8f0 !important;
+    box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05) !important;
+  }
+
+  header nav {
+    background-color: #f1f5f9 !important;
+    border-color: #e2e8f0 !important;
+  }
+
+  header nav button {
+    color: #334155 !important;
+  }
+
+  header nav button:hover {
+    color: #0284c7 !important;
+    background-color: #ffffff !important;
+  }
+
+  /* Header Logo & Badges */
+  header .text-white {
+    color: #0f172a !important;
+  }
+
+  header .text-slate-400 {
+    color: #64748b !important;
+  }
+
+  /* 3. Primary Section Cards & Containers (excluding terminal) */
+  section:not(#terminal-cockpit) .bg-\[\#090d16\],
+  section:not(#terminal-cockpit) .bg-\[\#0b101c\],
+  section:not(#terminal-cockpit) .bg-\[\#0a0f1c\],
+  section:not(#terminal-cockpit) .bg-\[\#0d1322\],
+  section:not(#terminal-cockpit) .bg-\[\#090e18\],
+  section:not(#terminal-cockpit) .bg-\[\#080d19\],
+  section:not(#terminal-cockpit) .bg-\[\#0b0f19\],
+  section:not(#terminal-cockpit) .bg-\[\#06080e\],
+  section:not(#terminal-cockpit) .bg-\[\#060910\] {
+    background-color: #ffffff !important;
+    border-color: #e2e8f0 !important;
+    box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05), 0 2px 6px -1px rgba(15, 23, 42, 0.03);
+  }
+
+  /* Nested inner blocks & sub-cards */
+  section:not(#terminal-cockpit) .bg-\[\#05070d\],
+  section:not(#terminal-cockpit) .bg-\[\#080b13\],
+  section:not(#terminal-cockpit) .bg-\[\#04060a\],
+  section:not(#terminal-cockpit) .bg-\[\#0b101c\]\/90,
+  section:not(#terminal-cockpit) .bg-\[\#060910\]\/70,
+  section:not(#terminal-cockpit) .bg-\[\#0c1322\],
+  section:not(#terminal-cockpit) .bg-\[\#0d1424\] {
+    background-color: #f1f5f9 !important;
+    border-color: #e2e8f0 !important;
+  }
+
+  /* 4. Global Typography Contrast Tuning */
+  /* Main Titles & Headings */
+  section:not(#terminal-cockpit) h1.text-white,
+  section:not(#terminal-cockpit) h2.text-white,
+  section:not(#terminal-cockpit) h3.text-white,
+  section:not(#terminal-cockpit) h4.text-white,
+  section:not(#terminal-cockpit) .text-white {
+    color: #0f172a !important;
+  }
+
+  /* Subtitles & Descriptions */
+  section:not(#terminal-cockpit) .text-slate-200,
+  section:not(#terminal-cockpit) .text-slate-300 {
+    color: #334155 !important;
+  }
+
+  section:not(#terminal-cockpit) .text-slate-400 {
+    color: #475569 !important;
+  }
+
+  section:not(#terminal-cockpit) .text-slate-500 {
+    color: #64748b !important;
+  }
+
+  /* Technical Highlights & Brand Accent Colors */
+  section:not(#terminal-cockpit) .text-cyan-400,
+  section:not(#terminal-cockpit) .text-cyan-300 {
+    color: #0284c7 !important;
+  }
+
+  section:not(#terminal-cockpit) .text-emerald-400,
+  section:not(#terminal-cockpit) .text-emerald-300 {
+    color: #059669 !important;
+  }
+
+  section:not(#terminal-cockpit) .text-amber-300,
+  section:not(#terminal-cockpit) .text-amber-400 {
+    color: #b45309 !important;
+  }
+
+  section:not(#terminal-cockpit) .text-purple-300,
+  section:not(#terminal-cockpit) .text-purple-400 {
+    color: #7c3aed !important;
+  }
+
+  section:not(#terminal-cockpit) .text-sky-300,
+  section:not(#terminal-cockpit) .text-sky-400 {
+    color: #0369a1 !important;
+  }
+
+  /* 5. Borders & Dividers */
+  section:not(#terminal-cockpit) .border-cyan-950,
+  section:not(#terminal-cockpit) .border-cyan-950\/40,
+  section:not(#terminal-cockpit) .border-cyan-950\/60,
+  section:not(#terminal-cockpit) .border-cyan-950\/70,
+  section:not(#terminal-cockpit) .border-cyan-950\/80,
+  section:not(#terminal-cockpit) .border-cyan-900\/40,
+  section:not(#terminal-cockpit) .border-cyan-900\/50,
+  section:not(#terminal-cockpit) .border-cyan-900\/60,
+  section:not(#terminal-cockpit) .border-slate-800,
+  section:not(#terminal-cockpit) .border-slate-800\/80,
+  section:not(#terminal-cockpit) .border-slate-800\/90,
+  section:not(#terminal-cockpit) .border-slate-900 {
+    border-color: #e2e8f0 !important;
+  }
+
+  section:not(#terminal-cockpit) .border-cyan-800,
+  section:not(#terminal-cockpit) .border-cyan-800\/40,
+  section:not(#terminal-cockpit) .border-cyan-800\/60,
+  section:not(#terminal-cockpit) .border-cyan-800\/80,
+  section:not(#terminal-cockpit) .border-cyan-500\/30,
+  section:not(#terminal-cockpit) .border-cyan-500\/40,
+  section:not(#terminal-cockpit) .border-cyan-500\/50 {
+    border-color: #93c5fd !important;
+  }
+
+  /* 6. Refined High-Contrast Badges & Pills */
+  .bg-cyan-950,
+  .bg-cyan-950\/60,
+  .bg-cyan-950\/80,
+  .bg-cyan-950\/90 {
+    background-color: #e0f2fe !important;
+    color: #0369a1 !important;
+    border-color: #bae6fd !important;
+  }
+
+  .bg-emerald-950,
+  .bg-emerald-950\/60,
+  .bg-emerald-950\/80 {
+    background-color: #dcfce7 !important;
+    color: #15803d !important;
+    border-color: #bbf7d0 !important;
+  }
+
+  .bg-amber-950,
+  .bg-amber-950\/60,
+  .bg-amber-950\/80 {
+    background-color: #fef3c7 !important;
+    color: #92400e !important;
+    border-color: #fde68a !important;
+  }
+
+  .bg-purple-950,
+  .bg-purple-950\/60,
+  .bg-purple-950\/80 {
+    background-color: #f3e8ff !important;
+    color: #6b21a8 !important;
+    border-color: #e9d5ff !important;
+  }
+
+  .bg-slate-900,
+  .bg-slate-900\/60,
+  .bg-slate-900\/80,
+  .bg-slate-950 {
+    background-color: #f1f5f9 !important;
+    color: #334155 !important;
+    border-color: #e2e8f0 !important;
+  }
+
+  /* 7. Action Buttons & Interactive Controls */
+  .bg-cyan-500 {
+    background-color: #0284c7 !important;
+    color: #ffffff !important;
+  }
+
+  .bg-cyan-500:hover {
+    background-color: #0369a1 !important;
+  }
+
+  .bg-cyan-500 span,
+  .bg-cyan-500 svg {
+    color: #ffffff !important;
+  }
+
+  .bg-\[\#0e1626\],
+  .bg-\[\#0d1424\] {
+    background-color: #f1f5f9 !important;
+    color: #0f172a !important;
+    border-color: #cbd5e1 !important;
+  }
+
+  .bg-\[\#0e1626\]:hover {
+    background-color: #e2e8f0 !important;
+  }
+
+  /* 8. Forms & Inputs */
+  input,
+  textarea,
+  select {
+    background-color: #ffffff !important;
+    border-color: #cbd5e1 !important;
+    color: #0f172a !important;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: #94a3b8 !important;
+  }
+
+  input:focus,
+  textarea:focus {
+    border-color: #0284c7 !important;
+    box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15) !important;
+  }
+
+  /* 9. Command Palette Modal */
+  .fixed.z-50 .bg-\[\#090d16\],
+  .fixed.z-50 .bg-\[\#0b101c\],
+  .fixed.z-50 .bg-\[\#070a12\] {
+    background-color: #ffffff !important;
+    border-color: #cbd5e1 !important;
+    box-shadow: 0 20px 40px -10px rgba(15, 23, 42, 0.25) !important;
+  }
+
+  .fixed.z-50 .bg-\[\#0d1320\],
+  .fixed.z-50 .bg-\[\#060910\] {
+    background-color: #f8fafc !important;
+    border-color: #e2e8f0 !important;
+  }
+
+  .fixed.z-50 .text-white {
+    color: #0f172a !important;
+  }
+
+  .fixed.z-50 .text-slate-200,
+  .fixed.z-50 .text-slate-300 {
+    color: #334155 !important;
+  }
+
+  /* 10. Case Study Modal */
+  .fixed.z-50 .bg-\[\#090d16\] {
+    background-color: #ffffff !important;
+    color: #0f172a !important;
+    border-color: #cbd5e1 !important;
+  }
+
+  /* 11. Footer */
+  footer {
+    background-color: #f1f5f9 !important;
+    border-top-color: #e2e8f0 !important;
+    color: #475569 !important;
+  }
+
+  footer .text-white {
+    color: #0f172a !important;
+  }
+
+  /* 12. Arch Linux Badge in Light Mode */
+  footer button.group {
+    background-color: #ffffff !important;
+    border-color: #cbd5e1 !important;
+    color: #334155 !important;
+  }
+
+  footer button.group:hover {
+    border-color: #0284c7 !important;
+    box-shadow: 0 0 15px rgba(2, 132, 199, 0.2) !important;
+  }
+
+  /* 13. Terminal Cockpit - Authentic High-Contrast Isolation */
+  #terminal-cockpit {
+    background-color: #080d1a !important;
+    border-color: #38bdf8 !important;
+    box-shadow: 0 12px 36px -4px rgba(2, 132, 199, 0.18), 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+  }
+
+  #terminal-cockpit .text-white {
+    color: #ffffff !important;
+  }
+
+  #terminal-cockpit .text-slate-200,
+  #terminal-cockpit .text-slate-300 {
+    color: #e2e8f0 !important;
+  }
+
+  #terminal-cockpit .text-slate-400 {
+    color: #94a3b8 !important;
+  }
+
+  #terminal-cockpit .text-slate-500 {
+    color: #64748b !important;
+  }
+
+  #terminal-cockpit .text-cyan-400,
+  #terminal-cockpit .text-cyan-300 {
+    color: #38bdf8 !important;
+  }
+
+  #terminal-cockpit .text-emerald-400 {
+    color: #34d399 !important;
+  }
+
+  #terminal-cockpit .bg-\[\#06080e\],
+  #terminal-cockpit .bg-\[\#090d16\],
+  #terminal-cockpit .bg-\[\#0a0f1c\],
+  #terminal-cockpit .bg-\[\#0d1322\],
+  #terminal-cockpit .bg-\[\#080b13\] {
+    background-color: #0b1120 !important;
+  }
+
+  #terminal-cockpit input {
+    background-color: transparent !important;
+    color: #ffffff !important;
+    border-color: transparent !important;
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "personalInfo": {
+    "fullName": "Mohammad Hussein Ghafoori",
+    "jobTitle": "Backend & AI Engineer",
+    "email": "king.mohamd.09876@gmail.com",
+    "phone": "Languages: English, Persian",
+    "location": "Tehran, Iran",
+    "website": "https://mohammad-hussein-dev.github.io/mohammad-hussein-dev/",
+    "linkedin": "https://www.linkedin.com/in/mohammad-hussein-dev/",
+    "github": "https://github.com/mohammad-hussein-dev",
+    "profileImage": "",
+    "birthDate": ""
+  },
+  "summary": "Backend & AI Engineer with a Physics & Mathematics foundation. I architect scalable systems with Django, FastAPI, and PostgreSQL — reducing latency by 40% and handling 1.2K concurrent requests. Physics-inspired problem solver delivering clean, testable code.",
+  "experience": [
+    {
+      "id": "1785428662788",
+      "jobTitle": "Backend Developer & AI Engineer",
+      "company": "Self Employed",
+      "location": "Tehran, Iran",
+      "startDate": "2026-06",
+      "endDate": "",
+      "current": true,
+      "description": "Designed and deployed 5 production-grade RESTful APIs with Django and DRF, handling 1.2K concurrent requests and reducing latency by 40% through query optimization and Redis caching. Engineered a Genetic Algorithm optimization pipeline processing 5,000+ spatial data points, achieving 98% convergence accuracy. Developed a physics simulation engine with 98% test coverage and CI/CD via GitHub Actions, cutting deployment time from 2 hours to 12 minutes. Architected secure backend systems with JWT authentication and role-based access control. Built bilingual (English/Persian) interfaces without performance trade-offs. Contribute to open-source projects with thorough code reviews.",
+      "bulletPoints": [
+        "",
+        ""
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": "1785429200757",
+      "degree": "High School Diploma (In Progress) — Mathematics & Physics Track",
+      "institution": "Self-Study & Independent Research",
+      "location": "Iran",
+      "graduationYear": "",
+      "gpa": "",
+      "honors": ""
+    }
+  ],
+  "projects": [
+    {
+      "id": "1785428669303",
+      "title": "Electro-Thermal PINN",
+      "description": "Physics-Informed Neural Network solving coupled Maxwell's equations and heat equation with Joule heating. Mesh-free solver with 3 architectures (MLP, MLPPINN, TransformerPINN). Relative L2 error < 9e-04 for electric field.",
+      "technologies": [
+        "PyTorch",
+        "Python",
+        "NumPy",
+        "Matplotlib"
+      ],
+      "liveUrl": "",
+      "githubUrl": "https://github.com/mohammad-hussein-dev/electro-thermal-pinn",
+      "startDate": "",
+      "endDate": ""
+    },
+    {
+      "id": "1785428943113",
+      "title": "Django Task Manager",
+      "description": "Production-ready task management system with JWT authentication, category management, and bilingual UI. 96% test coverage, Docker support, and CI/CD via GitHub Actions. Sub-200ms API response times.",
+      "technologies": [
+        "Docker",
+        "Celery",
+        "Redis",
+        "PostgreSQL",
+        "DRF",
+        "Django"
+      ],
+      "liveUrl": "",
+      "githubUrl": "https://github.com/mohammad-hussein-dev/django-task-manager",
+      "startDate": "",
+      "endDate": ""
+    },
+    {
+      "id": "1785429024401",
+      "title": "Projectile Physics Simulator",
+      "description": "Interactive 2D projectile motion simulator using kinematic equations. Features 100% test coverage, bilingual output, and clean modular architecture with NumPy vectorization.",
+      "technologies": [
+        "pytest",
+        "Matplotlib",
+        "NumPy",
+        "Python"
+      ],
+      "liveUrl": "",
+      "githubUrl": "https://github.com/mohammad-hussein-dev/projectile-physics-simulator",
+      "startDate": "",
+      "endDate": ""
+    }
+  ],
+  "skills": {
+    "mode": "categorized",
+    "simple": [],
+    "categorized": [
+      {
+        "id": "1785429348062",
+        "name": "Programming Languages",
+        "skills": [
+          "Python",
+          "JavaScript"
+        ]
+      },
+      {
+        "id": "1785429402700",
+        "name": "Frameworks & Libraries",
+        "skills": [
+          "Django",
+          "Django REST Framework",
+          "FastAPI"
+        ]
+      },
+      {
+        "id": "1785429438549",
+        "name": "Databases & Cache",
+        "skills": [
+          "PostgreSQL",
+          "Redis",
+          "SQLite"
+        ]
+      },
+      {
+        "id": "1785429468671",
+        "name": "DevOps & Tools",
+        "skills": [
+          "Docker",
+          "Git",
+          "GitHub Actions",
+          "Linux"
+        ]
+      }
+    ]
+  },
+  "customSections": [
+    {
+      "id": "1785429645319",
+      "title": "Languages",
+      "content": "• Persian: Native / Mother Tongue\n• English: Professional Working (B2)",
+      "type": "bullets",
+      "visible": true,
+      "order": 0,
+      "placement": "right"
+    }
+  ],
+  "sections": [
+    {
+      "id": "summary",
+      "title": "Professional Summary",
+      "visible": true,
+      "order": 1
+    },
+    {
+      "id": "experience",
+      "title": "Experience",
+      "visible": true,
+      "order": 2
+    },
+    {
+      "id": "projects",
+      "title": "Projects",
+      "visible": true,
+      "order": 3
+    },
+    {
+      "id": "education",
+      "title": "Education",
+      "visible": true,
+      "order": 4
+    },
+    {
+      "id": "skills",
+      "title": "Skills",
+      "visible": true,
+      "order": 5
+    },
+    {
+      "id": "custom",
+      "title": "Custom Sections",
+      "visible": true,
+      "order": 6
+    }
+  ],
+  "colors": {
+    "primary": "#3b82f6",
+    "secondary": "#6b7280",
+    "accent": "#10b981",
+    "text": "#1f2937",
+    "background": "#ffffff"
+  },
+  "template": "tech-sidebar",
+  "pageFormat": "letter",
+  "fontSize": "medium",
+  "fontFamily": "Inter"
+}

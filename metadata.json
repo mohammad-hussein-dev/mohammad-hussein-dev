@@ -1,0 +1,8 @@
+{
+  "name": "Mohammad Hussein Portfolio",
+  "description": "Interactive Engineering Portfolio 2.0 for Mohammad Hussein — Backend Engineer (Python, Django, FastAPI, PostgreSQL, Redis), Systems & Scientific Computing with interactive virtual MH-SHELL and physics simulation lab.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
