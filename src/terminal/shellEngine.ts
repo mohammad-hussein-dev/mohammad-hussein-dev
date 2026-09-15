@@ -1,4 +1,5 @@
 import { PROFILE, PROJECTS, SKILL_CATEGORIES, OPEN_SOURCE_CONTRIBUTIONS, VIRTUAL_FILESYSTEM, Project } from '../data/portfolioData';
+import { openInquiry } from '../features/inquiry/lib/bridge';
 
 export interface CommandResult {
   output: string | string[];
@@ -127,6 +128,17 @@ export class VirtualShell {
     const args = parts.slice(1);
 
     switch (cmd) {
+      case 'inquiry':
+      case 'start':
+      case 'hire':
+      case 'collab':
+      case 'quote': {
+        openInquiry({ source: 'terminal' });
+        return {
+          output: '\x1b[1;36m⏳ Opening project inquiry...\x1b[0m'
+        };
+      }
+
       case 'help':
         return this.cmdHelp();
 

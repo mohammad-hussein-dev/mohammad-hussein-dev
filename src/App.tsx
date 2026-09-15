@@ -15,6 +15,8 @@ import { ContactSection } from './components/contact/ContactSection';
 import { CommandPalette } from './components/palette/CommandPalette';
 // InquiryModal is lazy-loaded to keep the initial bundle small.
 const InquiryModal = React.lazy(() => import('./features/inquiry').then(m => ({ default: m.InquiryModal })));
+import { InquiryFAB } from './features/inquiry/components/InquiryFAB';
+import { onOpenInquiry } from './features/inquiry/lib/bridge';
 import { ThemeToggleEffect } from './components/common/ThemeToggleEffect';
 import { LanguageToggleEffect } from './components/common/LanguageToggleEffect';
 import { useLanguage } from './context/LanguageContext';
@@ -25,6 +27,24 @@ export const App: React.FC = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [isPaletteOpen, setIsPaletteOpen] = useState(false);
   const [isInquiryOpen, setIsInquiryOpen] = useState(false);
+
+  // Bridge: any layer (terminal, palette, keyboard) can open the modal
+  useEffect(() => {
+    return onOpenInquiry(() => setIsInquiryOpen(true));
+  }, []);
+
+  // Global shortcut: Ctrl+I (or Cmd+I on macOS) opens the inquiry modal
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => {
+      const isShortcut = (e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'i';
+      if (!isShortcut) return;
+      e.preventDefault();
+      setIsInquiryOpen(true);
+    };
+    window.addEventListener('keydown', handler);
+    return () => window.removeEventListener('keydown', handler);
+  }, []);
+
   const [isDark, setIsDark] = useState<boolean>(() => {
     if (typeof window !== 'undefined') {
       const saved = localStorage.getItem('mh_portfolio_theme');
@@ -182,6 +202,12 @@ export const App: React.FC = () => {
 
       {/* Dynamic Language Switch Notification Effect */}
       <LanguageToggleEffect language={language} isActive={languageTransitionFlash} />
+      <InquiryFAB
+        onClick={() => setIsInquiryOpen(true)}
+        lang={language === 'fa' ? 'fa' : 'en'}
+        hidden={isInquiryOpen}
+      />
+
       <React.Suspense fallback={null}>
         <InquiryModal
     open={isInquiryOpen}
