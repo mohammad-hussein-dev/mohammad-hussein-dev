@@ -2,7 +2,7 @@ export interface Project {
   id: string;
   title: string;
   slug: string;
-  category: 'BACKEND' | 'AI / ML' | 'SCIENTIFIC' | 'OPTIMIZATION' | 'TOOLS';
+  category: 'BACKEND' | 'AI / ML' | 'SCIENTIFIC' | 'OPTIMIZATION' | 'TOOLS' | 'CLIENT WORK';
   oneLiner: string;
   description: string;
   technologies: string[];
@@ -73,6 +73,8 @@ export const PROFILE = {
   xTwitter: "https://x.com/mohammad_h_dev",
   xTwitterHandle: "@mohammad_h_dev",
   youtube: "https://www.youtube.com/@mohammad_hussein_dev",
+  instagram: "https://www.instagram.com/mohammad_hussein_dev",
+  instagramHandle: "@mohammad_hussein_dev",
   resumeUrl: "https://mohammad-hussein-dev.github.io/mohammad-hussein-dev/Resume/Resume.pdf",
   contentStudioUrl: "https://github.com/mohammad-hussein-dev/content-studio",
   freelancePlatforms: [
@@ -92,6 +94,55 @@ export const PROFILE = {
 };
 
 export const PROJECTS: Project[] = [
+  {
+    id: "drmomeni",
+    slug: "dr-momeni-psychiatry-platform",
+    title: "Dr. Fatemeh Momeni — Psychiatry Clinic Platform",
+    category: "CLIENT WORK",
+    oneLiner: "Bilingual (FA/EN) clinical booking platform with WhatsApp-first workflow, server-side Telegram proxy, and 30-minute slot-lock countdown.",
+    description: "Full-stack client engagement for a licensed psychiatrist: secure admin portal, bilingual patient booking, WhatsApp-orchestrated payment, and a custom PHP proxy that bypasses Iranian ISP restrictions on the Telegram Bot API without ever exposing the bot token.",
+    technologies: ["React 19", "TypeScript", "Vite 8", "Tailwind CSS 4", "React Router", "PHP 7.4", "Telegram Bot API", "Jalaali Calendar"],
+    metrics: [
+      "WhatsApp-first workflow (0 SMS cost)",
+      "Server-side token (0 client exposure)",
+      "30-min auto-expire slot lock"
+    ],
+    featuredOrder: 0,
+    githubUrl: "https://github.com/mohammad-hussein-dev/dr-momeni-psychiatrist",
+    liveUrl: "https://drfatemehmomeni.ir",
+    caseStudy: {
+      problem: "A licensed psychiatrist needed a patient booking platform that (1) respects Iranian medical privacy standards, (2) avoids expensive SMS gateways and payment-gateway integration, (3) works despite the Iranian ISP block on api.telegram.org, and (4) serves Persian (RTL) and English patients in a single flow.",
+      constraints: "Zero external paid services (no SMS, no payment gateway). Telegram API unreachable from the browser. Bilingual RTL/LTR UI required. Clinic staff are non-technical — the admin panel must be simple. Budget-conscious engagement.",
+      approach: "Designed a WhatsApp-first workflow: patients book from the site, receive a 30-minute slot lock with a live countdown, and are redirected to a pre-filled WhatsApp message containing every booking detail. Payment is coordinated manually via card-to-card inside WhatsApp, eliminating payment-gateway complexity. A hardened PHP proxy performs the Telegram call server-side, circumventing the ISP block without exposing the bot token to the browser.",
+      architectureDescription: "React SPA (Vite build) hosted on cPanel → POST to a hardened PHP proxy → Telegram Bot API. Bot credentials live in a 0600-permissioned tg-config.php, guarded by a TG_PROXY_INTERNAL constant for defense-in-depth. All patient data stays local (localStorage); no third-party backend is involved.",
+      architectureSteps: [
+        "Patient selects service + date + time slot (bilingual UI, Jalaali calendar)",
+        "Client-side validation + 30-minute slot lock with live countdown",
+        "Booking POSTed to the PHP proxy (origin whitelist + 20/min IP rate limit)",
+        "Proxy injects bot token from tg-config.php and calls Telegram sendMessage",
+        "Clinic receives a structured, emoji-organized notification with confirm/reject commands",
+        "Patient is redirected to WhatsApp with pre-filled tracking details",
+        "Clinic confirms card-to-card payment and approves the slot in the admin panel"
+      ],
+      implementationHighlights: [
+        "Designed a WhatsApp-first booking flow that eliminates both SMS and payment-gateway costs.",
+        "Built a hardened PHP proxy with CORS whitelist, rate-limit, token regex validation, and HTML escaping for Telegram payloads.",
+        "Implemented a 30-minute auto-expire countdown with color transitions (emerald → amber → red) and a hidden 'Back' button until WhatsApp contact.",
+        "Achieved full FA/EN bilingual coverage including RTL layout, Persian calendar (Jalaali), and locale-aware number formatting.",
+        "Secured the admin panel with an obscure route, session-based auth, and a defense-in-depth constant guard on the credential config file."
+      ],
+      testing: "Manually validated end-to-end across Chrome, Firefox, and Safari; tested on mobile RTL viewports; and verified Telegram delivery from cPanel hosting under real Iranian ISP conditions. Rate-limit and CORS behavior were tested from isolated clients.",
+      results: [
+        "Delivered a production clinic platform with zero recurring service costs (no SMS, no payment gateway, no additional backend hosting beyond the cPanel plan).",
+        "Eliminated 100% of accidental admin-phone exposure on the public login page.",
+        "Reduced patient booking friction to a three-step flow: select slot → book → confirm on WhatsApp."
+      ],
+      lessonsLearned: [
+        "Server-side proxies are essential when third-party APIs are blocked by local ISPs — but they must be hardened against becoming an open relay.",
+        "WhatsApp-first flows can replace both SMS notifications and payment gateways in low-budget markets, provided the patient journey sets clear expectations and enforces a firm slot-lock timer."
+      ]
+    }
+  },
   {
     id: "pinn",
     slug: "electro-thermal-pinn",

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { PROFILE } from '../../data/portfolioData';
-import { GithubIcon, GitlabIcon, LinkedinIcon, XIcon, TelegramIcon, MailIcon } from './Icons';
+import { GithubIcon, GitlabIcon, LinkedinIcon, XIcon, TelegramIcon, MailIcon, InstagramIcon } from './Icons';
 import { useLanguage } from '../../context/LanguageContext';
 
 export interface SocialBadgeItem {
@@ -70,6 +70,18 @@ export const SOCIAL_PROFILES: SocialBadgeItem[] = [
     glowColor: 'rgba(34, 211, 238, 0.45)',
     borderColor: 'border-cyan-500/30 hover:border-cyan-400',
     hoverBg: 'hover:bg-cyan-950/40',
+  },
+
+  {
+    id: 'instagram',
+    name: 'Instagram',
+    url: PROFILE.instagram,
+    handle: PROFILE.instagramHandle,
+    icon: InstagramIcon,
+    brandColor: 'text-pink-400 group-hover:text-pink-300',
+    glowColor: 'rgba(236, 72, 153, 0.45)',
+    borderColor: 'border-pink-500/30 hover:border-pink-400',
+    hoverBg: 'hover:bg-pink-950/40',
   },
   {
     id: 'email',

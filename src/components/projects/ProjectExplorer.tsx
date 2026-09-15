@@ -17,6 +17,7 @@ export const ProjectExplorer: React.FC<ProjectExplorerProps> = ({ onSelectProjec
 
   const categories = [
     { id: 'ALL', label: isFa ? 'همه پروژه‌ها' : 'ALL' },
+    { id: 'CLIENT WORK', label: isFa ? 'پروژه‌های واقعی مشتری' : 'CLIENT WORK' },
     { id: 'BACKEND', label: isFa ? 'بک‌اند و دیتابیس' : 'BACKEND' },
     { id: 'AI / ML', label: isFa ? 'هوش مصنوعی و PINN' : 'AI / ML' },
     { id: 'SCIENTIFIC', label: isFa ? 'محاسبات علمی' : 'SCIENTIFIC' },
