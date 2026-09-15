@@ -18,6 +18,7 @@ export const ProjectExplorer: React.FC<ProjectExplorerProps> = ({ onSelectProjec
     { id: 'ALL', label: t.projects.allFilter },
     { id: 'CLIENT WORK', label: t.projects.clientWorkFilter },
     { id: 'PERSONAL', label: t.projects.personalFilter },
+    { id: 'ARCHIVE', label: t.projects.categoryArchive },
     { id: 'BACKEND', label: t.projects.backendFilter },
     { id: 'AI / ML', label: t.projects.aiMlFilter },
     { id: 'SCIENTIFIC', label: t.projects.scientificFilter },

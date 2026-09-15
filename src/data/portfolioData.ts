@@ -2,7 +2,7 @@ export interface Project {
   id: string;
   title: string;
   slug: string;
-  category: 'BACKEND' | 'AI / ML' | 'SCIENTIFIC' | 'OPTIMIZATION' | 'TOOLS' | 'CLIENT WORK' | 'PERSONAL';
+  category: 'BACKEND' | 'AI / ML' | 'SCIENTIFIC' | 'OPTIMIZATION' | 'TOOLS' | 'CLIENT WORK' | 'PERSONAL' | 'ARCHIVE';
   oneLiner: string;
   description: string;
   technologies: string[];
@@ -426,7 +426,55 @@ export const PROJECTS: Project[] = [
         "Treating your own portfolio as a production product (CI, tests, bilingual coverage) makes it far more valuable than a curated resume."
       ]
     }
-  }
+  },
+
+  {
+    id: "portfolio-v1",
+    slug: "portfolio-v1-archive",
+    title: "Portfolio v1.0 — Static HTML/CSS/JS Archive",
+    category: "ARCHIVE",
+    oneLiner: "Legacy portfolio built with pure HTML5, CSS3, and vanilla JavaScript — preserved as an archive of the pre-React era.",
+    description: "A hand-crafted, zero-dependency portfolio site deployed on GitHub Pages. Served as the primary personal brand site before the React/TypeScript v2 rewrite. Retained as a reference for minimalist static-site engineering and progressive enhancement.",
+    technologies: ["HTML5", "CSS3", "JavaScript (Vanilla)", "GitHub Pages"],
+    metrics: [
+      "Zero build-step, zero dependencies",
+      "Single-file static deploy on GitHub Pages",
+      "Archived predecessor to the React/TS v2"
+    ],
+    featuredOrder: 8,
+    githubUrl: "https://github.com/mohammad-hussein-dev/portfolio-v1",
+    liveUrl: "https://mohammad-hussein-dev.github.io/portfolio-v1/",
+    caseStudy: {
+      problem: "Needed a personal brand site without introducing a build pipeline, framework lock-in, or runtime dependencies. The constraint was a fully static deploy that could be edited by hand and served directly from a Git repository.",
+      constraints: "No npm, no bundler, no framework. Must run on GitHub Pages with zero server-side logic. Must remain editable without a local development environment.",
+      approach: "Built a single-page static portfolio using semantic HTML5, hand-written CSS3 with custom properties, and vanilla JavaScript for interactivity (dark/light mode, mobile menu, smooth scrolling). All assets were committed directly to the repository and served by GitHub Pages.",
+      architectureDescription: "A flat static site: index.html + style.css + script.js + assets. No build step. GitHub Pages serves the repository root as the web root.",
+      architectureSteps: [
+        "Hand-authored index.html with semantic sections",
+        "style.css with CSS custom properties for theming",
+        "script.js for theme toggle, mobile nav, and smooth scroll",
+        "Assets (images, resume PDF) committed directly to the repo",
+        "GitHub Pages serves the repository root",
+        "Deployed automatically on every push to main"
+      ],
+      implementationHighlights: [
+        "Zero-dependency stack: no npm, no bundler, no framework",
+        "Dark/Light mode implemented entirely with CSS custom properties and a single data-attribute toggle",
+        "Fully responsive layout using CSS Grid and Flexbox without any utility framework",
+        "Resume download and mobile menu implemented in < 50 lines of vanilla JavaScript"
+      ],
+      testing: "Manually verified across Chrome, Firefox, and Safari on desktop and mobile viewports. No automated test suite — the site was simple enough that visual QA was sufficient.",
+      results: [
+        "Served as the primary portfolio for the pre-React era",
+        "Demonstrated that a professional portfolio does not require a build pipeline",
+        "Preserved as a reference for static-first engineering"
+      ],
+      lessonsLearned: [
+        "Constraints (no build step, no dependencies) force clarity and force you to understand the fundamentals of the platform.",
+        "A static HTML/CSS/JS site remains a perfectly valid delivery mechanism for a portfolio — frameworks are a choice, not a requirement."
+      ]
+    }
+  },
 ];
 
 export const SKILL_CATEGORIES: SkillCategory[] = [

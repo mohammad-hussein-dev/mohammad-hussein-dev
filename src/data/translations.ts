@@ -119,6 +119,7 @@ export interface TranslationDictionary {
     csTechnologies: string;
     csClose: string;
     csCloseEsc: string;
+    categoryArchive: string;
   };
   stack: {
     badge: string;
@@ -441,6 +442,7 @@ export const translations: Record<Language, TranslationDictionary> = {
       csTechnologies: 'Technologies:',
       csClose: 'Close',
       csCloseEsc: 'Close (Esc)',
+      categoryArchive: 'ARCHIVE',
     },
     stack: {
       badge: 'Engineering Arsenal',
@@ -761,6 +763,7 @@ export const translations: Record<Language, TranslationDictionary> = {
       csTechnologies: 'تکنولوژی‌ها:',
       csClose: 'بستن',
       csCloseEsc: 'بستن (Esc)',
+      categoryArchive: 'آرشیو',
     },
     stack: {
       badge: 'تکنولوژی‌ها و ابزارها',
