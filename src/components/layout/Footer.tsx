@@ -1,6 +1,6 @@
 import React from 'react';
 import { PROFILE } from '../../data/portfolioData';
-import { GithubIcon, GitlabIcon, LinkedinIcon, XIcon, TelegramIcon, MailIcon } from '../common/Icons';
+import { GithubIcon, GitlabIcon, LinkedinIcon, XIcon, TelegramIcon, MailIcon, InstagramIcon } from '../common/Icons';
 import { Terminal } from 'lucide-react';
 import { ArchLinuxBadge } from './ArchLinuxBadge';
 import { useLanguage } from '../../context/LanguageContext';
@@ -40,6 +40,14 @@ export const Footer: React.FC = () => {
       icon: XIcon,
       hoverClass: 'hover:text-slate-100 hover:border-slate-300',
       glow: 'rgba(203,213,225,0.25)',
+      isEmail: false,
+    },
+    {
+      name: 'Instagram',
+      url: PROFILE.instagram,
+      icon: InstagramIcon,
+      hoverClass: 'hover:text-pink-400 hover:border-pink-500/60',
+      glow: 'rgba(236,72,153,0.25)',
       isEmail: false,
     },
     {

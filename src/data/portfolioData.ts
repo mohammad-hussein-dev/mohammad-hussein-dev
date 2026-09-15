@@ -2,7 +2,7 @@ export interface Project {
   id: string;
   title: string;
   slug: string;
-  category: 'BACKEND' | 'AI / ML' | 'SCIENTIFIC' | 'OPTIMIZATION' | 'TOOLS' | 'CLIENT WORK';
+  category: 'BACKEND' | 'AI / ML' | 'SCIENTIFIC' | 'OPTIMIZATION' | 'TOOLS' | 'CLIENT WORK' | 'PERSONAL';
   oneLiner: string;
   description: string;
   technologies: string[];
@@ -377,6 +377,53 @@ export const PROJECTS: Project[] = [
       ],
       lessonsLearned: [
         "Proactive data pipeline optimization at ingestion prevents downstream infrastructure scaling costs."
+      ]
+    }
+  },
+  {
+    id: "portfolio",
+    slug: "engineering-portfolio-v2",
+    title: "Engineering Portfolio v2.0 — Personal Platform",
+    category: "PERSONAL",
+    oneLiner: "Interactive engineering portfolio with virtual MH-SHELL, in-browser physics simulation lab, and bilingual FA/EN sci-fi interface.",
+    description: "A personal showcase platform that combines a virtual Linux shell (xterm.js), a client-side physics lab (Projectile RK4, Genetic Algorithm, PINN visualization, Heat Diffusion PDE), and bilingual FA/EN content — deployed as a static SPA on GitHub Pages with zero backend dependencies.",
+    technologies: ["React 19", "TypeScript", "Vite 8", "Tailwind CSS 4", "xterm.js", "Express", "GitHub Actions"],
+    metrics: [
+      "7 interactive sections + virtual terminal",
+      "Bilingual FA/EN with RTL support",
+      "Zero-backend static deploy on GitHub Pages"
+    ],
+    featuredOrder: 7,
+    githubUrl: "https://github.com/mohammad-hussein-dev/mohammad-hussein-dev",
+    liveUrl: "https://mohammad-hussein-dev.github.io/mohammad-hussein-dev/",
+    caseStudy: {
+      problem: "Recruiters and collaborators need more than a static resume to evaluate engineering depth. A traditional PDF cannot demonstrate real systems thinking, interactive tooling, or client-side computational work.",
+      constraints: "Must run on GitHub Pages (static-only hosting). Bilingual FA/EN with correct RTL behavior. Interactive demos must work without a backend. Build must be reproducible via CI/CD on every push.",
+      approach: "Built a single-page React application that treats the portfolio itself as an engineering artifact: a virtual terminal emulator (xterm.js) with a custom shell engine, four client-side physics/math simulators, a command palette, and a bilingual content layer — all deployed as static assets.",
+      architectureDescription: "Vite-built React SPA served from GitHub Pages. All interactivity (shell, simulations, terminal) is client-side. GitHub Actions rebuilds and republishes on every commit to main.",
+      architectureSteps: [
+        "Vite builds the React 19 + TypeScript SPA into static assets",
+        "GitHub Actions CI runs typecheck + build on every push",
+        "Static bundle is deployed to GitHub Pages",
+        "Browser loads the SPA; React Router handles all views",
+        "Virtual shell engine interprets user commands client-side",
+        "Physics simulations run in-browser using TypeScript + canvas"
+      ],
+      implementationHighlights: [
+        "Custom shell engine with 15+ commands (help, fastfetch, projects, physics, resume, theme)",
+        "In-browser physics lab: RK4 projectile, genetic algorithm, PINN visualization, heat diffusion PDE",
+        "Bilingual FA/EN architecture with RTL layout, plus a sci-fi/cyberpunk visual theme",
+        "Command palette (Ctrl+K) for fast navigation between sections"
+      ],
+      testing: "Type-checked with tsc --noEmit and validated via GitHub Actions CI on every push. Manually tested across Chrome, Firefox, and Safari for terminal and simulation correctness.",
+      results: [
+        "Single static bundle deployed to GitHub Pages with automated CI/CD",
+        "Interactive demos that run with zero server-side compute",
+        "Bilingual interface with correct RTL rendering for Persian readers"
+      ],
+      lessonsLearned: [
+        "Client-side-only architectures can deliver genuinely interactive demos — no backend needed for most portfolio showcases.",
+        "Treating your own portfolio as a production product (CI, tests, bilingual coverage) makes it far more valuable than a curated resume."
       ]
     }
   }

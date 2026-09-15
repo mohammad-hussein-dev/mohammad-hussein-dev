@@ -18,6 +18,7 @@ export const ProjectExplorer: React.FC<ProjectExplorerProps> = ({ onSelectProjec
   const categories = [
     { id: 'ALL', label: isFa ? 'همه پروژه‌ها' : 'ALL' },
     { id: 'CLIENT WORK', label: isFa ? 'پروژه‌های واقعی مشتری' : 'CLIENT WORK' },
+    { id: 'PERSONAL', label: isFa ? 'پروژه‌های شخصی' : 'PERSONAL' },
     { id: 'BACKEND', label: isFa ? 'بک‌اند و دیتابیس' : 'BACKEND' },
     { id: 'AI / ML', label: isFa ? 'هوش مصنوعی و PINN' : 'AI / ML' },
     { id: 'SCIENTIFIC', label: isFa ? 'محاسبات علمی' : 'SCIENTIFIC' },
@@ -164,12 +165,26 @@ export const ProjectExplorer: React.FC<ProjectExplorerProps> = ({ onSelectProjec
                     <span>{isFa ? 'مطالعه فنی دقیق' : 'Case Study'}</span>
                   </button>
 
+                  {/* Live Site — appears only when a liveUrl is provided */}
+                  {project.liveUrl && (
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center space-x-1 px-2.5 py-1.5 rounded-lg bg-emerald-950/60 hover:bg-emerald-900 text-emerald-400 hover:text-emerald-300 border border-emerald-700/60 hover:border-emerald-500 text-[11px] font-mono transition active:scale-95"
+                      title={isFa ? 'مشاهده سایت زنده' : 'View Live Site'}
+                    >
+                      <ExternalLink className="w-3.5 h-3.5" />
+                      <span>{isFa ? 'زنده' : 'Live'}</span>
+                    </a>
+                  )}
+
                   <a
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-white border border-slate-800 transition"
-                    title="View GitHub Repository"
+                    title={isFa ? 'مخزن گیت‌هاب' : 'View GitHub Repository'}
                   >
                     <GithubIcon className="w-4 h-4" />
                   </a>
