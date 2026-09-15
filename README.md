@@ -43,6 +43,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
   <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X">
+  <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
   <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail">
   <img src="https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram">
   <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube">
@@ -108,8 +109,9 @@ Backend engineer with a deep foundation in Physics and Mathematics. I architect 
 
 | **Category** | **Technologies** |
 | :--- | :--- |
-| **Languages** | Python, JavaScript |
+| **Languages** | Python, JavaScript, TypeScript |
 | **Backend** | Django, Django REST Framework, FastAPI |
+| **Frontend** | React 19, Vite, Tailwind CSS |
 | **Data** | PostgreSQL, SQLite, Redis |
 | **Async** | Celery, Redis |
 | **DevOps** | Docker, Git, GitHub Actions, Linux (Arch) |
@@ -150,6 +152,13 @@ Beyond engineering, I transform complex technical content between **English ↔ 
 ---
 
 ## 📌 Featured Projects
+
+### 🩺 [dr-momeni-psychiatrist](https://github.com/mohammad-hussein-dev/dr-momeni-psychiatrist)
+> **Challenge:** Build a production-ready clinical booking platform for a live medical practice, with a secure, Iran-ISP-bypassing notification pipeline  
+> **Solution:** React 19 + TypeScript SPA with a hardened server-side PHP proxy for the Telegram Bot API, a 30-minute slot-lock countdown, and a WhatsApp-first patient workflow  
+> **Impact:** Deployed at **[drfatemehmomeni.ir](https://drfatemehmomeni.ir)** — live for real patients, zero frontend secret exposure, WAF-compatible, defense-in-depth security guards, bilingual FA/EN  
+> **Tech:** `React 19` `TypeScript` `Vite` `Tailwind CSS` `PHP 7.4` `Telegram Bot API` `REST Proxy`  
+> **Status:** ✅ **Live in Production** — [Live Site](https://drfatemehmomeni.ir) | [GitHub](https://github.com/mohammad-hussein-dev/dr-momeni-psychiatrist)
 
 ### 🧬 [Electro-Thermal PINN](https://github.com/mohammad-hussein-dev/electro-thermal-pinn)
 > **Challenge:** Simulate electromagnetic-thermal systems without expensive FEM/FVM solvers  
@@ -262,6 +271,7 @@ I'm an active member of the **[StudyBuildCommunity](https://github.com/StudyBuil
 - 🦊 **GitLab**: [mohammad-hussein-dev](https://gitlab.com/mohammad-hussein-dev)
 - 💬 **Telegram**: [@mohammad_hussein_dev](https://t.me/mohammad_hussein_dev)
 - 🐦 **X**: [@mohammad_h_dev](https://x.com/mohammad_h_dev)
+- 📷 **Instagram**: [@mohammad.hussein.dev](https://www.instagram.com/mohammad.hussein.dev/)
 - 📺 **YouTube**: [mohammad_hussein_dev](https://www.youtube.com/@mohammad_hussein_dev)
 - 📧 **Email**: [king.mohamd.09876@gmail.com](mailto:king.mohamd.09876@gmail.com)
 - 💼 **Karlancer**: [MohammadHossein.Gh](https://karlancer.com/profile/1401608)
@@ -307,6 +317,9 @@ I'm an active member of the **[StudyBuildCommunity](https://github.com/StudyBuil
   </a>
   <a href="https://x.com/mohammad_h_dev" target="_blank">
     <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X">
+  </a>
+  <a href="https://www.instagram.com/mohammad.hussein.dev/" target="_blank">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
   </a>
   <a href="https://www.youtube.com/@mohammad_hussein_dev" target="_blank">
     <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube">
