@@ -19,10 +19,10 @@
  * @since     2026-09-15
  */
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ArrowLeft, ArrowRight, Send } from 'lucide-react';
-import type { BuildOutput, Language } from '../types';
+import type { BuildOutput, IntentCode, Language } from '../types';
 import { getTranslations } from '../lib/i18n';
 import { buildOutput } from '../lib/messageBuilder';
 import { useInquiry } from '../hooks/useInquiry';
@@ -46,6 +46,8 @@ export interface InquiryControllerProps {
   lang: Language;
   onClose?: () => void;
   enableTerminal?: boolean;
+  /** Optional pre-selected intent — skips the entry phase. */
+  presetIntent?: IntentCode | null;
 }
 
 type Phase = 'entry' | 'steps' | 'success';
@@ -54,14 +56,24 @@ export const InquiryController: React.FC<InquiryControllerProps> = ({
   lang,
   onClose,
   enableTerminal = false,
+  presetIntent = null,
 }) => {
   const t = getTranslations(lang);
   const isFa = lang === 'fa';
   const inquiry = useInquiry({ lang });
 
   const [phase, setPhase] = useState<Phase>(
-    inquiry.draft.intentCode ? 'steps' : 'entry'
+    presetIntent || inquiry.draft.intentCode ? 'steps' : 'entry'
   );
+
+  // Sync preset intent into the draft on mount / change
+  useEffect(() => {
+    if (presetIntent) {
+      inquiry.setIntent(presetIntent);
+      setPhase('steps');
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [presetIntent]);
   const [errors, setErrors] = useState<FieldErrors>({});
   const [output, setOutput] = useState<BuildOutput | null>(null);
   const [showChatFallback, setShowChatFallback] = useState(false);

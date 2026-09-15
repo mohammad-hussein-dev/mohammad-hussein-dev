@@ -16,7 +16,7 @@
 import React, { useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X } from 'lucide-react';
-import type { Language } from '../types';
+import type { IntentCode, Language } from '../types';
 import { getTranslations } from '../lib/i18n';
 import { InquiryController } from './InquiryController';
 
@@ -25,10 +25,12 @@ export interface InquiryModalProps {
   onClose: () => void;
   lang: Language;
   enableTerminal?: boolean;
+  /** Optional pre-selected intent forwarded to the controller. */
+  presetIntent?: IntentCode | null;
 }
 
 export const InquiryModal: React.FC<InquiryModalProps> = ({
-  open, onClose, lang, enableTerminal = false,
+  open, onClose, lang, enableTerminal = false, presetIntent = null,
 }) => {
   const t = getTranslations(lang);
   const isFa = lang === 'fa';
@@ -150,6 +152,7 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
                   lang={lang}
                   onClose={onClose}
                   enableTerminal={enableTerminal}
+                  presetIntent={presetIntent}
                 />
               </div>
             </div>

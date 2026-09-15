@@ -11,7 +11,7 @@ import { AboutSection } from './components/about/AboutSection';
 import { OpenSourceSection } from './components/opensource/OpenSourceSection';
 import { TechnicalCommunication } from './components/communication/TechnicalCommunication';
 import { WhatICanBuild } from './components/client/WhatICanBuild';
-import { ContactSection } from './components/contact/ContactSection';
+import { ContactHub } from './components/contact/ContactHub';
 import { CommandPalette } from './components/palette/CommandPalette';
 // InquiryModal is lazy-loaded to keep the initial bundle small.
 const InquiryModal = React.lazy(() => import('./features/inquiry').then(m => ({ default: m.InquiryModal })));
@@ -27,10 +27,15 @@ export const App: React.FC = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [isPaletteOpen, setIsPaletteOpen] = useState(false);
   const [isInquiryOpen, setIsInquiryOpen] = useState(false);
+  const [inquiryPresetIntent, setInquiryPresetIntent] = useState<import('./features/inquiry').IntentCode | null>(null);
 
-  // Bridge: any layer (terminal, palette, keyboard) can open the modal
+  // Bridge: any layer (terminal, palette, keyboard, contact hub)
+  // can open the modal with an optional preset intent.
   useEffect(() => {
-    return onOpenInquiry(() => setIsInquiryOpen(true));
+    return onOpenInquiry((detail) => {
+      if (detail.intentCode) setInquiryPresetIntent(detail.intentCode);
+      setIsInquiryOpen(true);
+    });
   }, []);
 
   // Global shortcut: Ctrl+I (or Cmd+I on macOS) opens the inquiry modal
@@ -176,7 +181,7 @@ export const App: React.FC = () => {
         <WhatICanBuild onOpenContact={handleOpenContact} />
 
         {/* Contact & Collaboration */}
-        <ContactSection />
+        <ContactHub />
       </main>
 
       {/* Footer */}
