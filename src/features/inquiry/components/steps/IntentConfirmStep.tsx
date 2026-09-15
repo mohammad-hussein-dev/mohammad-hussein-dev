@@ -10,7 +10,7 @@
  */
 
 import React from 'react';
-import * as Icons from 'lucide-react';
+import { resolveIcon } from '../iconRegistry';
 import type { Depth, IntentCode, Language } from '../../types';
 import { INTENT_BY_CODE } from '../../lib/intents';
 import { getTranslations } from '../../lib/i18n';
@@ -30,9 +30,7 @@ export const IntentConfirmStep: React.FC<IntentConfirmStepProps> = ({
   const t = getTranslations(lang);
   const isFa = lang === 'fa';
   const def = INTENT_BY_CODE[intentCode];
-  const Icon = def
-    ? (Icons as unknown as Record<string, React.ComponentType<{ className?: string; 'aria-hidden'?: boolean | 'true' | 'false' }>>)[def.icon] ?? Icons.Circle
-    : Icons.Circle;
+  const Icon = def ? resolveIcon(def.icon) : resolveIcon('Circle');
 
   const depthOptions = [
     { value: 'quick' as Depth,    label: t.depth.quick },

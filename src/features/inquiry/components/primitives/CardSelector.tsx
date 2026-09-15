@@ -48,7 +48,7 @@ export function CardSelector<T extends string>({
   className = '',
 }: CardSelectorProps<T>): React.ReactElement {
   const gridCols =
-    columns === 2 ? 'grid-cols-2'
+    columns === 2 ? 'grid-cols-1 xs:grid-cols-2 sm:grid-cols-2'
     : columns === 4 ? 'grid-cols-2 sm:grid-cols-4'
     : 'grid-cols-2 sm:grid-cols-3';
 

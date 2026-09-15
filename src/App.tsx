@@ -13,6 +13,8 @@ import { TechnicalCommunication } from './components/communication/TechnicalComm
 import { WhatICanBuild } from './components/client/WhatICanBuild';
 import { ContactSection } from './components/contact/ContactSection';
 import { CommandPalette } from './components/palette/CommandPalette';
+// InquiryModal is lazy-loaded to keep the initial bundle small.
+const InquiryModal = React.lazy(() => import('./features/inquiry').then(m => ({ default: m.InquiryModal })));
 import { ThemeToggleEffect } from './components/common/ThemeToggleEffect';
 import { LanguageToggleEffect } from './components/common/LanguageToggleEffect';
 import { useLanguage } from './context/LanguageContext';
@@ -22,6 +24,7 @@ export const App: React.FC = () => {
   const { language, languageTransitionFlash } = useLanguage();
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [isPaletteOpen, setIsPaletteOpen] = useState(false);
+  const [isInquiryOpen, setIsInquiryOpen] = useState(false);
   const [isDark, setIsDark] = useState<boolean>(() => {
     if (typeof window !== 'undefined') {
       const saved = localStorage.getItem('mh_portfolio_theme');
@@ -179,6 +182,14 @@ export const App: React.FC = () => {
 
       {/* Dynamic Language Switch Notification Effect */}
       <LanguageToggleEffect language={language} isActive={languageTransitionFlash} />
+      <React.Suspense fallback={null}>
+        <InquiryModal
+    open={isInquiryOpen}
+    onClose={() => setIsInquiryOpen(false)}
+    lang={language === 'fa' ? 'fa' : 'en'}
+  />
+      </React.Suspense>
+
     </div>
   );
 };

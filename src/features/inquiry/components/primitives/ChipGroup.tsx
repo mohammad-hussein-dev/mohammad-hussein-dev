@@ -56,7 +56,7 @@ export function ChipGroup<T extends string>({
             aria-checked={active}
             onClick={() => onChange(opt.value)}
             className={[
-              'px-3.5 py-2 rounded-full border text-xs font-semibold transition-all whitespace-nowrap',
+              'min-h-[40px] sm:min-h-[36px] px-4 py-2.5 sm:px-3.5 sm:py-2 rounded-full border text-xs font-semibold transition-all whitespace-nowrap',
               'focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent-cyan)]',
               'cursor-pointer',
               active

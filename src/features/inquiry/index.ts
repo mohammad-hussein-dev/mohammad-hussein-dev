@@ -57,3 +57,10 @@ export { ProgressBar } from './components/ProgressBar';
 // ─── Controller (mount this) ───
 export { InquiryController } from './components/InquiryController';
 export type { InquiryControllerProps } from './components/InquiryController';
+
+// ─── Mount points ───
+export { InquiryModal } from './components/InquiryModal';
+export type { InquiryModalProps } from './components/InquiryModal';
+
+export { InquiryFAB } from './components/InquiryFAB';
+export type { InquiryFABProps } from './components/InquiryFAB';

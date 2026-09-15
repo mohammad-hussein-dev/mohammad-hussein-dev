@@ -306,8 +306,10 @@ export const InquiryController: React.FC<InquiryControllerProps> = ({
           type="button"
           onClick={handleBack}
           disabled={inquiry.machine.index === 0}
+          aria-label={t.nav.back}
           className={[
-            'h-11 px-5 rounded-lg border text-xs font-semibold transition-colors cursor-pointer',
+            'h-11 min-w-[44px] px-3 sm:px-5 rounded-lg border text-xs font-semibold',
+            'transition-colors cursor-pointer',
             'border-[var(--border-subtle)] bg-[var(--bg-card)] text-[var(--text-secondary)]',
             'hover:border-[var(--accent-cyan)]/50 hover:text-[var(--accent-cyan)]',
             'disabled:opacity-40 disabled:cursor-not-allowed',
@@ -315,17 +317,18 @@ export const InquiryController: React.FC<InquiryControllerProps> = ({
           ].join(' ')}
         >
           {isFa ? <ArrowRight className="w-4 h-4" aria-hidden="true" /> : <ArrowLeft className="w-4 h-4" aria-hidden="true" />}
-          <span>{t.nav.back}</span>
+          <span className="hidden sm:inline">{t.nav.back}</span>
         </button>
 
         <button
           type="button"
           onClick={handleNext}
           className={[
-            'h-11 px-6 rounded-lg text-xs font-bold transition-all cursor-pointer',
+            'h-11 flex-1 sm:flex-initial sm:px-6 px-4 rounded-lg text-xs font-bold',
+            'transition-all cursor-pointer',
             'bg-[var(--accent-cyan)] text-[var(--bg-primary)]',
             'hover:bg-[var(--accent-cyan)]/90',
-            'flex items-center gap-2',
+            'flex items-center justify-center gap-2',
             'focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent-cyan)]',
           ].join(' ')}
         >

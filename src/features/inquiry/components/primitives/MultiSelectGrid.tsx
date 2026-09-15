@@ -77,7 +77,7 @@ export function MultiSelectGrid<T extends string>({
             aria-selected={active}
             onClick={() => toggle(opt.value)}
             className={[
-              'p-3 rounded-lg border text-start flex items-center justify-between gap-2 transition-all',
+              'min-h-[44px] p-3 rounded-lg border text-start flex items-center justify-between gap-2 transition-all',
               'focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent-cyan)]',
               'cursor-pointer',
               active

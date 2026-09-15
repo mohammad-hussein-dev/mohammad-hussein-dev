@@ -10,7 +10,7 @@
  */
 
 import React, { useMemo } from 'react';
-import * as Icons from 'lucide-react';
+import { resolveIcon, Circle } from '../iconRegistry';
 import type { DomainId, Language } from '../../types';
 import { DOMAINS, DOMAIN_GROUP_LABELS, DOMAIN_GROUPS } from '../../lib/domains';
 import { MultiSelectGrid, type GridOption } from '../primitives';
@@ -25,14 +25,13 @@ export const DomainStep: React.FC<DomainStepProps> = ({ lang, values, onChange }
   const isFa = lang === 'fa';
 
   const groupedOptions = useMemo(() => {
-    const lib = Icons as unknown as Record<string, React.ComponentType<{ className?: string; 'aria-hidden'?: boolean | 'true' | 'false' }>>;
     const result: Record<string, GridOption<DomainId>[]> = {};
     for (const g of DOMAIN_GROUPS) result[g] = [];
     for (const d of DOMAINS) {
       result[d.group].push({
         value: d.id,
         label: isFa ? d.labelFa : d.labelEn,
-        icon: lib[d.icon] ?? Icons.Circle,
+        icon: resolveIcon(d.icon),
       });
     }
     return result;

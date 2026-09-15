@@ -11,7 +11,8 @@
  */
 
 import React, { useMemo } from 'react';
-import * as Icons from 'lucide-react';
+import { Sparkles } from 'lucide-react';
+import { resolveIcon } from '../iconRegistry';
 import type { IntentCode, Language } from '../../types';
 import { INTENTS, INTENT_GROUPS, GROUP_LABELS } from '../../lib/intents';
 import { getTranslations } from '../../lib/i18n';
@@ -23,11 +24,6 @@ export interface GuidedEntryProps {
   className?: string;
 }
 
-/** Resolves a lucide icon by name, with a safe fallback. */
-function resolveIcon(name: string): React.ComponentType<{ className?: string; 'aria-hidden'?: boolean | 'true' | 'false' }> {
-  const lib = Icons as unknown as Record<string, React.ComponentType<{ className?: string; 'aria-hidden'?: boolean | 'true' | 'false' }>>;
-  return lib[name] ?? Icons.Circle;
-}
 
 export const GuidedEntry: React.FC<GuidedEntryProps> = ({
   lang,
@@ -106,7 +102,7 @@ export const GuidedEntry: React.FC<GuidedEntryProps> = ({
             'flex items-center gap-3',
           ].join(' ')}
         >
-          <Icons.Sparkles className="w-5 h-5 text-[var(--accent-cyan)] shrink-0" aria-hidden="true" />
+          <Sparkles className="w-5 h-5 text-[var(--accent-cyan)] shrink-0" aria-hidden="true" />
           <span className="min-w-0">
             <span className="block text-xs font-semibold text-[var(--accent-cyan)]">
               {t.entry.somethingElse}
