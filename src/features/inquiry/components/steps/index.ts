@@ -24,3 +24,6 @@ export type { ContactStepProps } from './ContactStep';
 
 export { ReviewStep } from './ReviewStep';
 export type { ReviewStepProps } from './ReviewStep';
+
+export { SuccessStep } from './SuccessStep';
+export type { SuccessStepProps } from './SuccessStep';

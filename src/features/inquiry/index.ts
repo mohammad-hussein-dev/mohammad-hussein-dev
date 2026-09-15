@@ -53,3 +53,7 @@ export type { UseInquiryOptions, UseInquiryReturn } from './hooks/useInquiry';
 // ─── Step Components ───
 export * from './components/steps';
 export { ProgressBar } from './components/ProgressBar';
+
+// ─── Controller (mount this) ───
+export { InquiryController } from './components/InquiryController';
+export type { InquiryControllerProps } from './components/InquiryController';
