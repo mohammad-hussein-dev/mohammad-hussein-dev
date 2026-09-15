@@ -73,8 +73,8 @@ export const PROFILE = {
   xTwitter: "https://x.com/mohammad_h_dev",
   xTwitterHandle: "@mohammad_h_dev",
   youtube: "https://www.youtube.com/@mohammad_hussein_dev",
-  instagram: "https://www.instagram.com/mohammad_hussein_dev",
-  instagramHandle: "@mohammad_hussein_dev",
+  instagram: "https://www.instagram.com/mohammad.hussein.dev/",
+  instagramHandle: "@mohammad.hussein.dev",
   resumeUrl: "https://mohammad-hussein-dev.github.io/mohammad-hussein-dev/Resume/Resume.pdf",
   contentStudioUrl: "https://github.com/mohammad-hussein-dev/content-studio",
   freelancePlatforms: [
