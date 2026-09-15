@@ -81,13 +81,13 @@ export const Navbar: React.FC<NavbarProps> = ({
   }, [mobileMenuOpen]);
 
   const navLinks = [
-    { label: isFa ? 'پروژه‌ها' : 'Projects', href: '#projects', icon: Code2, badge: '4 Core' },
-    { label: isFa ? 'آزمایشگاه فیزیک' : 'Science Lab', href: '#science', icon: FlaskConical, badge: 'PINN & RK4' },
-    { label: isFa ? 'تکنولوژی‌ها' : 'Stack', href: '#skills', icon: Cpu, badge: 'Architecture' },
-    { label: isFa ? 'درباره من' : 'About', href: '#about', icon: User, badge: 'Bio' },
-    { label: isFa ? 'متن‌باز' : 'Open Source', href: '#opensource', icon: GitPullRequest, badge: 'Repos' },
-    { label: isFa ? 'خدمات' : 'Services', href: '#services', icon: Zap, badge: 'Contracts' },
-    { label: isFa ? 'تماس' : 'Contact', href: '#contact', icon: Mail, badge: 'Direct' },
+    { label: t.nav.projects, href: '#projects', icon: Code2, badge: t.nav.badgeCore },
+    { label: t.nav.scienceLab, href: '#science', icon: FlaskConical, badge: t.nav.badgePinnRk4 },
+    { label: t.nav.stack, href: '#skills', icon: Cpu, badge: t.nav.badgeArchitecture },
+    { label: t.nav.about, href: '#about', icon: User, badge: t.nav.badgeBio },
+    { label: t.nav.opensource, href: '#opensource', icon: GitPullRequest, badge: t.nav.badgeRepos },
+    { label: t.nav.services, href: '#services', icon: Zap, badge: t.nav.badgeContracts },
+    { label: t.nav.contact, href: '#contact', icon: Mail, badge: t.nav.badgeDirect },
   ];
 
   const handleLinkClick = (href: string) => {
@@ -117,7 +117,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               MH<span className="text-cyan-400">://</span>DEV
             </div>
             <div className="text-[10px] font-mono text-slate-400 leading-none">
-              {isFa ? 'مهندسی بک‌اند و هوش مصنوعی' : 'Backend & AI'}
+              {t.nav.brandTagline}
             </div>
           </div>
         </div>
@@ -145,7 +145,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 ? 'bg-cyan-950/70 hover:bg-cyan-900/60 text-cyan-300 border-cyan-500/60 shadow-[0_0_10px_rgba(34,211,238,0.2)]'
                 : 'bg-[#090e18] hover:bg-[#11192b] text-slate-300 hover:text-cyan-300 border-slate-800 hover:border-cyan-800'
             }`}
-            title={isFa ? 'Switch to English (EN)' : 'تغییر به فارسی (FA)'}
+            title={isFa ? t.nav.langSwitchToEn : t.nav.langSwitchToFa}
           >
             <Languages className="w-3.5 h-3.5 text-cyan-400" />
             <span className="font-bold tracking-wider font-mono">{isFa ? 'FA' : 'EN'}</span>
@@ -162,17 +162,17 @@ export const Navbar: React.FC<NavbarProps> = ({
                 ? 'bg-cyan-950 text-cyan-300 border-cyan-500 shadow-xs shadow-cyan-500/30 font-semibold'
                 : 'bg-[#090e18] text-slate-400 border-slate-800 hover:border-slate-700 hover:text-slate-200'
             }`}
-            title="Toggle Recruiter Executive Summary View"
+            title={t.nav.recruiterTitle}
           >
             <Briefcase className="w-3.5 h-3.5" />
-            <span className="hidden md:inline">{isFa ? 'حالت کارفرما' : 'Recruiter View'}</span>
+            <span className="hidden md:inline">{t.nav.recruiterMode}</span>
           </button>
 
           {/* Command Palette Trigger */}
           <button
             onClick={onOpenPalette}
             className="px-2.5 py-1.5 rounded-lg bg-[#090e18] hover:bg-[#11192b] text-slate-300 border border-slate-800 hover:border-cyan-800 flex items-center space-x-2 transition"
-            title="Command Palette (Ctrl + K)"
+            title={t.nav.paletteTitle}
           >
             <Search className="w-3.5 h-3.5 text-cyan-400" />
             <kbd className="text-[10px] text-slate-500 px-1 py-0.5 rounded bg-slate-900 border border-slate-800">
@@ -184,7 +184,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           <button
             onClick={onToggleTheme}
             className="p-2 rounded-lg bg-[#090e18] hover:bg-[#11192b] text-slate-400 hover:text-amber-300 border border-slate-800 transition"
-            title={isDark ? "Switch to Light Mode" : "Switch to Dark Mode"}
+            title={isDark ? t.nav.themeTitleToLight : t.nav.themeTitleToDark}
           >
             {isDark ? <Sun className="w-3.5 h-3.5" /> : <Moon className="w-3.5 h-3.5" />}
           </button>
@@ -196,7 +196,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             className="px-3 py-1.5 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold flex items-center space-x-1.5 transition active:scale-95 shadow-md shadow-cyan-500/20"
           >
             <Download className="w-3.5 h-3.5" />
-            <span>{isFa ? 'رزومه' : 'Resume'}</span>
+            <span>{t.nav.resume}</span>
           </a>
         </div>
 
@@ -217,7 +217,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
           <button
             onClick={onOpenPalette}
-            aria-label="Open Command Palette"
+            aria-label={t.nav.openPalette}
             className="p-2 rounded-lg bg-[#090e18] border border-cyan-900/50 text-cyan-400 active:scale-95 transition"
           >
             <Search className="w-4 h-4" />
@@ -226,7 +226,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           {/* Morphing Hamburger Toggle Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle Navigation Menu"
+            aria-label={t.nav.toggleMenu}
             className="relative w-9 h-9 rounded-lg bg-[#090e18] border border-cyan-900/60 hover:border-cyan-500 flex flex-col items-center justify-center space-y-1.5 p-2 active:scale-95 transition-all shadow-xs"
           >
             <span
@@ -269,7 +269,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   </span>
                   <span className="text-slate-300 font-semibold">MH-ARCH-SYSTEM</span>
                 </div>
-                <span className="text-cyan-400 text-[10px]">ONLINE · Wayland</span>
+                <span className="text-cyan-400 text-[10px]">{t.nav.systemOnline} · {t.nav.systemWayland}</span>
               </div>
 
               {/* Main Nav Links with Icons & Badges */}
@@ -318,7 +318,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                     }`}
                   >
                     <Briefcase className="w-3.5 h-3.5 text-cyan-400" />
-                    <span>{isFa ? 'حالت کارفرما' : 'Recruiter View'}</span>
+                    <span>{t.nav.recruiterMode}</span>
                   </button>
 
                   {/* Theme switcher */}
@@ -329,12 +329,12 @@ export const Navbar: React.FC<NavbarProps> = ({
                     {isDark ? (
                       <>
                         <Sun className="w-3.5 h-3.5 text-amber-400" />
-                        <span>Light Mode</span>
+                        <span>{t.nav.lightMode}</span>
                       </>
                     ) : (
                       <>
                         <Moon className="w-3.5 h-3.5 text-cyan-400" />
-                        <span>Dark Mode</span>
+                        <span>{t.nav.darkMode}</span>
                       </>
                     )}
                   </button>
@@ -347,7 +347,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   className="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-cyan-500 to-sky-400 hover:from-cyan-400 hover:to-sky-300 text-slate-950 font-bold flex items-center justify-center space-x-2 shadow-lg shadow-cyan-500/25 transition active:scale-[0.98]"
                 >
                   <Download className="w-4 h-4" />
-                  <span>{isFa ? 'دانلود رزومه رسمی (PDF)' : 'Download Official Resume (PDF)'}</span>
+                  <span>{t.recruiter.downloadResumePdf}</span>
                 </a>
               </div>
             </div>

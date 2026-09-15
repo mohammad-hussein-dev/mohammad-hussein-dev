@@ -4,8 +4,7 @@ import { GitPullRequest, GitMerge, ExternalLink } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
 
 export const OpenSourceSection: React.FC = () => {
-  const { language } = useLanguage();
-  const isFa = language === 'fa';
+  const { t } = useLanguage();
 
   return (
     <section id="opensource" className="py-20 bg-[#070a11] relative border-t border-cyan-950/40">
@@ -14,15 +13,13 @@ export const OpenSourceSection: React.FC = () => {
         <div className="mb-12">
           <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-800/40 text-cyan-400 text-xs font-mono mb-3">
             <GitPullRequest className="w-3.5 h-3.5 text-cyan-400" />
-            <span>{isFa ? 'اکوسیستم و متن‌باز' : 'Open Source & Ecosystem'}</span>
+            <span>{t.opensource.badge}</span>
           </div>
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-white">
-            {isFa ? 'پول ریکوئست‌ها و مشارکت‌های ادغام‌شده' : 'Merged Pull Requests & Contributions'}
+            {t.opensource.title}
           </h2>
           <p className="text-sm text-slate-400 mt-1 max-w-2xl">
-            {isFa
-              ? 'مشارکت‌های واقعی در ابزارهای توسعه‌دهندگان، زیرساخت داکر، آنالیتیکس و فریم‌ورک‌های تست پایتون.'
-              : 'Real contributions to upstream developer tooling, Docker infrastructure, customer analytics, and Python testing frameworks.'}
+            {t.opensource.subtitle}
           </p>
         </div>
 
@@ -46,7 +43,7 @@ export const OpenSourceSection: React.FC = () => {
                     rel="noopener noreferrer"
                     className="text-xs font-mono text-cyan-400 hover:text-cyan-300 flex items-center space-x-1"
                   >
-                    <span>{isFa ? 'مشاهده PR' : 'View PR'}</span>
+                    <span>{t.opensource.viewPr}</span>
                     <ExternalLink className="w-3 h-3" />
                   </a>
                 </div>

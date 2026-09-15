@@ -3,8 +3,7 @@ import { Layers, Network, Check, Code, ArrowRight, ShieldCheck, ExternalLink, Sp
 import { useLanguage } from '../../context/LanguageContext';
 
 export const PinnVisualizer: React.FC = () => {
-  const { language } = useLanguage();
-  const isFa = language === 'fa';
+  const { t } = useLanguage();
 
   const [activeStep, setActiveStep] = useState<number>(1);
   const [selectedArch, setSelectedArch] = useState<'TransformerPINN' | 'MLPPINN' | 'MLP'>('TransformerPINN');
@@ -123,51 +122,41 @@ export const PinnVisualizer: React.FC = () => {
   const steps = [
     {
       id: 0,
-      title: isFa ? '۱. مختصات فضا-زمان بدون شبکه' : '1. Collocation Sampling',
+      title: t.sim.pinn.step1Title,
       math: '\\mathbf{x} = (x, y, t) \\in \\Omega \\times [0, T]',
-      desc: isFa
-        ? 'نمونه‌برداری بدون مشبکه‌بندی (Mesh-Free) از کل دامنه فیزیکی و مرزها. حذف کامل خطای گسسته‌سازی المان محدود (FEM).'
-        : 'Continuous domain & boundary point sampling without spatial mesh discretization, eliminating grid artifacts.',
+      desc: t.sim.pinn.step1Desc,
       code: `x_colloc = torch.rand((N_colloc, 2), requires_grad=True)\nt_colloc = torch.rand((N_colloc, 1), requires_grad=True)`,
       tensor: '[10000, 3]'
     },
     {
       id: 1,
-      title: isFa ? '۲. معماری ترنسفورمر / MLP' : '2. Transformer Backbone',
+      title: t.sim.pinn.step2Title,
       math: '\\hat{\\mathbf{u}} = \\mathcal{N}_\\theta(\\mathbf{x}) = \\begin{bmatrix} T(x,y,t) \\\\ \\Phi(x,y,t) \\end{bmatrix}',
-      desc: isFa
-        ? 'مجهز به بردار موقعیت چرخشی (RoPE)، مکانیزم توجه چندگروهی (GQA) و فعال‌ساز SwiGLU برای تخمین همزمان گرادیان‌ها.'
-        : 'RoPE rotational embeddings + Grouped-Query Attention (GQA) + SwiGLU activations predicting coupled scalar fields.',
+      desc: t.sim.pinn.step2Desc,
       code: `class TransformerPINN(nn.Module):\n    def __init__(self, d_model=128, n_heads=4):\n        super().__init__()\n        self.rope = RotaryEmbedding(dim=32)\n        self.attn = GroupedQueryAttention(d_model, n_heads)\n        self.ffn = SwiGLU(d_model, d_ff=256)`,
       tensor: '[10000, 2]'
     },
     {
       id: 2,
-      title: isFa ? '۳. مشتق‌گیری خودکار دقیق (Autograd)' : '3. Exact Autograd',
+      title: t.sim.pinn.step3Title,
       math: '\\nabla T = \\frac{\\partial T}{\\partial \\mathbf{x}}, \\quad \\nabla \\cdot (k(T) \\nabla T)',
-      desc: isFa
-        ? 'محاسبه مشتقات جزئی مرتبه اول و دوم تحلیلی از طریق گراف محاسباتی پای‌تورچ بدون هیچ تقریب تفاضل متناهی.'
-        : 'Analytical 1st and 2nd order spatial partial derivatives extracted analytically via PyTorch computational graph.',
+      desc: t.sim.pinn.step3Desc,
       code: `grad_T = torch.autograd.grad(T, x_colloc, grad_outputs=torch.ones_like(T), create_graph=True)[0]\ndT_dx, dT_dy = grad_T[:, 0:1], grad_T[:, 1:2]`,
       tensor: 'Exact Autograd'
     },
     {
       id: 3,
-      title: isFa ? '۴. تابع زیان فیزیکی کوپل‌شده' : '4. Coupled Physics Loss',
+      title: t.sim.pinn.step4Title,
       math: '\\mathcal{L}_{Total} = \\mathcal{L}_{Fourier} + \\lambda_E \\mathcal{L}_{Maxwell} + \\lambda_{BC} \\mathcal{L}_{BC}',
-      desc: isFa
-        ? 'تضمین قانون بقای انرژی و انتقال حرارت ژول: $\\rho c_p \\frac{\\partial T}{\\partial t} - \\nabla \\cdot (k \\nabla T) - \\sigma |\\nabla \\Phi|^2 = 0$.'
-        : 'Energy conservation residual loss combining Fourier thermal conduction and Maxwell electrostatic Joule heating.',
+      desc: t.sim.pinn.step4Desc,
       code: `loss_pde = torch.mean((rho * cp * dT_dt - div_k_gradT - sigma * (E_norm**2)) ** 2)\nloss_bc = torch.mean((T_pred_bc - T_true_bc) ** 2)\ntotal_loss = loss_pde + 10.0 * loss_bc`,
       tensor: 'Scalar Loss'
     },
     {
       id: 4,
-      title: isFa ? '۵. میدان حل همگرا و کوئری‌پذیر' : '5. Converged Solution',
+      title: t.sim.pinn.step5Title,
       math: '\\|T_{pred} - T_{true}\\|_{L2} < 9.09 \\times 10^{-4}',
-      desc: isFa
-        ? 'میدان پیوسته و مشتق‌پذیر حرارتی و پتانسیل الکتریکی با خطای L2 کمتر از 0.0009، قابل کوئری در هر رزولوشن دلخواه.'
-        : 'High-fidelity differentiable solution fields queryable at arbitrary resolution with sub-millikelvin accuracy.',
+      desc: t.sim.pinn.step5Desc,
       code: `# Inference at arbitrary test resolution\nwith torch.no_grad():\n    T_grid = model(coords_mesh)`,
       tensor: 'L2 < 9.09e-4'
     }
@@ -181,7 +170,7 @@ export const PinnVisualizer: React.FC = () => {
           <div className="flex items-center space-x-2">
             <Network className="w-5 h-5 text-cyan-400" />
             <h3 className="text-base font-semibold text-slate-100">
-              {isFa ? 'شبکه عصبی آگاه از فیزیک (PINN) الکتروترمال' : 'Electro-Thermal PINN Architecture Flow'}
+              {t.sim.pinn.heading}
             </h3>
             <a
               href="https://github.com/mohammad-hussein-dev/electro-thermal-pinn"
@@ -194,9 +183,7 @@ export const PinnVisualizer: React.FC = () => {
             </a>
           </div>
           <p className="text-xs text-slate-400 mt-0.5">
-            {isFa
-              ? 'حل‌کننده یادگیری عمیق معادلات دیفرانسیل جزئی غیرخطی کوپل‌شده ماکسول و انتقال حرارت فوریه با RoPE و GQA.'
-              : 'Deep learning solver for coupled nonlinear Fourier & Maxwell PDEs using Rotary Position Embeddings and GQA.'}
+            {t.sim.pinn.subheading}
           </p>
         </div>
 
@@ -225,7 +212,7 @@ export const PinnVisualizer: React.FC = () => {
           <div className="flex items-center justify-between text-xs font-mono text-slate-400 pb-2 border-b border-slate-900">
             <span className="text-cyan-400 font-semibold flex items-center space-x-1">
               <Eye className="w-3.5 h-3.5" />
-              <span>{isFa ? 'میدان دما و پتانسیل (کلیک برای پروب)' : '2D Solution Field (Click to Probe)'}</span>
+              <span>{t.sim.pinn.canvasLabel}</span>
             </span>
             <span className="text-[10px] text-slate-500 font-mono">
               x: {probePos.x.toFixed(2)}, y: {probePos.y.toFixed(2)}
@@ -245,15 +232,15 @@ export const PinnVisualizer: React.FC = () => {
           {/* Probed Coordinates Telemetry */}
           <div className="grid grid-cols-3 gap-2 mt-3 pt-2 border-t border-slate-900 text-center font-mono text-xs">
             <div className="p-1.5 bg-[#0a0f1d] rounded border border-cyan-950">
-              <div className="text-[10px] text-slate-500">{isFa ? 'دما T' : 'Temp (T)'}</div>
+              <div className="text-[10px] text-slate-500">{t.sim.pinn.statTemp}</div>
               <div className="text-amber-400 font-bold">{probed.T.toFixed(1)} K</div>
             </div>
             <div className="p-1.5 bg-[#0a0f1d] rounded border border-cyan-950">
-              <div className="text-[10px] text-slate-500">{isFa ? 'پتانسیل Φ' : 'Potential (Φ)'}</div>
+              <div className="text-[10px] text-slate-500">{t.sim.pinn.statPotential}</div>
               <div className="text-cyan-300 font-bold">{probed.phi.toFixed(1)} V</div>
             </div>
             <div className="p-1.5 bg-[#0a0f1d] rounded border border-cyan-950">
-              <div className="text-[10px] text-slate-500">{isFa ? 'خطای PDE' : 'Residual L2'}</div>
+              <div className="text-[10px] text-slate-500">{t.sim.pinn.statResidual}</div>
               <div className="text-emerald-400 font-bold">{probed.pdeResidual.toExponential(2)}</div>
             </div>
           </div>
@@ -279,7 +266,7 @@ export const PinnVisualizer: React.FC = () => {
 
             <div className="flex items-center space-x-2 text-[11px] text-emerald-400 font-mono pt-1">
               <ShieldCheck className="w-3.5 h-3.5" />
-              <span>{isFa ? 'قوانین بقای ترمودینامیک و الکترومغناطیس اثبات شده' : 'Exact Energy & Charge Conservation Guaranteed'}</span>
+              <span>{t.sim.pinn.trustBadge}</span>
             </div>
           </div>
 

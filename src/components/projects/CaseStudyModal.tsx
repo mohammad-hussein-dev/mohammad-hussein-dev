@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Project } from '../../data/portfolioData';
 import { GithubIcon, GitlabIcon } from '../common/Icons';
 import { X, ExternalLink, CheckCircle2, AlertCircle, Cpu, ShieldCheck, Layers, GitFork, Star } from 'lucide-react';
+import { useLanguage } from '../../context/LanguageContext';
 
 interface CaseStudyModalProps {
   project: Project | null;
@@ -9,6 +10,8 @@ interface CaseStudyModalProps {
 }
 
 export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ project, onClose }) => {
+  const { t } = useLanguage();
+
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape') onClose();
@@ -46,7 +49,7 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ project, onClose
           <button
             onClick={onClose}
             className="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition"
-            title="Close (Esc)"
+            title={t.projects.csCloseEsc}
           >
             <X className="w-5 h-5" />
           </button>
@@ -67,7 +70,7 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ project, onClose
                 className="px-3.5 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-white text-xs font-mono flex items-center space-x-1.5 border border-slate-700 transition"
               >
                 <GithubIcon className="w-4 h-4" />
-                <span>Source Code</span>
+                <span>{t.projects.csSourceCode}</span>
               </a>
               {project.gitlabUrl && (
                 <a
@@ -98,7 +101,7 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ project, onClose
             <div className="p-4 rounded-xl bg-[#070b13] border border-slate-800">
               <div className="flex items-center space-x-2 text-rose-400 text-xs font-mono uppercase tracking-wider mb-2">
                 <AlertCircle className="w-4 h-4" />
-                <span>The Problem</span>
+                <span>{t.projects.csProblem}</span>
               </div>
               <p className="text-xs text-slate-300 leading-relaxed">
                 {caseStudy.problem}
@@ -108,7 +111,7 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ project, onClose
             <div className="p-4 rounded-xl bg-[#070b13] border border-slate-800">
               <div className="flex items-center space-x-2 text-amber-400 text-xs font-mono uppercase tracking-wider mb-2">
                 <ShieldCheck className="w-4 h-4" />
-                <span>Engineering Constraints</span>
+                <span>{t.projects.csConstraints}</span>
               </div>
               <p className="text-xs text-slate-300 leading-relaxed">
                 {caseStudy.constraints}
@@ -120,7 +123,7 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ project, onClose
           <div className="p-5 rounded-xl bg-[#070b13] border border-cyan-950">
             <div className="flex items-center space-x-2 text-cyan-400 text-xs font-mono uppercase tracking-wider mb-3">
               <Layers className="w-4 h-4" />
-              <span>System Architecture & Pipeline</span>
+              <span>{t.projects.csArchitecture}</span>
             </div>
             <p className="text-xs text-slate-300 mb-4">
               {caseStudy.architectureDescription}
@@ -139,7 +142,7 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ project, onClose
           <div className="p-5 rounded-xl bg-[#070b13] border border-slate-800">
             <div className="text-xs font-mono uppercase tracking-wider text-emerald-400 mb-3 flex items-center space-x-2">
               <Cpu className="w-4 h-4" />
-              <span>Implementation Highlights</span>
+              <span>{t.projects.csHighlights}</span>
             </div>
             <ul className="space-y-2">
               {caseStudy.implementationHighlights.map((hl, i) => (
@@ -155,7 +158,7 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ project, onClose
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="p-4 rounded-xl bg-[#070b13] border border-slate-800">
               <div className="text-xs font-mono uppercase tracking-wider text-cyan-400 mb-2">
-                Testing & Verification
+                {t.projects.csTesting}
               </div>
               <p className="text-xs text-slate-300 leading-relaxed">
                 {caseStudy.testing}
@@ -164,7 +167,7 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ project, onClose
 
             <div className="p-4 rounded-xl bg-[#070b13] border border-slate-800">
               <div className="text-xs font-mono uppercase tracking-wider text-emerald-400 mb-2">
-                Measurable Results
+                {t.projects.csResults}
               </div>
               <ul className="space-y-1.5">
                 {caseStudy.results.map((res, i) => (
@@ -180,7 +183,7 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ project, onClose
           {/* Lessons Learned */}
           <div className="p-4 rounded-xl bg-[#0c1220] border border-indigo-950/60">
             <div className="text-xs font-mono uppercase tracking-wider text-indigo-300 mb-2">
-              Lessons Learned & Future Horizons
+              {t.projects.csLessons}
             </div>
             <ul className="space-y-1.5">
               {caseStudy.lessonsLearned.map((lesson, i) => (
@@ -196,14 +199,14 @@ export const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ project, onClose
         {/* Modal Footer */}
         <div className="px-6 py-3.5 bg-[#0d1320] border-t border-slate-800 flex items-center justify-between text-xs font-mono text-slate-400 shrink-0">
           <div className="flex items-center space-x-2">
-            <span>Technologies:</span>
+            <span>{t.projects.csTechnologies}</span>
             <span className="text-cyan-300">{project.technologies.join(', ')}</span>
           </div>
           <button
             onClick={onClose}
             className="px-4 py-1.5 rounded bg-cyan-950 hover:bg-cyan-900 text-cyan-200 border border-cyan-700 transition"
           >
-            Close
+            {t.projects.csClose}
           </button>
         </div>
       </div>

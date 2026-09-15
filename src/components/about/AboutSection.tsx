@@ -13,35 +13,19 @@ import { CyberMatrixAvatar } from './CyberMatrixAvatar';
  * Implemented following Google TypeScript style principles with full i18n & responsiveness.
  */
 export const AboutSection: React.FC = () => {
-  const { language } = useLanguage();
+  // Note: `t` powers all translatable strings; `isFa` is reserved for the
+  // "story" block below which contains inline JSX markup (<strong className="...">).
+  // This is idiomatic i18n: markup-bearing blocks use conditional rendering
+  // rather than dangerouslySetInnerHTML or exploding into 12+ fragment keys.
+  const { t, language } = useLanguage();
   const isFa = language === 'fa';
 
   const pipelineSteps = [
-    {
-      title: isFa ? "فیزیک" : "Physics",
-      desc: isFa ? "مدل‌سازی دینامیک جهان واقعی و قوانین بقا" : "Modeling real-world dynamics & conservation laws",
-      color: "text-cyan-400"
-    },
-    {
-      title: isFa ? "ریاضیات" : "Mathematics",
-      desc: isFa ? "فرمول‌بندی تحلیلی، جبر خطی و حساب دیفرانسیل" : "Analytical formulation, linear algebra & calculus",
-      color: "text-indigo-400"
-    },
-    {
-      title: isFa ? "حل مسئله" : "Problem Solving",
-      desc: isFa ? "انتزاع الگوریتمی و بهینه‌سازی تحت قیود" : "Algorithmic abstraction & constraint optimization",
-      color: "text-amber-400"
-    },
-    {
-      title: isFa ? "محاسبات علمی" : "Scientific Computing",
-      desc: isFa ? "آرایه‌های برداری NumPy، شبکه‌های PINN و شبیه‌سازی" : "Vectorized NumPy, PyTorch PINNs & simulation",
-      color: "text-emerald-400"
-    },
-    {
-      title: isFa ? "سیستم‌های بک‌اند" : "Backend Systems",
-      desc: isFa ? "میکروسرویس‌های جنگو، FastAPI، پستگرس و ردیس در محیط پروداکشن" : "Production Django, FastAPI, PostgreSQL & Redis",
-      color: "text-cyan-300"
-    }
+    { title: t.about.pipe1Title, desc: t.about.pipe1Desc, color: "text-cyan-400" },
+    { title: t.about.pipe2Title, desc: t.about.pipe2Desc, color: "text-indigo-400" },
+    { title: t.about.pipe3Title, desc: t.about.pipe3Desc, color: "text-amber-400" },
+    { title: t.about.pipe4Title, desc: t.about.pipe4Desc, color: "text-emerald-400" },
+    { title: t.about.pipe5Title, desc: t.about.pipe5Desc, color: "text-cyan-300" },
   ];
 
   return (
@@ -54,15 +38,13 @@ export const AboutSection: React.FC = () => {
         <div className="mb-12">
           <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-800/40 text-cyan-400 text-xs font-mono mb-3">
             <User className="w-3.5 h-3.5 text-cyan-400" />
-            <span>{isFa ? 'هویت و رویکرد مهندسی' : 'Engineering Identity & Mindset'}</span>
+            <span>{t.about.badge}</span>
           </div>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-white">
-            {isFa ? 'هویت مهندسی، دقت علمی و معماری سیستم‌ها' : 'The Scientific Mindset Behind the Code'}
+            {t.about.title}
           </h2>
           <p className="text-sm sm:text-base text-slate-400 mt-2 max-w-3xl leading-relaxed">
-            {isFa
-              ? 'پیشینه تحلیلی فیزیک و ریاضیات چگونه رویکرد من را به معماری نرم‌افزار، مقیاس‌پذیری پایدار و کدنویسی بدون باگ شکل داده است.'
-              : 'How analytical physics and mathematical foundations shape an uncompromising approach to backend architecture, verifiable reliability, and performance.'}
+            {t.about.subtitle}
           </p>
         </div>
 
@@ -71,9 +53,9 @@ export const AboutSection: React.FC = () => {
           <div className="text-xs font-mono uppercase tracking-wider text-slate-400 mb-4 flex items-center justify-between">
             <span className="flex items-center space-x-2">
               <Layers className="w-3.5 h-3.5 text-cyan-400" />
-              <span>{isFa ? 'خط لوله مهندسی علمی' : 'The Scientific Engineering Pipeline'}</span>
+              <span>{t.about.pipelineHeading}</span>
             </span>
-            <span className="text-cyan-400 text-[11px] font-semibold">{isFa ? 'از فرمول تا محیط پروداکشن' : 'Formula to Production'}</span>
+            <span className="text-cyan-400 text-[11px] font-semibold">{t.about.pipelineTag}</span>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 relative">
@@ -109,7 +91,7 @@ export const AboutSection: React.FC = () => {
             <div className="bg-[#050810] p-6 sm:p-7 rounded-2xl border border-slate-800 space-y-4 text-sm text-slate-300 leading-relaxed shadow-lg">
               <div className="flex items-center space-x-2 text-xs font-mono text-cyan-400 uppercase tracking-wider pb-1 border-b border-slate-800/80">
                 <BookOpen className="w-3.5 h-3.5 text-cyan-400" />
-                <span>{isFa ? 'داستان و جهان‌بینی مهندسی' : 'The Story & Engineering Philosophy'}</span>
+                <span>{t.about.storyHeading}</span>
               </div>
 
               {isFa ? (

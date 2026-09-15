@@ -86,8 +86,7 @@ export const CyberMatrixAvatar: React.FC<CyberMatrixAvatarProps> = ({
   className = '',
   username = 'mohammad-hussein-dev'
 }) => {
-  const { language } = useLanguage();
-  const isFa = language === 'fa';
+  const { t } = useLanguage();
 
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -254,7 +253,7 @@ export const CyberMatrixAvatar: React.FC<CyberMatrixAvatarProps> = ({
             <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-cyan-400" />
           </span>
           <span className="text-slate-300 font-bold tracking-wider uppercase">
-            {isFa ? 'هویت گیت‌هاب و وضعیت زنده' : 'GitHub Verified Identity'}
+            {t.about.cyberBadge}
           </span>
         </div>
 
@@ -356,9 +355,7 @@ export const CyberMatrixAvatar: React.FC<CyberMatrixAvatarProps> = ({
           </p>
 
           <p className="text-[11px] text-slate-500 max-w-xs font-mono">
-            {isFa
-              ? 'توسعه‌دهنده بک‌اند پایتون و جنگو · مسلط به آرچ لینوکس و سیستم‌های علمی'
-              : 'Python & Django Backend Architect · Linux & Simulation Specialist'}
+            {t.about.cyberSubtitle}
           </p>
         </div>
       </div>
@@ -407,7 +404,7 @@ export const CyberMatrixAvatar: React.FC<CyberMatrixAvatarProps> = ({
           className="flex-1 py-2 px-3 rounded-xl bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white font-mono text-xs font-bold flex items-center justify-center space-x-1.5 transition-all duration-200 shadow-md shadow-cyan-900/30 hover:shadow-cyan-500/20 active:scale-98"
         >
           <GithubIcon className="w-3.5 h-3.5" />
-          <span>{isFa ? 'مشاهده پروفایل گیت‌هاب' : 'Visit GitHub'}</span>
+          <span>{t.about.cyberVisitGithub}</span>
           <ExternalLink className="w-3 h-3 ml-0.5 opacity-80" />
         </a>
 
@@ -421,12 +418,12 @@ export const CyberMatrixAvatar: React.FC<CyberMatrixAvatarProps> = ({
           {copied ? (
             <>
               <Check className="w-3.5 h-3.5 text-emerald-400" />
-              <span className="text-emerald-400">{isFa ? 'کپی شد' : 'Copied'}</span>
+              <span className="text-emerald-400">{t.about.cyberCopied}</span>
             </>
           ) : (
             <>
               <Copy className="w-3.5 h-3.5 text-slate-400" />
-              <span>{isFa ? 'کپی لینک' : 'Copy'}</span>
+              <span>{t.about.cyberCopyLink}</span>
             </>
           )}
         </button>

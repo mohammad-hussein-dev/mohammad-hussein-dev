@@ -3,8 +3,7 @@ import { Play, Pause, RotateCcw, Flame, Waves, Sparkles, Activity, ExternalLink,
 import { useLanguage } from '../../context/LanguageContext';
 
 export const HeatDiffusionSim: React.FC = () => {
-  const { language } = useLanguage();
-  const isFa = language === 'fa';
+  const { t } = useLanguage();
 
   const [mode, setMode] = useState<'heat' | 'wave'>('heat');
   const [isRunning, setIsRunning] = useState<boolean>(true);
@@ -255,13 +254,11 @@ export const HeatDiffusionSim: React.FC = () => {
               <Waves className="w-5 h-5 text-cyan-400" />
             )}
             <h3 className="text-base font-semibold text-slate-100">
-              {isFa ? 'شبیه‌ساز پیوسته معادلات دیفرانسیل جزئی (PDE)' : 'Continuous PDE Finite Difference Solver'}
+              {t.sim.heat.heading}
             </h3>
           </div>
           <p className="text-xs text-slate-400 mt-0.5">
-            {isFa
-              ? 'حل عددی تفاضل متناهی معادلات دیفرانسیل انتقال حرارت فوریه و موج پیوسته دو بعدی.'
-              : 'Real-time numerical 5-point discrete Laplacian stencil for 2D Fourier heat diffusion & wave propagation.'}
+            {t.sim.heat.subheading}
           </p>
         </div>
 
@@ -277,7 +274,7 @@ export const HeatDiffusionSim: React.FC = () => {
               }`}
             >
               <Flame className="w-3.5 h-3.5" />
-              <span>{isFa ? 'انتقال حرارت' : 'Heat PDE'}</span>
+              <span>{t.sim.heat.modeHeat}</span>
             </button>
             <button
               onClick={() => setMode('wave')}
@@ -288,7 +285,7 @@ export const HeatDiffusionSim: React.FC = () => {
               }`}
             >
               <Waves className="w-3.5 h-3.5" />
-              <span>{isFa ? 'انتشار موج' : 'Wave PDE'}</span>
+              <span>{t.sim.heat.modeWave}</span>
             </button>
           </div>
 
@@ -299,7 +296,7 @@ export const HeatDiffusionSim: React.FC = () => {
                 ? 'bg-amber-950/80 text-amber-300 border border-amber-600'
                 : 'bg-emerald-950/80 text-emerald-300 border border-emerald-600'
             }`}
-            title={isRunning ? 'Pause Simulation' : 'Run Simulation'}
+            title={isRunning ? t.sim.heat.pauseTitle : t.sim.heat.playTitle}
           >
             {isRunning ? <Pause className="w-3.5 h-3.5" /> : <Play className="w-3.5 h-3.5" />}
           </button>
@@ -307,7 +304,7 @@ export const HeatDiffusionSim: React.FC = () => {
           <button
             onClick={resetField}
             className="p-2 rounded bg-slate-900 text-slate-400 hover:text-slate-200 border border-slate-800 transition"
-            title="Reset Grid Field"
+            title={t.sim.heat.resetTitle}
           >
             <RotateCcw className="w-3.5 h-3.5" />
           </button>
@@ -320,10 +317,10 @@ export const HeatDiffusionSim: React.FC = () => {
         <div className="lg:col-span-7 flex flex-col justify-between bg-[#04060b] rounded-xl p-3.5 border border-slate-800/90 relative overflow-hidden">
           <div className="flex items-center justify-between text-xs font-mono text-slate-400 pb-2 border-b border-slate-900">
             <span className="text-cyan-400 font-semibold">
-              {isFa ? 'شبکه ۲ بعدی پیوسته (۴۰×۴۰ المان)' : '2D Discrete Spatial Field (40x40 Grid)'}
+              {t.sim.heat.canvasLabel}
             </span>
             <span className="text-[11px] text-amber-400 font-mono">
-              {isFa ? 'برای تزریق حرارت/موج روی صفحه کلیک و درگ کنید' : 'Click / Drag on canvas to inject energy'}
+              {t.sim.heat.canvasHint}
             </span>
           </div>
 
@@ -342,9 +339,9 @@ export const HeatDiffusionSim: React.FC = () => {
 
           {/* Color Scale Legend */}
           <div className="mt-3 pt-2 border-t border-slate-900 flex items-center justify-between text-[10px] font-mono text-slate-500">
-            <span>{mode === 'heat' ? 'Cold (0 K)' : 'Valley (-1)'}</span>
+            <span>{mode === 'heat' ? t.sim.heat.legendLow : t.sim.heat.legendWaveLow}</span>
             <div className={`h-2 flex-1 mx-3 rounded ${mode === 'heat' ? 'bg-gradient-to-r from-blue-900 via-cyan-500 via-amber-500 to-yellow-200' : 'bg-gradient-to-r from-fuchsia-500 via-slate-900 to-cyan-400'}`} />
-            <span>{mode === 'heat' ? 'Peak Heat (T_max)' : 'Crest (+1)'}</span>
+            <span>{mode === 'heat' ? t.sim.heat.legendHigh : t.sim.heat.legendWaveHigh}</span>
           </div>
         </div>
 
@@ -353,7 +350,7 @@ export const HeatDiffusionSim: React.FC = () => {
           {/* Mathematical Formulation Card */}
           <div className="p-3.5 bg-[#05070d] rounded-xl border border-cyan-950/80 space-y-2">
             <div className="text-[11px] uppercase tracking-wider text-slate-400 font-mono flex items-center justify-between">
-              <span>{isFa ? 'معادله حاکم بر سیستم' : 'Governing PDE Formulation'}</span>
+              <span>{t.sim.heat.governingLabel}</span>
               <span className="text-emerald-400 font-mono">FTCS & Central Diff</span>
             </div>
             <div className="p-2.5 bg-[#090e1a] rounded-lg border border-slate-800 text-amber-300 font-mono text-xs overflow-x-auto">
@@ -368,26 +365,20 @@ export const HeatDiffusionSim: React.FC = () => {
               )}
             </div>
             <p className="text-xs text-slate-300 leading-relaxed pt-1">
-              {mode === 'heat'
-                ? isFa
-                  ? 'قانون هدایت گرمایی فوریه: سرعت تغییر دما با لاپلاسین میدان دما و ضریب نفوذ حرارتی تناسب مستقیم دارد.'
-                  : 'Fourier thermal conduction: Rate of temperature change proportional to second spatial derivatives (Laplacian).'
-                : isFa
-                  ? 'معادله موج هایپربولیک دو بعدی با اصطکاک و میرایی خطی، مدل‌کننده نوسانات امواج آکوستیک و الکترومغناطیسی.'
-                  : 'Hyperbolic wave equation with linear damping, modeling acoustic membrane and electromagnetic ripple modes.'}
+              {mode === 'heat' ? t.sim.heat.heatDesc : t.sim.heat.waveDesc}
             </p>
           </div>
 
           {/* Source Geometry Presets */}
           <div className="p-3 bg-[#05070d] rounded-xl border border-slate-800 space-y-2">
             <div className="text-[11px] font-mono text-slate-400">
-              {isFa ? 'الگوی چگالی اولیه منبع:' : 'Initial Impulse Source Geometry:'}
+              {t.sim.heat.sourceLabel}
             </div>
             <div className="grid grid-cols-3 gap-1.5">
               {[
-                { id: 'gaussian', label: isFa ? 'گوسی متمرکز' : 'Gaussian Pulse' },
-                { id: 'dipole', label: isFa ? 'دوقطبی پلار' : 'Dipole Source' },
-                { id: 'sine', label: isFa ? 'هارمونیک سینوسی' : 'Fourier Harmonic' }
+                { id: 'gaussian', label: t.sim.heat.sourceGaussian },
+                { id: 'dipole', label: t.sim.heat.sourceDipole },
+                { id: 'sine', label: t.sim.heat.sourceSine }
               ].map((src) => (
                 <button
                   key={src.id}
@@ -408,7 +399,7 @@ export const HeatDiffusionSim: React.FC = () => {
           <div className="p-3.5 bg-[#05070d] rounded-xl border border-slate-800 space-y-3 font-mono text-xs">
             <div>
               <div className="flex justify-between text-slate-300 mb-1">
-                <span>{mode === 'heat' ? (isFa ? 'ضریب نفوذ حرارتی (α):' : 'Diffusivity (α):') : (isFa ? 'سرعت فاز موج (c):' : 'Wave Speed (c):')}</span>
+                <span>{mode === 'heat' ? t.sim.heat.diffusivityHeat : t.sim.heat.diffusivityWave}</span>
                 <span className="text-cyan-400 font-bold">{diffusivity.toFixed(2)}</span>
               </div>
               <input
@@ -425,7 +416,7 @@ export const HeatDiffusionSim: React.FC = () => {
             {mode === 'wave' && (
               <div>
                 <div className="flex justify-between text-slate-300 mb-1">
-                  <span>{isFa ? 'ضریب میرایی محیط (γ):' : 'Damping Factor (γ):'}</span>
+                  <span>{t.sim.heat.dampingLabel}</span>
                   <span className="text-amber-400 font-bold">{damping.toFixed(3)}</span>
                 </div>
                 <input

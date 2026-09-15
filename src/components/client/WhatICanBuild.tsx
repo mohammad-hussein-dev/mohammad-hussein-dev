@@ -1,12 +1,15 @@
 import React from 'react';
 import { WHAT_I_CAN_BUILD } from '../../data/portfolioData';
 import { Server, Layers, Cpu, Zap, CheckCircle2, BookOpen, ArrowRight } from 'lucide-react';
+import { useLanguage } from '../../context/LanguageContext';
 
 interface WhatICanBuildProps {
   onOpenContact: () => void;
 }
 
 export const WhatICanBuild: React.FC<WhatICanBuildProps> = ({ onOpenContact }) => {
+  const { t } = useLanguage();
+
   const getIcon = (iconName: string) => {
     switch (iconName) {
       case 'Server': return <Server className="w-5 h-5 text-cyan-400" />;
@@ -27,13 +30,13 @@ export const WhatICanBuild: React.FC<WhatICanBuildProps> = ({ onOpenContact }) =
           <div>
             <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-800/40 text-cyan-400 text-xs font-mono mb-3">
               <Zap className="w-3.5 h-3.5 text-cyan-400" />
-              <span>Solutions & Architecture</span>
+              <span>{t.services.badge}</span>
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-white">
-              What I Can Build For Your Team
+              {t.services.title}
             </h2>
             <p className="text-sm text-slate-400 mt-1 max-w-2xl">
-              Concrete engineering deliverables designed for stability, high performance, and rapid deployment.
+              {t.services.subtitle}
             </p>
           </div>
 
@@ -41,7 +44,7 @@ export const WhatICanBuild: React.FC<WhatICanBuildProps> = ({ onOpenContact }) =
             onClick={onOpenContact}
             className="px-4 py-2 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 text-xs font-mono font-bold flex items-center space-x-2 transition active:scale-95 shadow-md shadow-cyan-500/20 shrink-0"
           >
-            <span>Request Project Estimate</span>
+            <span>{t.services.requestEstimate}</span>
             <ArrowRight className="w-3.5 h-3.5" />
           </button>
         </div>
@@ -77,7 +80,7 @@ export const WhatICanBuild: React.FC<WhatICanBuildProps> = ({ onOpenContact }) =
                   onClick={onOpenContact}
                   className="text-xs font-mono text-cyan-400/90 hover:text-cyan-300 flex items-center space-x-1 transition"
                 >
-                  <span>Discuss requirements</span>
+                  <span>{t.services.discussRequirements}</span>
                   <span>→</span>
                 </button>
               </div>

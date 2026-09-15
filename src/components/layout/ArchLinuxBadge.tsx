@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Cpu, CheckCircle2 } from 'lucide-react';
+import { useLanguage } from '../../context/LanguageContext';
 
 export const ArchLinuxBadge: React.FC = () => {
+  const { t } = useLanguage();
   const [isHovered, setIsHovered] = useState(false);
   const [copied, setCopied] = useState(false);
 
@@ -18,7 +20,7 @@ export const ArchLinuxBadge: React.FC = () => {
         onMouseLeave={() => setIsHovered(false)}
         onClick={handleCopyArchInfo}
         className="group relative flex items-center space-x-2 px-3 py-1.5 rounded-full bg-[#080d19] border border-cyan-900/60 hover:border-cyan-400 text-slate-300 transition-all duration-300 hover:scale-105 hover:-translate-y-0.5 active:scale-95 shadow-sm hover:shadow-[0_0_20px_rgba(0,229,255,0.3)] select-none cursor-pointer"
-        title="Arch Linux Workstation (Click to copy specs)"
+        title={t.about.archBadgeTitle}
       >
         {/* Subtle Ambient Pulse Glow */}
         <span className="absolute -inset-0.5 rounded-full bg-gradient-to-r from-cyan-500/20 via-sky-500/30 to-blue-500/20 blur-xs opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10" />
@@ -72,11 +74,11 @@ export const ArchLinuxBadge: React.FC = () => {
           {copied ? (
             <div className="text-[10px] text-emerald-400 flex items-center space-x-1 font-semibold pt-0.5">
               <CheckCircle2 className="w-2.5 h-2.5" />
-              <span>Arch Linux specs copied to clipboard!</span>
+              <span>{t.about.archBadgeCopied}</span>
             </div>
           ) : (
             <div className="text-[9px] text-slate-500 pt-0.5">
-              Click to copy system specs
+              {t.about.archBadgeClickToCopy}
             </div>
           )}
 

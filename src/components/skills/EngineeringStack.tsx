@@ -4,8 +4,7 @@ import { Server, Database, Terminal, CheckCircle2, Cpu, BookOpen, Layers, Shield
 import { useLanguage } from '../../context/LanguageContext';
 
 export const EngineeringStack: React.FC = () => {
-  const { language } = useLanguage();
-  const isFa = language === 'fa';
+  const { t } = useLanguage();
 
   const getCategoryIcon = (iconName: string) => {
     switch (iconName) {
@@ -21,31 +20,23 @@ export const EngineeringStack: React.FC = () => {
 
   const engineeringPrinciples = [
     {
-      title: isFa ? "معماری ماژولار و تمیز" : "Clean Modular Architecture",
-      desc: isFa
-        ? "جداسازی کامل لایه‌ها، منطق دامنه مستقل و تعریف شفاف مرزهای API بر اساس الگوهای SOLID و Clean Architecture."
-        : "Separation of concerns, decoupled domain logic, and well-defined API boundaries.",
+      title: t.stack.principle1Title,
+      desc: t.stack.principle1Desc,
       icon: <Layers className="w-4 h-4 text-cyan-400" />
     },
     {
-      title: isFa ? "توسعه مبتنی بر تست (TDD)" : "Test-Driven Reliability",
-      desc: isFa
-        ? "پوشش تست ۹۶٪+ با pytest، تست‌های ایزوله واحد و یکپارچه‌سازی خودکار در خط لوله CI/CD."
-        : "Standardizing 96%+ test coverage via pytest with automated CI gates before merging.",
+      title: t.stack.principle2Title,
+      desc: t.stack.principle2Desc,
       icon: <ShieldCheck className="w-4 h-4 text-emerald-400" />
     },
     {
-      title: isFa ? "بهینه‌سازی دیتابیس و کشینگ" : "Data & Caching Efficiency",
-      desc: isFa
-        ? "ایندکس‌گذاری دقیق، جلوگیری از N+1 با prefetch_related و کشینگ چندلایه‌ای Redis جهت حداقل زمان تاخیر."
-        : "Proactive database indexing, prefetching, and multi-tier Redis caching to minimize query latency.",
+      title: t.stack.principle3Title,
+      desc: t.stack.principle3Desc,
       icon: <Zap className="w-4 h-4 text-amber-400" />
     },
     {
-      title: isFa ? "پایه‌های علمی و ریاضی" : "Mathematical Grounding",
-      desc: isFa
-        ? "به‌کارگیری مدل‌سازی فیزیک و دقت تحلیلی در بهینه‌سازی الگوریتم‌ها و خطوط پردازش داده."
-        : "Applying physics modeling and analytical rigor to optimize algorithms and data pipelines.",
+      title: t.stack.principle4Title,
+      desc: t.stack.principle4Desc,
       icon: <Cpu className="w-4 h-4 text-indigo-400" />
     }
   ];
@@ -57,15 +48,13 @@ export const EngineeringStack: React.FC = () => {
         <div className="mb-12">
           <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-800/40 text-cyan-400 text-xs font-mono mb-3">
             <Terminal className="w-3.5 h-3.5 text-cyan-400" />
-            <span>{isFa ? 'قابلیت‌های فنی و مهندسی' : 'Technical Capabilities'}</span>
+            <span>{t.stack.badge}</span>
           </div>
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-white">
-            {isFa ? 'استک مهندسی و ابزارهای توسعه سیستم' : 'Engineering Stack & System Tools'}
+            {t.stack.title}
           </h2>
           <p className="text-sm text-slate-400 mt-1 max-w-2xl">
-            {isFa
-              ? 'ماتریس تکنولوژی اثبات‌شده متمرکز بر سیستم‌های بک‌اند پایتون، دیتابیس‌های رابطه‌ای مقیاس‌پذیر و محاسبات علمی.'
-              : 'A production-proven technology matrix centered on Python backend systems, scalable relational databases, and scientific computing.'}
+            {t.stack.subtitle}
           </p>
         </div>
 
@@ -112,7 +101,7 @@ export const EngineeringStack: React.FC = () => {
         {/* Engineering Mindset & Principles */}
         <div className="mt-12 bg-[#090d18] rounded-xl p-6 border border-cyan-950/80">
           <div className="text-xs font-mono uppercase tracking-wider text-cyan-400 mb-4">
-            {isFa ? 'اصول بنیادین مهندسی نرم‌افزار' : 'Core Engineering Principles'}
+            {t.stack.architecturalPrinciples}
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {engineeringPrinciples.map((prin, i) => (

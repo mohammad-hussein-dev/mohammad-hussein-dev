@@ -9,21 +9,20 @@ interface ProjectExplorerProps {
 }
 
 export const ProjectExplorer: React.FC<ProjectExplorerProps> = ({ onSelectProject }) => {
-  const { language } = useLanguage();
-  const isFa = language === 'fa';
+  const { t } = useLanguage();
 
   const [selectedCategory, setSelectedCategory] = useState<string>('ALL');
   const [searchQuery, setSearchQuery] = useState<string>('');
 
   const categories = [
-    { id: 'ALL', label: isFa ? 'همه پروژه‌ها' : 'ALL' },
-    { id: 'CLIENT WORK', label: isFa ? 'پروژه‌های واقعی مشتری' : 'CLIENT WORK' },
-    { id: 'PERSONAL', label: isFa ? 'پروژه‌های شخصی' : 'PERSONAL' },
-    { id: 'BACKEND', label: isFa ? 'بک‌اند و دیتابیس' : 'BACKEND' },
-    { id: 'AI / ML', label: isFa ? 'هوش مصنوعی و PINN' : 'AI / ML' },
-    { id: 'SCIENTIFIC', label: isFa ? 'محاسبات علمی' : 'SCIENTIFIC' },
-    { id: 'OPTIMIZATION', label: isFa ? 'الگوریتم‌های بهینه‌سازی' : 'OPTIMIZATION' },
-    { id: 'TOOLS', label: isFa ? 'ابزارها و لینوکس' : 'TOOLS' }
+    { id: 'ALL', label: t.projects.allFilter },
+    { id: 'CLIENT WORK', label: t.projects.clientWorkFilter },
+    { id: 'PERSONAL', label: t.projects.personalFilter },
+    { id: 'BACKEND', label: t.projects.backendFilter },
+    { id: 'AI / ML', label: t.projects.aiMlFilter },
+    { id: 'SCIENTIFIC', label: t.projects.scientificFilter },
+    { id: 'OPTIMIZATION', label: t.projects.optFilter },
+    { id: 'TOOLS', label: t.projects.toolsFilter }
   ];
 
   const filteredProjects = useMemo(() => {
@@ -52,15 +51,13 @@ export const ProjectExplorer: React.FC<ProjectExplorerProps> = ({ onSelectProjec
           <div>
             <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-800/40 text-cyan-400 text-xs font-mono mb-3">
               <FolderGit2 className="w-3.5 h-3.5 text-cyan-400" />
-              <span>{isFa ? 'کاوشگر پروژه‌های مهندسی' : 'Engineering Project Explorer'}</span>
+              <span>{t.projects.badge}</span>
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-white">
-              {isFa ? 'پروژه‌های شاخص و معماری سیستم‌ها' : 'Featured Work & Systems Architecture'}
+              {t.projects.title}
             </h2>
             <p className="text-sm text-slate-400 mt-1 max-w-2xl">
-              {isFa
-                ? 'زیرساخت‌های بک‌اند مقیاس‌پذیر، حل‌کننده‌های عصبی معادلات فیزیک، و موتورهای بهینه‌سازی چندهدفه با تضمین تست و قابلیت اطمینان بالا.'
-                : 'Production backends, scientific neural solvers, and multi-objective optimization systems with test-driven guarantees.'}
+              {t.projects.subtitle}
             </p>
           </div>
 
@@ -69,7 +66,7 @@ export const ProjectExplorer: React.FC<ProjectExplorerProps> = ({ onSelectProjec
             <Search className="w-4 h-4 text-slate-500 absolute left-3 top-1/2 -translate-y-1/2" />
             <input
               type="text"
-              placeholder={isFa ? 'جستجوی پروژه، تکنولوژی...' : 'Search stack, project...'}
+              placeholder={t.projects.searchPlaceholder}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full bg-[#05070d] border border-slate-800 rounded-lg pl-9 pr-3 py-1.5 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-cyan-500 font-mono transition"
@@ -162,7 +159,7 @@ export const ProjectExplorer: React.FC<ProjectExplorerProps> = ({ onSelectProjec
                     className="flex-1 py-1.5 px-3 rounded-lg bg-cyan-950/70 hover:bg-cyan-900 text-cyan-300 border border-cyan-700/60 text-xs font-mono flex items-center justify-center space-x-1.5 transition active:scale-98"
                   >
                     <FileCode2 className="w-3.5 h-3.5" />
-                    <span>{isFa ? 'مطالعه فنی دقیق' : 'Case Study'}</span>
+                    <span>{t.projects.viewCaseStudy}</span>
                   </button>
 
                   {/* Live Site — appears only when a liveUrl is provided */}
@@ -172,10 +169,10 @@ export const ProjectExplorer: React.FC<ProjectExplorerProps> = ({ onSelectProjec
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center space-x-1 px-2.5 py-1.5 rounded-lg bg-emerald-950/60 hover:bg-emerald-900 text-emerald-400 hover:text-emerald-300 border border-emerald-700/60 hover:border-emerald-500 text-[11px] font-mono transition active:scale-95"
-                      title={isFa ? 'مشاهده سایت زنده' : 'View Live Site'}
+                      title={t.projects.viewLiveSite}
                     >
                       <ExternalLink className="w-3.5 h-3.5" />
-                      <span>{isFa ? 'زنده' : 'Live'}</span>
+                      <span>{t.projects.live}</span>
                     </a>
                   )}
 
@@ -184,7 +181,7 @@ export const ProjectExplorer: React.FC<ProjectExplorerProps> = ({ onSelectProjec
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-white border border-slate-800 transition"
-                    title={isFa ? 'مخزن گیت‌هاب' : 'View GitHub Repository'}
+                    title={t.projects.viewGithub}
                   >
                     <GithubIcon className="w-4 h-4" />
                   </a>

@@ -9,8 +9,7 @@ interface Point {
 }
 
 export const GeneticAlgorithmSim: React.FC = () => {
-  const { language } = useLanguage();
-  const isFa = language === 'fa';
+  const { t } = useLanguage();
 
   const [generation, setGeneration] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
@@ -174,7 +173,7 @@ export const GeneticAlgorithmSim: React.FC = () => {
           <div className="flex items-center space-x-2">
             <Cpu className="w-5 h-5 text-emerald-400" />
             <h3 className="text-base font-semibold text-slate-100">
-              {isFa ? 'بهینه‌سازی چندهدفه مکان‌یابی با الگوریتم ژنتیک' : 'Multi-Objective Facility Site Selection (DEAP)'}
+              {t.sim.ga.heading}
             </h3>
             <a
               href="https://github.com/mohammad-hussein-dev/site-selection-ga"
@@ -187,9 +186,7 @@ export const GeneticAlgorithmSim: React.FC = () => {
             </a>
           </div>
           <p className="text-xs text-slate-400 mt-0.5">
-            {isFa
-              ? 'حل مسائل NP-Hard مکان‌یابی با تقاطع یکنواخت، جهش تصادفی و حفظ جبهه پارتو (پوشش جمعیت در برابر هزینه زیرساخت).'
-              : 'Solving NP-Hard spatial combinatorial optimization with binary elitism and Pareto tradeoff frontiers.'}
+            {t.sim.ga.subheading}
           </p>
         </div>
 
@@ -205,7 +202,7 @@ export const GeneticAlgorithmSim: React.FC = () => {
             }`}
           >
             {isRunning ? <Pause className="w-3.5 h-3.5" /> : <Play className="w-3.5 h-3.5" />}
-            <span>{isRunning ? (isFa ? 'توقف تکامل' : 'Pause GA') : (isFa ? 'اجرای تکامل' : 'Evolve Gen')}</span>
+            <span>{isRunning ? t.sim.ga.pauseGA : t.sim.ga.evolveGA}</span>
           </button>
           <button
             onClick={resetSimulation}
@@ -223,10 +220,10 @@ export const GeneticAlgorithmSim: React.FC = () => {
         <div className="lg:col-span-7 bg-[#05070c] rounded-xl p-3 border border-slate-800/80 relative overflow-hidden flex flex-col justify-between">
           <div className="flex items-center justify-between text-xs font-mono text-slate-400 pb-2 border-b border-slate-900">
             <span className="text-emerald-400 font-semibold">
-              {isFa ? `نسل: ${generation}/50 · سایت‌های فعال: ${selectedSitesCount}/16` : `Gen ${generation}/50 · Active Sites: ${selectedSitesCount}/16`}
+              {`${t.sim.ga.genLabel}: ${generation}/50 · ${t.sim.ga.activeSitesLabel}: ${selectedSitesCount}/16`}
             </span>
             <span className="text-slate-500 text-[10px]">
-              {isFa ? 'نقاط فیروزه‌ای: تقاضا | دایره‌های سبز: تسهیلات' : 'Cyan: Demand | Green Circles: Sites'}
+              {t.sim.ga.legend}
             </span>
           </div>
 
@@ -297,7 +294,7 @@ export const GeneticAlgorithmSim: React.FC = () => {
           {/* Chromosome Bitstring Inspector */}
           <div className="mt-3 pt-2 border-t border-slate-900 font-mono text-[11px]">
             <div className="text-slate-400 text-[10px] mb-1 flex items-center justify-between">
-              <span>{isFa ? 'ژنوم کروموزوم برتر (۱۶ بیتی):' : 'Best Chromosome Bitstring (16-bit):'}</span>
+              <span>{t.sim.ga.chromosomeLabel}</span>
               <span className="text-emerald-400">{selectedSitesCount} Genes Active</span>
             </div>
             <div className="flex items-center space-x-1 overflow-x-auto pb-1">
@@ -320,23 +317,23 @@ export const GeneticAlgorithmSim: React.FC = () => {
           {/* Fitness Metrics */}
           <div className="p-3.5 bg-[#05070c] rounded-xl border border-emerald-950/80 space-y-2">
             <div className="text-[11px] font-bold text-emerald-400 uppercase tracking-wider">
-              {isFa ? 'شاخص‌های شایستگی پارتو' : 'Pareto Fitness Telemetry'}
+              {t.sim.ga.paretoHeading}
             </div>
             <div className="grid grid-cols-2 gap-2 text-center">
               <div className="p-2 bg-[#090e1a] rounded-lg border border-slate-800">
-                <div className="text-[10px] text-slate-500">{isFa ? 'امتیاز شایستگی' : 'Max Fitness'}</div>
+                <div className="text-[10px] text-slate-500">{t.sim.ga.maxFitness}</div>
                 <div className="text-emerald-400 font-bold text-base">{currentStats.best}</div>
               </div>
               <div className="p-2 bg-[#090e1a] rounded-lg border border-slate-800">
-                <div className="text-[10px] text-slate-500">{isFa ? 'پوشش جمعیت' : 'Coverage Score'}</div>
+                <div className="text-[10px] text-slate-500">{t.sim.ga.coverageScore}</div>
                 <div className="text-cyan-300 font-bold text-base">{currentStats.coverage}</div>
               </div>
               <div className="p-2 bg-[#090e1a] rounded-lg border border-slate-800">
-                <div className="text-[10px] text-slate-500">{isFa ? 'هزینه سرمایه‌ای' : 'Capital Cost'}</div>
+                <div className="text-[10px] text-slate-500">{t.sim.ga.capitalCost}</div>
                 <div className="text-amber-400 font-bold text-base">${currentStats.cost}k</div>
               </div>
               <div className="p-2 bg-[#090e1a] rounded-lg border border-slate-800">
-                <div className="text-[10px] text-slate-500">{isFa ? 'میانگین جمعیت' : 'Avg Fitness'}</div>
+                <div className="text-[10px] text-slate-500">{t.sim.ga.avgFitness}</div>
                 <div className="text-purple-300 font-bold text-base">{currentStats.avg}</div>
               </div>
             </div>
@@ -346,7 +343,7 @@ export const GeneticAlgorithmSim: React.FC = () => {
           <div className="p-3.5 bg-[#05070c] rounded-xl border border-slate-800 space-y-3">
             <div>
               <div className="flex justify-between text-slate-300 mb-1">
-                <span>{isFa ? 'نرخ جهش ژنتیکی (pₘ):' : 'Mutation Rate (pₘ):'}</span>
+                <span>{t.sim.ga.mutationRate}</span>
                 <span className="text-emerald-400 font-bold">{(mutationRate * 100).toFixed(0)}%</span>
               </div>
               <input
@@ -362,7 +359,7 @@ export const GeneticAlgorithmSim: React.FC = () => {
 
             <div>
               <div className="flex justify-between text-slate-300 mb-1">
-                <span>{isFa ? 'اندازه جمعیت اولیه (N):' : 'Population Size (N):'}</span>
+                <span>{t.sim.ga.populationSize}</span>
                 <span className="text-cyan-400 font-bold">{populationSize}</span>
               </div>
               <input

@@ -3,8 +3,7 @@ import { Play, RotateCcw, Activity, Gauge, Zap, ExternalLink, ShieldCheck, Spark
 import { useLanguage } from '../../context/LanguageContext';
 
 export const ProjectileSimulator: React.FC = () => {
-  const { language } = useLanguage();
-  const isFa = language === 'fa';
+  const { t } = useLanguage();
 
   const [velocity, setVelocity] = useState<number>(45);
   const [angle, setAngle] = useState<number>(45);
@@ -132,7 +131,7 @@ export const ProjectileSimulator: React.FC = () => {
           <div className="flex items-center space-x-2">
             <Activity className="w-5 h-5 text-cyan-400" />
             <h3 className="text-base font-semibold text-slate-100">
-              {isFa ? 'شبیه‌ساز سینماتیک پرتابه با انتگرال‌گیر RK4' : 'Vectorized Projectile Kinematics Simulator'}
+              {t.sim.projectile.heading}
             </h3>
             <a
               href="https://github.com/mohammad-hussein-dev/projectile-physics-simulator"
@@ -145,9 +144,7 @@ export const ProjectileSimulator: React.FC = () => {
             </a>
           </div>
           <p className="text-xs text-slate-400 mt-0.5">
-            {isFa
-              ? 'حل عددی مرتبه ۴ رانگ-کوتا (RK4) با در نظر گرفتن نیروی درگ آیرودینامیک غیرخطی هوا و اتلاف انرژی.'
-              : '4th Order Runge-Kutta (RK4) numerical integrator with nonlinear quadratic atmospheric drag.'}
+            {t.sim.projectile.subheading}
           </p>
         </div>
         <div className="flex items-center space-x-2">
@@ -159,7 +156,7 @@ export const ProjectileSimulator: React.FC = () => {
                 : 'bg-slate-900 text-slate-400 border-slate-800'
             }`}
           >
-            {showVacuumComparison ? (isFa ? 'مقایسه با خلاء: فعال' : 'Vacuum Baseline: ON') : (isFa ? 'مقایسه با خلاء: خاموش' : 'Vacuum Baseline: OFF')}
+            {showVacuumComparison ? t.sim.projectile.vacuumOn : t.sim.projectile.vacuumOff}
           </button>
         </div>
       </div>
@@ -240,17 +237,17 @@ export const ProjectileSimulator: React.FC = () => {
           <div className="flex items-center space-x-3">
             <span className="flex items-center space-x-1.5">
               <span className="w-3 h-1 bg-cyan-400 rounded" />
-              <span>{isFa ? 'مسیر واقعی با درگ RK4' : 'Air Drag Trajectory (RK4)'}</span>
+              <span>{t.sim.projectile.airDragTrajectory}</span>
             </span>
             {showVacuumComparison && (
               <span className="flex items-center space-x-1.5">
                 <span className="w-3 h-0.5 border-t border-dashed border-amber-400" />
-                <span>{isFa ? 'مسیر بدون مقاومت هوا (خلاء)' : 'Vacuum Ideal Path'}</span>
+                <span>{t.sim.projectile.vacuumIdealPath}</span>
               </span>
             )}
           </div>
           <span className="text-emerald-400">
-            {isFa ? `مدت پرواز: ${simulationData.totalFlightTime.toFixed(2)} ثانیه` : `Flight Time: ${simulationData.totalFlightTime.toFixed(2)}s`}
+            {`${t.sim.projectile.flightTimeLabel}: ${simulationData.totalFlightTime.toFixed(2)}${t.sim.projectile.flightTimeUnit}`}
           </span>
         </div>
       </div>
@@ -260,12 +257,12 @@ export const ProjectileSimulator: React.FC = () => {
         {/* Controls Column */}
         <div className="p-3.5 bg-[#05070c] rounded-xl border border-slate-800 space-y-3 font-mono text-xs">
           <div className="text-[11px] font-bold text-cyan-400 uppercase tracking-wider">
-            {isFa ? 'پارامترهای پرتاب و محیط' : 'Launch & Atmospheric Parameters'}
+            {t.sim.projectile.paramsHeading}
           </div>
 
           <div>
             <div className="flex justify-between text-slate-300 mb-1">
-              <span>{isFa ? 'سرعت اولیه (v₀):' : 'Initial Velocity (v₀):'}</span>
+              <span>{t.sim.projectile.initialVelocity}</span>
               <span className="text-cyan-400 font-bold">{velocity} m/s</span>
             </div>
             <input
@@ -280,7 +277,7 @@ export const ProjectileSimulator: React.FC = () => {
 
           <div>
             <div className="flex justify-between text-slate-300 mb-1">
-              <span>{isFa ? 'زاویه پرتاب (θ):' : 'Launch Angle (θ):'}</span>
+              <span>{t.sim.projectile.launchAngle}</span>
               <span className="text-cyan-400 font-bold">{angle}°</span>
             </div>
             <input
@@ -295,7 +292,7 @@ export const ProjectileSimulator: React.FC = () => {
 
           <div>
             <div className="flex justify-between text-slate-300 mb-1">
-              <span>{isFa ? 'ضریب درگ هوا (Cd·A):' : 'Air Drag Coeff (Cd·A):'}</span>
+              <span>{t.sim.projectile.airDragCoeff}</span>
               <span className="text-amber-400 font-bold">{airDrag.toFixed(2)}</span>
             </div>
             <input
@@ -311,13 +308,13 @@ export const ProjectileSimulator: React.FC = () => {
 
           {/* Gravity Body Presets */}
           <div>
-            <div className="text-slate-400 mb-1">{isFa ? 'میدان گرانش جرم آسمانی:' : 'Planetary Gravity Preset:'}</div>
+            <div className="text-slate-400 mb-1">{t.sim.projectile.gravityPresetLabel}</div>
             <div className="grid grid-cols-4 gap-1">
               {[
-                { id: 'earth', label: isFa ? 'زمین' : 'Earth', val: '9.81' },
-                { id: 'moon', label: isFa ? 'ماه' : 'Moon', val: '1.62' },
-                { id: 'mars', label: isFa ? 'مریخ' : 'Mars', val: '3.71' },
-                { id: 'jupiter', label: isFa ? 'مشتری' : 'Jupiter', val: '24.79' }
+                { id: 'earth', label: t.sim.projectile.planetEarth, val: '9.81' },
+                { id: 'moon', label: t.sim.projectile.planetMoon, val: '1.62' },
+                { id: 'mars', label: t.sim.projectile.planetMars, val: '3.71' },
+                { id: 'jupiter', label: t.sim.projectile.planetJupiter, val: '24.79' }
               ].map((p) => (
                 <button
                   key={p.id}
@@ -338,32 +335,32 @@ export const ProjectileSimulator: React.FC = () => {
         {/* Real-time Telemetry & Physics Equations */}
         <div className="p-3.5 bg-[#05070c] rounded-xl border border-cyan-950 space-y-3 font-mono text-xs">
           <div className="text-[11px] font-bold text-emerald-400 uppercase tracking-wider flex items-center justify-between">
-            <span>{isFa ? 'داده‌های عددی و اتلاف انرژی' : 'Kinematic Metrics & Energy'}</span>
+            <span>{t.sim.projectile.metricsHeading}</span>
             <span className="text-[10px] text-slate-500 font-normal">g = {g.toFixed(2)} m/s²</span>
           </div>
 
           <div className="grid grid-cols-2 gap-2 text-center">
             <div className="p-2 bg-[#090e1a] rounded-lg border border-slate-800">
-              <div className="text-[10px] text-slate-500">{isFa ? 'برد پرتابه (X)' : 'Max Range'}</div>
+              <div className="text-[10px] text-slate-500">{t.sim.projectile.maxRange}</div>
               <div className="text-cyan-300 font-bold text-sm">{simulationData.totalRange.toFixed(1)} m</div>
             </div>
             <div className="p-2 bg-[#090e1a] rounded-lg border border-slate-800">
-              <div className="text-[10px] text-slate-500">{isFa ? 'اوج ارتفاع (Y)' : 'Max Altitude'}</div>
+              <div className="text-[10px] text-slate-500">{t.sim.projectile.maxAltitude}</div>
               <div className="text-amber-300 font-bold text-sm">{simulationData.maxHeight.toFixed(1)} m</div>
             </div>
             <div className="p-2 bg-[#090e1a] rounded-lg border border-slate-800">
-              <div className="text-[10px] text-slate-500">{isFa ? 'سرعت برخورد' : 'Impact Velocity'}</div>
+              <div className="text-[10px] text-slate-500">{t.sim.projectile.impactVelocity}</div>
               <div className="text-emerald-400 font-bold text-sm">{simulationData.finalVelocity.toFixed(1)} m/s</div>
             </div>
             <div className="p-2 bg-[#090e1a] rounded-lg border border-slate-800">
-              <div className="text-[10px] text-slate-500">{isFa ? 'انرژی جنبشی اولیه' : 'Initial Energy'}</div>
+              <div className="text-[10px] text-slate-500">{t.sim.projectile.initialEnergy}</div>
               <div className="text-purple-300 font-bold text-sm">{simulationData.initialEnergy.toFixed(0)} J</div>
             </div>
           </div>
 
           {/* Governing Drag Equation Box */}
           <div className="p-2.5 bg-[#080d19] rounded-lg border border-cyan-950 text-slate-300 text-[11px] leading-relaxed">
-            <div className="text-cyan-400 font-bold mb-1">{isFa ? 'معادله دیفرانسیل برداری حرکت:' : 'Differential Vector Equation:'}</div>
+            <div className="text-cyan-400 font-bold mb-1">{t.sim.projectile.equationLabel}</div>
             <code className="text-amber-300 text-xs">
               m (d v&#8407; / dt) = m g&#8407; - &#189; &rho; C_d A |v&#8407;| v&#8407;
             </code>

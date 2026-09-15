@@ -1,8 +1,11 @@
 import React from 'react';
 import { CONTENT_STUDIO_DOCS, PROFILE } from '../../data/portfolioData';
 import { BookOpen, Globe2, FileText, ArrowRight, ExternalLink, Code2 } from 'lucide-react';
+import { useLanguage } from '../../context/LanguageContext';
 
 export const TechnicalCommunication: React.FC = () => {
+  const { t } = useLanguage();
+
   return (
     <section id="communication" className="py-20 bg-[#090d16] relative border-t border-cyan-950/40">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -11,13 +14,13 @@ export const TechnicalCommunication: React.FC = () => {
           <div>
             <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-800/40 text-cyan-400 text-xs font-mono mb-3">
               <BookOpen className="w-3.5 h-3.5 text-cyan-400" />
-              <span>Technical Communication & Localization</span>
+              <span>{t.communication.badge}</span>
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-white">
-              Documentation & Bilingual Engineering
+              {t.communication.title}
             </h2>
             <p className="text-sm text-slate-400 mt-1 max-w-2xl">
-              Precision technical writing, RTL localization, and academic LaTeX manuscripts bridging English and Persian technical communities.
+              {t.communication.subtitle}
             </p>
           </div>
 
@@ -27,7 +30,7 @@ export const TechnicalCommunication: React.FC = () => {
             rel="noopener noreferrer"
             className="px-3.5 py-2 rounded-lg bg-[#0e1626] hover:bg-[#131e33] text-cyan-300 border border-cyan-800/60 text-xs font-mono flex items-center space-x-2 transition shrink-0"
           >
-            <span>Content Studio Repo</span>
+            <span>{t.communication.contentStudioRepo}</span>
             <ExternalLink className="w-3.5 h-3.5" />
           </a>
         </div>
@@ -68,7 +71,7 @@ export const TechnicalCommunication: React.FC = () => {
                   rel="noopener noreferrer"
                   className="text-xs font-mono text-cyan-400 hover:text-cyan-300 flex items-center space-x-1.5 transition"
                 >
-                  <span>Explore Documents</span>
+                  <span>{t.communication.exploreDocuments}</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </a>
               </div>

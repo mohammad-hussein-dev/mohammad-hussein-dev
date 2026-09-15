@@ -6,8 +6,7 @@ import { useLanguage } from '../../context/LanguageContext';
 import { CircularFreelanceBadges } from '../common/CircularFreelanceBadges';
 
 export const ContactSection: React.FC = () => {
-  const { language } = useLanguage();
-  const isFa = language === 'fa';
+  const { t } = useLanguage();
 
   const [copiedEmail, setCopiedEmail] = useState(false);
   const [formName, setFormName] = useState('');
@@ -40,15 +39,13 @@ export const ContactSection: React.FC = () => {
         <div className="mb-12">
           <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-800/40 text-cyan-400 text-xs font-mono mb-3">
             <Mail className="w-3.5 h-3.5 text-cyan-400" />
-            <span>{isFa ? 'کانال‌های مستقیم و قراردادها' : 'Direct Channels & Contracts'}</span>
+            <span>{t.contact.badge}</span>
           </div>
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-white">
-            {isFa ? 'بیایید سیستمی پایدار و مهندسی‌شده بسازیم' : "Let's Build Something Reliable"}
+            {t.contact.title}
           </h2>
           <p className="text-sm text-slate-400 mt-1 max-w-2xl">
-            {isFa
-              ? 'چه به دنبال طراحی وب‌سرویس بک‌اند با Django/FastAPI باشید، چه موتور شبیه‌سازی علمی یا مستندسازی عمیق فنی — آماده آغاز همکاری هستم.'
-              : 'Whether you need a backend API built with Django/FastAPI, a scientific simulation engine, or technical documentation — I am open to discussing new projects and roles.'}
+            {t.contact.subtitle}
           </p>
         </div>
 
@@ -58,7 +55,7 @@ export const ContactSection: React.FC = () => {
             {/* Primary Contacts */}
             <div className="bg-[#050810] rounded-xl p-5 border border-slate-800 space-y-3">
               <div className="text-xs font-mono uppercase tracking-wider text-cyan-400 mb-1">
-                {isFa ? 'راه‌های ارتباط مستقیم' : 'Direct Channels'}
+                {t.contact.directChannels}
               </div>
 
               {/* Email Item */}
@@ -68,14 +65,14 @@ export const ContactSection: React.FC = () => {
                     <Mail className="w-4 h-4" />
                   </div>
                   <div>
-                    <div className="text-[11px] font-mono text-slate-400">{isFa ? 'ایمیل مستقیم' : 'Direct Email'}</div>
+                    <div className="text-[11px] font-mono text-slate-400">{t.contact.sendEmail}</div>
                     <div className="text-xs font-mono font-semibold text-slate-200">{PROFILE.email}</div>
                   </div>
                 </div>
                 <button
                   onClick={handleCopyEmail}
                   className="p-2 rounded bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-cyan-300 border border-slate-800 transition text-xs flex items-center space-x-1"
-                  title="Copy email to clipboard"
+                  title={t.contact.copyEmailTooltip}
                 >
                   {copiedEmail ? <Check className="w-3.5 h-3.5 text-emerald-400" /> : <Copy className="w-3.5 h-3.5" />}
                 </button>
@@ -93,7 +90,7 @@ export const ContactSection: React.FC = () => {
                     <MessageSquare className="w-4 h-4" />
                   </div>
                   <div>
-                    <div className="text-[11px] font-mono text-slate-400">{isFa ? 'پیام‌رسان تلگرام' : 'Telegram Messenger'}</div>
+                    <div className="text-[11px] font-mono text-slate-400">{t.contact.telegramDirect}</div>
                     <div className="text-xs font-mono font-semibold text-slate-200 group-hover:text-cyan-300 transition">
                       {PROFILE.telegramHandle}
                     </div>
@@ -114,7 +111,7 @@ export const ContactSection: React.FC = () => {
                     <GithubIcon className="w-4 h-4" />
                   </div>
                   <div>
-                    <div className="text-[11px] font-mono text-slate-400">{isFa ? 'مخزن‌های گیت‌هاب' : 'GitHub Workspace'}</div>
+                    <div className="text-[11px] font-mono text-slate-400">{t.contact.githubLabel}</div>
                     <div className="text-xs font-mono font-semibold text-slate-200 group-hover:text-cyan-300 transition">
                       mohammad-hussein-dev
                     </div>
@@ -160,14 +157,14 @@ export const ContactSection: React.FC = () => {
             {/* Direct Message Composer Form */}
             <form onSubmit={handleSendForm} className="bg-[#050810] rounded-xl p-5 border border-slate-800 space-y-3.5">
               <div className="text-xs font-mono uppercase tracking-wider text-slate-300 mb-1 flex items-center justify-between">
-                <span>{isFa ? 'ارسال پیام مستقیم' : 'Send a Direct Message'}</span>
-                {sentSuccess && <span className="text-emerald-400 text-xs font-mono">{isFa ? 'نرم‌افزار ایمیل باز شد!' : 'Mail client opened!'}</span>}
+                <span>{t.contact.sendMessageLabel}</span>
+                {sentSuccess && <span className="text-emerald-400 text-xs font-mono">{t.contact.mailClientOpened}</span>}
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <input
                   type="text"
-                  placeholder={isFa ? 'نام شما' : 'Your Name'}
+                  placeholder={t.contact.nameLabel}
                   required
                   value={formName}
                   onChange={(e) => setFormName(e.target.value)}
@@ -175,7 +172,7 @@ export const ContactSection: React.FC = () => {
                 />
                 <input
                   type="email"
-                  placeholder={isFa ? 'آدرس ایمیل شما' : 'Your Email Address'}
+                  placeholder={t.contact.emailLabel}
                   value={formEmail}
                   onChange={(e) => setFormEmail(e.target.value)}
                   className="w-full bg-[#0b101c] border border-slate-800 rounded-lg px-3 py-2 text-xs font-mono text-slate-200 placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition"
@@ -183,7 +180,7 @@ export const ContactSection: React.FC = () => {
               </div>
 
               <textarea
-                placeholder={isFa ? 'توضیحات پروژه، نیازمندی‌های وب‌سرویس یا موقعیت شغلی مورد نظر خود را بنویسید...' : 'Tell me about your project, API requirements, or role...'}
+                placeholder={t.contact.messageLabel}
                 rows={3}
                 required
                 value={formMessage}
@@ -196,7 +193,7 @@ export const ContactSection: React.FC = () => {
                 className="w-full py-2.5 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 text-xs font-mono font-bold flex items-center justify-center space-x-2 transition active:scale-98 shadow-md shadow-cyan-500/20"
               >
                 <Send className="w-3.5 h-3.5" />
-                <span>{isFa ? 'انتقال پیام از طریق ایمیل' : 'Transmit Message via Email'}</span>
+                <span>{t.contact.submitBtn}</span>
               </button>
             </form>
           </div>

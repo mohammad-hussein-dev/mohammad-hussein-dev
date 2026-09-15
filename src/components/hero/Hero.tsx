@@ -40,7 +40,7 @@ export const Hero: React.FC<HeroProps> = ({
             {/* System Status Pill */}
             <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-800/40 text-cyan-300 text-xs font-mono">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-              <span>{isFa ? 'مهندس بک‌اند و سیستم‌های محاسباتی هوش مصنوعی' : 'Backend Engineer & AI Systems'}</span>
+              <span>{t.hero.statusTag}</span>
               <span className="text-slate-500">|</span>
               <span className="text-slate-400">Arch Linux / Neovim</span>
             </div>
@@ -51,17 +51,13 @@ export const Hero: React.FC<HeroProps> = ({
                 {isFa ? 'محمد حسین' : PROFILE.name}
               </h1>
               <p className="text-base sm:text-lg font-mono text-cyan-400 mt-2 font-medium">
-                {isFa
-                  ? 'مهندس ارشد بک‌اند (پایتون/جنگو) · پژوهشگر فیزیک محاسباتی و شبکه‌های PINN'
-                  : `${PROFILE.primaryRole} · ${PROFILE.secondaryRole}`}
+                {t.hero.roleDetail}
               </p>
             </div>
 
             {/* Mission Statement */}
             <p className="text-sm sm:text-base text-slate-300 leading-relaxed max-w-xl">
-              {isFa
-                ? 'طراح و توسعه‌دهنده زیرساخت‌های پایدار، میکروسرویس‌های پرسرعت جنگو و فست‌ای‌پی‌آی، پایگاه‌های داده توزیع‌شده و مدل‌های یادگیری عمیق حاکم بر معادلات دیفرانسیل فیزیک.'
-                : PROFILE.missionStatement}
+              {t.hero.missionDetail}
             </p>
 
             {/* Core Tech Stack Badges */}
@@ -83,7 +79,7 @@ export const Hero: React.FC<HeroProps> = ({
                 className="px-5 py-2.5 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 text-xs font-mono font-bold flex items-center space-x-2 transition active:scale-95 shadow-lg shadow-cyan-500/25"
               >
                 <FolderGit2 className="w-4 h-4" />
-                <span>{isFa ? 'مشاهده پروژه‌ها' : 'Explore Projects'}</span>
+                <span>{t.hero.ctaProjects}</span>
               </button>
 
               <a
@@ -92,7 +88,7 @@ export const Hero: React.FC<HeroProps> = ({
                 className="px-4 py-2.5 rounded-lg bg-[#0e1626] hover:bg-[#131e33] text-cyan-300 text-xs font-mono flex items-center space-x-2 border border-cyan-800/60 transition active:scale-95"
               >
                 <Download className="w-4 h-4" />
-                <span>{isFa ? 'دانلود رزومه (PDF)' : 'Resume (PDF)'}</span>
+                <span>{t.hero.ctaResume}</span>
               </a>
 
               <button
@@ -100,7 +96,7 @@ export const Hero: React.FC<HeroProps> = ({
                 className="px-4 py-2.5 rounded-lg bg-slate-900/80 hover:bg-slate-800 text-slate-300 hover:text-white text-xs font-mono flex items-center space-x-2 border border-slate-800 transition active:scale-95"
               >
                 <Mail className="w-4 h-4" />
-                <span>{isFa ? 'ارتباط مستقیم' : 'Get in Touch'}</span>
+                <span>{t.hero.ctaContact}</span>
               </button>
             </div>
 
@@ -110,11 +106,11 @@ export const Hero: React.FC<HeroProps> = ({
             {/* Quick Command Hint */}
             <div className="pt-2 flex items-center space-x-3 text-xs font-mono text-slate-500">
               <span>
-                {isFa ? 'برای باز کردن پالت دستورات کلیدهای ' : 'Press '}
+                {t.hero.commandHintBefore}
                 <kbd className="px-1.5 py-0.5 rounded bg-slate-900 border border-slate-800 text-cyan-400 font-mono">
                   Ctrl + K
                 </kbd>
-                {isFa ? ' را فشار دهید' : ' for Command Palette'}
+                {t.hero.commandHintAfter}
               </span>
             </div>
           </div>

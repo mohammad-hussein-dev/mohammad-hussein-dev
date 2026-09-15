@@ -2,6 +2,28 @@ import React from 'react';
 import { Languages, Globe, Sparkles } from 'lucide-react';
 import { Language } from '../../data/translations';
 
+/**
+ * @fileoverview LanguageToggleEffect — Transient toast shown on language switch.
+ *
+ * @design — Why this component intentionally bypasses the i18n `t()` system:
+ *
+ *   1. This toast notifies the user of the language they JUST SWITCHED TO.
+ *      It must render 100% in the TARGET language (not the previous one).
+ *
+ *   2. `useLanguage()` updates its state asynchronously. If we relied on `t.*`
+ *      here, the toast would flash the OLD language for one render cycle,
+ *      then flip to the new one — a visible flicker.
+ *
+ *   3. The `language` prop is the authoritative target language, passed
+ *      synchronously by the parent (`App.tsx`) the moment the user clicks.
+ *
+ *   4. This is the ONE component where `isFa ? ... : ...` is the CORRECT
+ *      architectural choice. Everywhere else in the codebase, use `t.*`.
+ *
+ * @see App.tsx — for the trigger site
+ * @see LanguageContext.tsx — for the async state flow
+ */
+
 interface LanguageToggleEffectProps {
   language: Language;
   isActive: boolean;
@@ -10,6 +32,8 @@ interface LanguageToggleEffectProps {
 export const LanguageToggleEffect: React.FC<LanguageToggleEffectProps> = ({ language, isActive }) => {
   if (!isActive) return null;
 
+  // NOTE: `isFa` here reflects the TARGET language, not the current app state.
+  // This is intentional and required for correct toast semantics.
   const isFa = language === 'fa';
 
   return (

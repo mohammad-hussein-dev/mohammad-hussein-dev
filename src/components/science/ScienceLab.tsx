@@ -7,8 +7,7 @@ import { Atom, Cpu, Activity, Network, Waves, Flame, Sparkles } from 'lucide-rea
 import { useLanguage } from '../../context/LanguageContext';
 
 export const ScienceLab: React.FC = () => {
-  const { language } = useLanguage();
-  const isFa = language === 'fa';
+  const { t } = useLanguage();
 
   const [activeTab, setActiveTab] = useState<'pinn' | 'heat' | 'projectile' | 'ga'>('pinn');
 
@@ -20,15 +19,13 @@ export const ScienceLab: React.FC = () => {
           <div>
             <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-800/40 text-cyan-400 text-xs font-mono mb-3">
               <Atom className="w-3.5 h-3.5 text-cyan-400 animate-spin" style={{ animationDuration: '10s' }} />
-              <span>{isFa ? 'آزمایشگاه تعاملی فیزیک محاسباتی و هوش مصنوعی' : 'Interactive Physics & Math Lab'}</span>
+              <span>{t.scienceLab.badge}</span>
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-white">
-              {isFa ? 'پل میان محاسبات علمی و مهندسی نرم‌افزار' : 'Scientific Computing in Action'}
+              {t.scienceLab.title}
             </h2>
             <p className="text-sm text-slate-400 mt-1 max-w-2xl">
-              {isFa
-                ? 'حل‌کننده‌های عددی کلاینت-ساید، شبکه‌های عصبی آگاه از فیزیک (PINNs)، شبیه‌سازهای انتگرال‌گیر RK4 و الگوریتم‌های ژنتیک مبتنی بر ریپازیتوری‌های واقعی گیت‌هاب.'
-                : 'Real client-side numerical solvers, Physics-Informed Neural Networks, Runge-Kutta kinematics, and genetic algorithms from real-world research repositories.'}
+              {t.scienceLab.subtitle}
             </p>
           </div>
 
@@ -43,7 +40,7 @@ export const ScienceLab: React.FC = () => {
               }`}
             >
               <Network className="w-3.5 h-3.5" />
-              <span>{isFa ? 'شبکه PINN' : 'PINN (PDE)'}</span>
+              <span>{t.scienceLab.tabPinn}</span>
             </button>
 
             <button
@@ -55,7 +52,7 @@ export const ScienceLab: React.FC = () => {
               }`}
             >
               <Flame className="w-3.5 h-3.5" />
-              <span>{isFa ? 'انتقال حرارت فوریه' : 'Heat Diffusion'}</span>
+              <span>{t.scienceLab.tabDiffusion}</span>
             </button>
 
             <button
@@ -67,7 +64,7 @@ export const ScienceLab: React.FC = () => {
               }`}
             >
               <Activity className="w-3.5 h-3.5" />
-              <span>{isFa ? 'سینماتیک RK4' : 'Kinematics (RK4)'}</span>
+              <span>{t.scienceLab.tabKinematics}</span>
             </button>
 
             <button
@@ -79,7 +76,7 @@ export const ScienceLab: React.FC = () => {
               }`}
             >
               <Cpu className="w-3.5 h-3.5" />
-              <span>{isFa ? 'الگوریتم ژنتیک' : 'Genetic Algo'}</span>
+              <span>{t.scienceLab.tabGA}</span>
             </button>
           </div>
         </div>

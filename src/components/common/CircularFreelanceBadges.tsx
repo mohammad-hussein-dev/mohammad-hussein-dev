@@ -98,8 +98,7 @@ export const FREELANCE_PLATFORM_BADGES: FreelanceBadgeData[] = [
 ];
 
 export const CircularFreelanceBadges: React.FC = () => {
-  const { language } = useLanguage();
-  const isFa = language === 'fa';
+  const { t } = useLanguage();
   const [hoveredBadge, setHoveredBadge] = useState<string | null>(null);
 
   return (
@@ -112,7 +111,7 @@ export const CircularFreelanceBadges: React.FC = () => {
             <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-400" />
           </span>
           <span className="uppercase tracking-wider font-semibold text-slate-300">
-            {isFa ? 'پروفایل‌های فریلنسری تاییدشده' : 'Verified Freelance Profiles'}
+            {t.contact.verifiedFreelance}
           </span>
         </div>
         <span className="text-[10px] text-cyan-400/80 bg-cyan-950/60 border border-cyan-900/60 px-2 py-0.5 rounded-full font-mono">
@@ -180,13 +179,13 @@ export const CircularFreelanceBadges: React.FC = () => {
                     <span className={`font-bold ${item.color}`}>{item.name}</span>
                     <span className="text-[10px] text-emerald-400 font-semibold flex items-center space-x-1">
                       <CheckCircle2 className="w-3 h-3" />
-                      <span>{isFa ? 'تاییدشده' : 'Verified'}</span>
+                      <span>{t.contact.verifiedLabel}</span>
                     </span>
                   </div>
                   <div className="text-[11px] text-slate-300 font-medium">{item.role}</div>
                   <div className="text-[10px] text-slate-400 border-t border-slate-800/80 pt-1 flex items-center justify-between space-x-2">
                     <span className="text-amber-300/90 font-mono">{item.score}</span>
-                    <span className="text-cyan-400">{isFa ? 'مشاهده پروفایل' : 'View Profile'} →</span>
+                    <span className="text-cyan-400">{t.contact.viewProfileLink} →</span>
                   </div>
                 </div>
                 {/* Arrow */}
