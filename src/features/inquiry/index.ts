@@ -38,3 +38,10 @@ export { buildOutput, CHANNELS, type BuildMessageInput } from './lib/messageBuil
 
 // i18n
 export { getTranslations, TRANSLATIONS } from './lib/i18n';
+
+// ─── Components ───
+export { InquiryShell } from './components/InquiryShell';
+export type { InquiryShellProps } from './components/InquiryShell';
+
+export * from './components/primitives';
+export * from './components/entry';
