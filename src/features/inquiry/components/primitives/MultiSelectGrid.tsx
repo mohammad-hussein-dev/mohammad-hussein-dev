@@ -11,12 +11,20 @@
 
 import React from 'react';
 import { Check } from 'lucide-react';
-import type { LucideIcon } from 'lucide-react';
+
+/**
+ * Icon type — intentionally broader than LucideIcon so that
+ * dynamically-resolved components (via lookup tables) can be passed.
+ */
+export type IconComponent = React.ComponentType<{
+  className?: string;
+  'aria-hidden'?: boolean | 'true' | 'false';
+}>;
 
 export interface GridOption<T extends string> {
   value: T;
   label: string;
-  icon?: LucideIcon;
+  icon?: IconComponent;
   /** Optional group key — items are grouped in render order. */
   group?: string;
 }

@@ -45,3 +45,11 @@ export type { InquiryShellProps } from './components/InquiryShell';
 
 export * from './components/primitives';
 export * from './components/entry';
+
+// ─── Hooks ───
+export { useInquiry } from './hooks/useInquiry';
+export type { UseInquiryOptions, UseInquiryReturn } from './hooks/useInquiry';
+
+// ─── Step Components ───
+export * from './components/steps';
+export { ProgressBar } from './components/ProgressBar';
