@@ -273,7 +273,7 @@ I'm an active member of the **[StudyBuildCommunity](https://github.com/StudyBuil
 - 🐦 **X**: [@mohammad_h_dev](https://x.com/mohammad_h_dev)
 - 📷 **Instagram**: [@mohammad.hussein.dev](https://www.instagram.com/mohammad.hussein.dev/)
 - 📺 **YouTube**: [mohammad_hussein_dev](https://www.youtube.com/@mohammad_hussein_dev)
-- 📧 **Email**: [king.mohamd.09876@gmail.com](mailto:king.mohamd.09876@gmail.com)
+- 📧 **Email**: [mohammad.hussein.dev.1@gmail.com](mailto:mohammad.hussein.dev.1@gmail.com)
 - 💼 **Karlancer**: [MohammadHossein.Gh](https://karlancer.com/profile/1401608)
 - 📄 **Parscoders**: [mohammad_hussein](https://parscoders.com/resume/769525/mohammad_hussein)
 - ✍️ **Typeiran**: [Mohammad Hussein Ghafoori](https://typeiran.com/user/797507)
@@ -324,7 +324,7 @@ I'm an active member of the **[StudyBuildCommunity](https://github.com/StudyBuil
   <a href="https://www.youtube.com/@mohammad_hussein_dev" target="_blank">
     <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube">
   </a>
-  <a href="mailto:king.mohamd.09876@gmail.com">
+  <a href="mailto:mohammad.hussein.dev.1@gmail.com">
     <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
   </a>
 </p>
