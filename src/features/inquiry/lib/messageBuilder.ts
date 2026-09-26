@@ -35,7 +35,7 @@ import { generateTrackingCode } from './tracker';
 /** Developer's public channels (single source of truth). */
 export const CHANNELS = {
   telegram: 'mohammad_hussein_dev',
-  email: 'king.mohamd.09876@gmail.com',
+  email: 'mohammad.hussein.dev.1@gmail.com',
 } as const;
 
 // ─── Label Dictionaries ─────────────────────────────────────────────────

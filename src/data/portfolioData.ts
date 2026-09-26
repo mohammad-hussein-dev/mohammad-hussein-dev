@@ -64,7 +64,7 @@ export const PROFILE = {
   tagline: "Simulating the Universe, One Repo at a Time",
   missionStatement: "Building reliable backend systems, APIs, and scientific software with a strong foundation in physics and mathematics.",
   location: "Tehran, Iran",
-  email: "king.mohamd.09876@gmail.com",
+  email: "mohammad.hussein.dev.1@gmail.com",
   github: "https://github.com/mohammad-hussein-dev",
   gitlab: "https://gitlab.com/mohammad-hussein-dev",
   linkedin: "https://www.linkedin.com/in/mohammad-hussein-dev/",
